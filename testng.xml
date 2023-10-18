@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Launch Browser Scripts">
+	
+<!--Executing Different Classes in this Test Case Parallely-->
+  <test name="Launch Browser" parallel="classes" thread-count="3">
+	  <classes>
+		  <class name="basic.LaunchChrome"></class>
+		  <class name="basic.LaunchFirefox"></class>
+		  <class name="basic.LaunchEdge"></class>
+	  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

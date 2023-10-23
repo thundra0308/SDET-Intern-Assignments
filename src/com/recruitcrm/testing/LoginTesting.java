@@ -3,7 +3,7 @@ package com.recruitcrm.testing;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-//Class to Test Login Functionality
+//Class to Test Login Page Functionalities
 public class LoginTesting extends Base {
 
 	// Login using Credentials

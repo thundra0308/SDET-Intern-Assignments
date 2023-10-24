@@ -61,11 +61,10 @@ public class AddCompanyTesting extends LoginTesting {
 	//Verify that the Required Company has been Added Successfully
 	public void verifyCompanyAddedTest(String name) {
 		
-		//Wait for the Data Refresh and Opening of the Added Company Page
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#sTest-companyNameCompanyDpage")));
-		
-		//Verify that the Added Company is Correct
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[role='alert'].toast.is-success")));
+		WebElement success = driver.findElement(By.cssSelector("div[role='alert'].toast.is-success"));
+		Assert.assertTrue(success.isDisplayed());
 		String actual_company_name = driver.findElement(By.cssSelector("#sTest-companyNameCompanyDpage")).getText();
 		Assert.assertEquals(actual_company_name, name);
 		

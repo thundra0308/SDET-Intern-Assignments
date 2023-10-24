@@ -1,10 +1,12 @@
 package com.recruitcrm.testing;
 
 import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 //Class to Test Candidate Adding Functionalities
@@ -45,7 +47,7 @@ public class AddCandidateTesting extends LoginTesting {
 		submit.click();
 		
 		//Verify that the Candidate has been Added Successfully
-//		verifyAddedCandidate("Alan Walker");
+		verifyAddedCandidate("Alan Walker");
 		
 	}
 	
@@ -86,29 +88,21 @@ public class AddCandidateTesting extends LoginTesting {
 		WebElement submit = driver.findElement(By.cssSelector("#sTest-candidateAddBtn"));
 		submit.click();
 		
-//		try {
-//			Thread.sleep(20000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		//Verify that the Candidate has been Added Successfully
-//		verifyAddedCandidate("Robert Cooper");
+		//Verify that the Candidate has been Added Successfully
+		verifyAddedCandidate("Robert Cooper");
 		
 	}
 	
 	//Verify that the Candidate has been Added Successfully
-//	public void verifyAddedCandidate(String name) {
-//		
-//		//Wait for the Data Refresh and Opening of the Added Candidate Page
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#sTest-candidateNameDetailPage")));
-//				
-//		//Verify that the Added Candidate is Correct
-//		String actual_candidate_name = driver.findElement(By.cssSelector("#sTest-candidateNameDetailPage")).getText();
-//		Assert.assertEquals(actual_candidate_name, name);
-//		
-//	}
+	public void verifyAddedCandidate(String name) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[role='alert'].toast.is-success")));
+		WebElement success = driver.findElement(By.cssSelector("div[role='alert'].toast.is-success"));
+		Assert.assertTrue(success.isDisplayed());
+		String actual_candidate_name = driver.findElement(By.cssSelector("#sTest-candidateNameDetailPage")).getText();
+		Assert.assertEquals(actual_candidate_name, name);
+		
+	}
 	
 }

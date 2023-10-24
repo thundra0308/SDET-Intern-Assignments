@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.recruitcrm.testing.AddCandidateTesting">
+      <class name="com.recruitcrm.testing.AddCompanyTesting">
         <methods>
-          <include name="addCandidateTest_2"/>
           <include name="openBrowser"/>
+          <include name="addCompanyTest"/>
         </methods>
-      </class> <!-- com.recruitcrm.testing.AddCandidateTesting -->
+      </class> <!-- com.recruitcrm.testing.AddCompanyTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -42,6 +42,10 @@ public class AddCandidateTesting extends LoginTesting {
 		//Enter Phone Number
 		phone.sendKeys("1111111111");
 		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#sTest-candidateAddBtn")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#sTest-candidateAddBtn")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#sTest-candidateAddBtn")));
+		
 		//Click on Submit Button
 		WebElement submit = driver.findElement(By.cssSelector("#sTest-candidateAddBtn"));
 		submit.click();
@@ -57,9 +61,9 @@ public class AddCandidateTesting extends LoginTesting {
 		
 		//Wait for Previous Test Processing
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#sTest-candidateNameDetailPage")));
-		//Wait for Add Button to Appear on Top
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#sTest-addInAppBtn")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#sTest-addInAppBtn")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#sTest-addInAppBtn")));
 		
 		
 		

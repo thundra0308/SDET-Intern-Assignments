@@ -50,6 +50,10 @@ public class AddCompanyTesting extends LoginTesting {
 		WebElement industry_type_span = driver.findElement(By.cssSelector("#sTest-industryTxt div.dropdown-trigger > button span.label-scroll"));
 		Assert.assertEquals(industry_type_span.getText(), industry_type);
 		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#sTest-companySubmitBtn")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#sTest-companySubmitBtn")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#sTest-companySubmitBtn")));
+		
 		//Click on Submit Button
 		driver.findElement(By.cssSelector("#sTest-companySubmitBtn")).click();
 		

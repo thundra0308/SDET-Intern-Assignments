@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-27T02:22:46 IST" name="Default suite" finished-at="2023-10-27T02:22:52 IST" duration-ms="5488">
+  <suite started-at="2023-10-27T02:31:11 IST" name="Default suite" finished-at="2023-10-27T02:32:24 IST" duration-ms="72793">
     <groups>
     </groups>
-    <test started-at="2023-10-27T02:22:46 IST" name="Default test" finished-at="2023-10-27T02:22:52 IST" duration-ms="5488">
-      <class name="com.selenium.assignment.testing.Login">
-        <test-method signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.Login@24c22fe]" started-at="2023-10-27T02:22:46 IST" name="loginTest" finished-at="2023-10-27T02:22:52 IST" duration-ms="5449" status="PASS">
+    <test started-at="2023-10-27T02:31:11 IST" name="Default test" finished-at="2023-10-27T02:32:24 IST" duration-ms="72793">
+      <class name="com.selenium.assignment.testing.AddCandidate">
+        <test-method signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.AddCandidate@a1f72f5]" started-at="2023-10-27T02:31:11 IST" name="loginTest" finished-at="2023-10-27T02:31:19 IST" duration-ms="7933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-      </class> <!-- com.selenium.assignment.testing.Login -->
+        <test-method signature="addCandidate_Manual()[pri:1, instance:com.selenium.assignment.testing.AddCandidate@a1f72f5]" started-at="2023-10-27T02:31:19 IST" name="addCandidate_Manual" finished-at="2023-10-27T02:31:35 IST" duration-ms="16496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCandidate_Manual -->
+        <test-method signature="addCandidateTest_Auto()[pri:2, instance:com.selenium.assignment.testing.AddCandidate@a1f72f5]" started-at="2023-10-27T02:31:35 IST" name="addCandidateTest_Auto" finished-at="2023-10-27T02:32:24 IST" duration-ms="48324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCandidateTest_Auto -->
+      </class> <!-- com.selenium.assignment.testing.AddCandidate -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

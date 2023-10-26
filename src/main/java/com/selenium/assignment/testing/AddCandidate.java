@@ -50,7 +50,7 @@ public class AddCandidate extends Login {
 		elementClick("addCandidateBtnTop_css");
 
 		// Upload the CV in the Upload Box
-		String file_path = "C:\\Users\\surya\\Downloads\\New-York-Resume-Template-Creative.pdf";
+		String file_path = System.getProperty("user.dir") + "/upload-files/Resume.pdf";
 		elementEnterText("addCandidateUploadResume_css", file_path);
 
 		// Wait for Upload to Complete

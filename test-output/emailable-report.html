@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">49,159</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.selenium.assignment.testing.AddCandidate</td><td><a href="#m0">addCandidateTest_Auto</a></td><td rowspan="1">1698350794903</td><td rowspan="1">1159</td></tr><tr class="failedeven"><td><a href="#m1">addCandidate_Manual</a></td><td rowspan="1">1698350756235</td><td rowspan="1">38668</td></tr><tr class="failedodd"><td rowspan="1">com.selenium.assignment.testing.AddCompany</td><td><a href="#m2">addCompanyTest</a></td><td rowspan="1">1698350756281</td><td rowspan="1">8053</td></tr><tr class="failedeven"><td rowspan="1">com.selenium.assignment.testing.AddContact</td><td><a href="#m3">addContact</a></td><td rowspan="1">1698350756104</td><td rowspan="1">21597</td></tr><tr class="failedodd"><td rowspan="1">com.selenium.assignment.testing.AddJob</td><td><a href="#m4">addJobTest</a></td><td rowspan="1">1698350756123</td><td rowspan="1">29669</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.selenium.assignment.testing.AddCandidate</td><td><a href="#m5">loginTest</a></td><td rowspan="1">1698350746948</td><td rowspan="1">9285</td></tr><tr class="passedodd"><td rowspan="1">com.selenium.assignment.testing.AddCompany</td><td><a href="#m6">loginTest</a></td><td rowspan="1">1698350746948</td><td rowspan="1">9331</td></tr><tr class="passedeven"><td rowspan="1">com.selenium.assignment.testing.AddContact</td><td><a href="#m7">loginTest</a></td><td rowspan="1">1698350746948</td><td rowspan="1">9148</td></tr><tr class="passedodd"><td rowspan="1">com.selenium.assignment.testing.AddJob</td><td><a href="#m8">loginTest</a></td><td rowspan="1">1698350746948</td><td rowspan="1">9173</td></tr><tr class="passedeven"><td rowspan="1">com.selenium.assignment.testing.Login</td><td><a href="#m9">loginTest</a></td><td rowspan="1">1698350746948</td><td rowspan="1">9236</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.selenium.assignment.testing.AddCandidate#addCandidateTest_Auto</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: element click intercepted: Element &lt;a data-v-5b813768=&quot;&quot; id=&quot;sTest-addInAppBtn&quot; class=&quot;add_new&quot; data-bs-toggle=&quot;dropdown&quot; disabled=&quot;false&quot; aria-expanded=&quot;false&quot;&gt;...&lt;/a&gt; is not clickable at point (1232, 27). Other element would receive the click: &lt;p class=&quot;modal-card-title m-b-15 m-t-15&quot;&gt;...&lt;/p&gt;
+  (Session info: chrome=118.0.5993.90)
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e16fd7fb92db98d554ba1866f0c48ba6, clickElement {id=066F471AEDBE8D58E857C0FA70AF70EA_element_16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53104}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53104/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e16fd7fb92db98d554ba1866f0c48ba6)] -&gt; css selector: #sTest-addInAppBtn]
+Session ID: e16fd7fb92db98d554ba1866f0c48ba6
+	at com.selenium.assignment.base.BaseUi.reportFail(BaseUi.java:293)
+	at com.selenium.assignment.base.BaseUi.elementClick(BaseUi.java:99)
+	at com.selenium.assignment.testing.AddCandidate.addCandidateTest_Auto(AddCandidate.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.selenium.assignment.testing.AddCandidate#addCandidate_Manual</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected condition failed: waiting for presence of element located by: By.cssSelector: div[role=&apos;alert&apos;].toast.is-success (tried for 30 second(s) with 500 milliseconds interval)
+	at com.selenium.assignment.base.BaseUi.reportFail(BaseUi.java:293)
+	at com.selenium.assignment.base.BaseUi.explicitWait(BaseUi.java:251)
+	at com.selenium.assignment.testing.AddCandidate.verifyCandidateAdded(AddCandidate.java:72)
+	at com.selenium.assignment.testing.AddCandidate.addCandidate_Manual(AddCandidate.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.selenium.assignment.testing.AddCompany#addCompanyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: element click intercepted: Element &lt;button data-v-56bb67c9=&quot;&quot; type=&quot;button&quot; class=&quot;button btn-med&quot;&gt;...&lt;/button&gt; is not clickable at point (1325, 172). Other element would receive the click: &lt;div class=&quot;loading-background&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=118.0.5993.90)
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b263931b9f54a5a51c8ac1e961bc942, clickElement {id=44D7DBBAD393901FC2365D93DEFD0E4B_element_68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53108/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7b263931b9f54a5a51c8ac1e961bc942)] -&gt; css selector: #sTest-industryTxt div.dropdown-trigger &gt; button]
+Session ID: 7b263931b9f54a5a51c8ac1e961bc942
+	at com.selenium.assignment.base.BaseUi.reportFail(BaseUi.java:293)
+	at com.selenium.assignment.base.BaseUi.elementClick(BaseUi.java:99)
+	at com.selenium.assignment.testing.AddCompany.addCompanyTest(AddCompany.java:29)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.selenium.assignment.testing.AddContact#addContact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e9041b1d5760dd717f1ab03f23fef70, getElementText {id=333238282BB76B9812A753108FDBB210_element_104}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53105/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5e9041b1d5760dd717f1ab03f23fef70)] -&gt; css selector: #sTest-searchCompanyName ul li]
+Session ID: 5e9041b1d5760dd717f1ab03f23fef70
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at com.selenium.assignment.base.BaseUi.select(BaseUi.java:275)
+	at com.selenium.assignment.testing.AddContact.addAndSelectCompanies(AddContact.java:53)
+	at com.selenium.assignment.testing.AddContact.addContact(AddContact.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.selenium.assignment.testing.AddJob#addJobTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d68935a2a9d2e051b76f36bbda362ac8, getElementText {id=C8B7EC16B2304D648276AC4DF907932B_element_248}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53106}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53106/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d68935a2a9d2e051b76f36bbda362ac8)] -&gt; css selector: div#sTest-addJobConactTxt ul li]
+Session ID: d68935a2a9d2e051b76f36bbda362ac8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at com.selenium.assignment.base.BaseUi.select(BaseUi.java:275)
+	at com.selenium.assignment.testing.AddJob.addJobTest(AddJob.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.selenium.assignment.testing.AddCandidate#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.selenium.assignment.testing.AddCompany#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.selenium.assignment.testing.AddContact#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.selenium.assignment.testing.AddJob#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.selenium.assignment.testing.Login#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

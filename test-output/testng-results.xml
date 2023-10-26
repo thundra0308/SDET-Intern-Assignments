@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="5" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-27T01:35:46 IST" name="Suite" finished-at="2023-10-27T01:36:36 IST" duration-ms="49159">
+    <groups>
+    </groups>
+    <test started-at="2023-10-27T01:35:46 IST" name="Test" finished-at="2023-10-27T01:36:36 IST" duration-ms="49159">
+      <class name="com.selenium.assignment.testing.Login">
+        <test-method signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.Login@102cec62]" started-at="2023-10-27T01:35:46 IST" name="loginTest" finished-at="2023-10-27T01:35:56 IST" duration-ms="9236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.selenium.assignment.testing.Login -->
+      <class name="com.selenium.assignment.testing.AddCandidate">
+        <test-method signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.AddCandidate@5e21e98f]" started-at="2023-10-27T01:35:46 IST" name="loginTest" finished-at="2023-10-27T01:35:56 IST" duration-ms="9285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="addCandidate_Manual()[pri:1, instance:com.selenium.assignment.testing.AddCandidate@5e21e98f]" started-at="2023-10-27T01:35:56 IST" name="addCandidate_Manual" finished-at="2023-10-27T01:36:34 IST" duration-ms="38668" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div[role='alert'].toast.is-success (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for presence of element located by: By.cssSelector: div[role='alert'].toast.is-success (tried for 30 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:99)
+at com.selenium.assignment.base.BaseUi.reportFail(BaseUi.java:293)
+at com.selenium.assignment.base.BaseUi.explicitWait(BaseUi.java:251)
+at com.selenium.assignment.testing.AddCandidate.verifyCandidateAdded(AddCandidate.java:72)
+at com.selenium.assignment.testing.AddCandidate.addCandidate_Manual(AddCandidate.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCandidate_Manual -->
+        <test-method signature="addCandidateTest_Auto()[pri:2, instance:com.selenium.assignment.testing.AddCandidate@5e21e98f]" started-at="2023-10-27T01:36:34 IST" name="addCandidateTest_Auto" finished-at="2023-10-27T01:36:36 IST" duration-ms="1159" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[element click intercepted: Element <a data-v-5b813768="" id="sTest-addInAppBtn" class="add_new" data-bs-toggle="dropdown" disabled="false" aria-expanded="false">...</a> is not clickable at point (1232, 27). Other element would receive the click: <p class="modal-card-title m-b-15 m-t-15">...</p>
+  (Session info: chrome=118.0.5993.90)
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e16fd7fb92db98d554ba1866f0c48ba6, clickElement {id=066F471AEDBE8D58E857C0FA70AF70EA_element_16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53104}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53104/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e16fd7fb92db98d554ba1866f0c48ba6)] -> css selector: #sTest-addInAppBtn]
+Session ID: e16fd7fb92db98d554ba1866f0c48ba6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: element click intercepted: Element <a data-v-5b813768="" id="sTest-addInAppBtn" class="add_new" data-bs-toggle="dropdown" disabled="false" aria-expanded="false">...</a> is not clickable at point (1232, 27). Other element would receive the click: <p class="modal-card-title m-b-15 m-t-15">...</p>
+  (Session info: chrome=118.0.5993.90)
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e16fd7fb92db98d554ba1866f0c48ba6, clickElement {id=066F471AEDBE8D58E857C0FA70AF70EA_element_16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53104}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53104/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e16fd7fb92db98d554ba1866f0c48ba6)] -> css selector: #sTest-addInAppBtn]
+Session ID: e16fd7fb92db98d554ba1866f0c48ba6
+at org.testng.Assert.fail(Assert.java:99)
+at com.selenium.assignment.base.BaseUi.reportFail(BaseUi.java:293)
+at com.selenium.assignment.base.BaseUi.elementClick(BaseUi.java:99)
+at com.selenium.assignment.testing.AddCandidate.addCandidateTest_Auto(AddCandidate.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCandidateTest_Auto -->
+      </class> <!-- com.selenium.assignment.testing.AddCandidate -->
+      <class name="com.selenium.assignment.testing.AddContact">
+        <test-method signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.AddContact@239105a8]" started-at="2023-10-27T01:35:46 IST" name="loginTest" finished-at="2023-10-27T01:35:56 IST" duration-ms="9148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="addContact()[pri:4, instance:com.selenium.assignment.testing.AddContact@239105a8]" started-at="2023-10-27T01:35:56 IST" name="addContact" finished-at="2023-10-27T01:36:17 IST" duration-ms="21597" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e9041b1d5760dd717f1ab03f23fef70, getElementText {id=333238282BB76B9812A753108FDBB210_element_104}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53105/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5e9041b1d5760dd717f1ab03f23fef70)] -> css selector: #sTest-searchCompanyName ul li]
+Session ID: 5e9041b1d5760dd717f1ab03f23fef70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e9041b1d5760dd717f1ab03f23fef70, getElementText {id=333238282BB76B9812A753108FDBB210_element_104}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53105/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5e9041b1d5760dd717f1ab03f23fef70)] -> css selector: #sTest-searchCompanyName ul li]
+Session ID: 5e9041b1d5760dd717f1ab03f23fef70
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+at com.selenium.assignment.base.BaseUi.select(BaseUi.java:275)
+at com.selenium.assignment.testing.AddContact.addAndSelectCompanies(AddContact.java:53)
+at com.selenium.assignment.testing.AddContact.addContact(AddContact.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContact -->
+      </class> <!-- com.selenium.assignment.testing.AddContact -->
+      <class name="com.selenium.assignment.testing.AddJob">
+        <test-method signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.AddJob@3fce8fd9]" started-at="2023-10-27T01:35:46 IST" name="loginTest" finished-at="2023-10-27T01:35:56 IST" duration-ms="9173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="addJobTest()[pri:5, instance:com.selenium.assignment.testing.AddJob@3fce8fd9]" started-at="2023-10-27T01:35:56 IST" name="addJobTest" finished-at="2023-10-27T01:36:25 IST" duration-ms="29669" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d68935a2a9d2e051b76f36bbda362ac8, getElementText {id=C8B7EC16B2304D648276AC4DF907932B_element_248}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53106}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53106/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d68935a2a9d2e051b76f36bbda362ac8)] -> css selector: div#sTest-addJobConactTxt ul li]
+Session ID: d68935a2a9d2e051b76f36bbda362ac8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d68935a2a9d2e051b76f36bbda362ac8, getElementText {id=C8B7EC16B2304D648276AC4DF907932B_element_248}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53106}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53106/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d68935a2a9d2e051b76f36bbda362ac8)] -> css selector: div#sTest-addJobConactTxt ul li]
+Session ID: d68935a2a9d2e051b76f36bbda362ac8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+at com.selenium.assignment.base.BaseUi.select(BaseUi.java:275)
+at com.selenium.assignment.testing.AddJob.addJobTest(AddJob.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addJobTest -->
+      </class> <!-- com.selenium.assignment.testing.AddJob -->
+      <class name="com.selenium.assignment.testing.AddCompany">
+        <test-method signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.AddCompany@51a9ad5e]" started-at="2023-10-27T01:35:46 IST" name="loginTest" finished-at="2023-10-27T01:35:56 IST" duration-ms="9331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="addCompanyTest()[pri:3, instance:com.selenium.assignment.testing.AddCompany@51a9ad5e]" started-at="2023-10-27T01:35:56 IST" name="addCompanyTest" finished-at="2023-10-27T01:36:04 IST" duration-ms="8053" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[element click intercepted: Element <button data-v-56bb67c9="" type="button" class="button btn-med">...</button> is not clickable at point (1325, 172). Other element would receive the click: <div class="loading-background"></div>
+  (Session info: chrome=118.0.5993.90)
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b263931b9f54a5a51c8ac1e961bc942, clickElement {id=44D7DBBAD393901FC2365D93DEFD0E4B_element_68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53108/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7b263931b9f54a5a51c8ac1e961bc942)] -> css selector: #sTest-industryTxt div.dropdown-trigger > button]
+Session ID: 7b263931b9f54a5a51c8ac1e961bc942]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: element click intercepted: Element <button data-v-56bb67c9="" type="button" class="button btn-med">...</button> is not clickable at point (1325, 172). Other element would receive the click: <div class="loading-background"></div>
+  (Session info: chrome=118.0.5993.90)
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b263931b9f54a5a51c8ac1e961bc942, clickElement {id=44D7DBBAD393901FC2365D93DEFD0E4B_element_68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.90, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53108/devtoo..., se:cdpVersion: 118.0.5993.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7b263931b9f54a5a51c8ac1e961bc942)] -> css selector: #sTest-industryTxt div.dropdown-trigger > button]
+Session ID: 7b263931b9f54a5a51c8ac1e961bc942
+at org.testng.Assert.fail(Assert.java:99)
+at com.selenium.assignment.base.BaseUi.reportFail(BaseUi.java:293)
+at com.selenium.assignment.base.BaseUi.elementClick(BaseUi.java:99)
+at com.selenium.assignment.testing.AddCompany.addCompanyTest(AddCompany.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCompanyTest -->
+      </class> <!-- com.selenium.assignment.testing.AddCompany -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

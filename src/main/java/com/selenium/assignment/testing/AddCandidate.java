@@ -12,7 +12,7 @@ public class AddCandidate extends LoginAndLogout {
 
 	//Test Method to Add Candidate by Manually Filling the Details
 	@Test(priority = 1)
-	public void addCandidate_Manual() {
+	public void addCandidateTest_Manual() {
 
 		// Wait for Add Button on Top to be Available
 		explicitWait("addBtnTop_css", 30);

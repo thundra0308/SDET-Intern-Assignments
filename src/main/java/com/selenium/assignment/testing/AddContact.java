@@ -12,7 +12,7 @@ public class AddContact extends LoginAndLogout {
 
 	//Test Method to Add Contact
 	@Test(priority = 4)
-	public void addContact() {
+	public void addContactTest() {
 
 		// Wait for Add Button on Top to be Available
 		explicitWait("addBtnTop_css",30);

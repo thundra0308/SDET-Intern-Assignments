@@ -5,18 +5,11 @@
     <classes>
       <class name="com.selenium.assignment.testing.AddContact">
         <methods>
-          <include name="addContact"/>
           <include name="loginTest"/>
+          <include name="addContactTest"/>
           <include name="logoutTest"/>
         </methods>
       </class> <!-- com.selenium.assignment.testing.AddContact -->
-      <class name="com.selenium.assignment.testing.AddCompany">
-        <methods>
-          <include name="loginTest"/>
-          <include name="addCompanyTest"/>
-          <include name="logoutTest"/>
-        </methods>
-      </class> <!-- com.selenium.assignment.testing.AddCompany -->
       <class name="com.selenium.assignment.testing.AddJob">
         <methods>
           <include name="loginTest"/>
@@ -24,14 +17,6 @@
           <include name="logoutTest"/>
         </methods>
       </class> <!-- com.selenium.assignment.testing.AddJob -->
-      <class name="com.selenium.assignment.testing.AddCandidate">
-        <methods>
-          <include name="loginTest"/>
-          <include name="addCandidate_Manual"/>
-          <include name="addCandidateTest_Auto"/>
-          <include name="logoutTest"/>
-        </methods>
-      </class> <!-- com.selenium.assignment.testing.AddCandidate -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

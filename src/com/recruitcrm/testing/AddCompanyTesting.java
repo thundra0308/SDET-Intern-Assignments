@@ -38,6 +38,12 @@ public class AddCompanyTesting extends LoginTesting {
 		WebElement industry_search = driver.findElement(By.cssSelector("#sTest-industryTxt div.dropdown-menu input"));
 		String industry_type = "Manufacturing & Engineering";
 		industry_search.sendKeys(industry_type);
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		List<WebElement> industry_search_result = driver.findElements(By.cssSelector("#sTest-industryTxt div.dropdown-menu a div div"));
 		for(WebElement e : industry_search_result) {
 			String curr_industry = e.getText();

@@ -77,7 +77,7 @@ public class AddCandidateTesting extends LoginTesting {
 		
 		//Upload the CV in the Upload Box
 		WebElement upload_cv = driver.findElement(By.cssSelector("#sTest-uploadFile-candidateAddResume"));
-		String file_path = "C:\\Users\\surya\\Downloads\\New-York-Resume-Template-Creative.pdf";
+		String file_path = System.getProperty("user.dir") + "/upload-files/Resume.pdf";
 		upload_cv.sendKeys(file_path);
 		
 		//Wait for Upload to Complete

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Recruit CRM Tetsing" thread-count="2" parallel="tests">
-  <test thread-count="2" parallel="classes" name="TestAddCandidate">
-	  <classes>
-		  <class name="com.recruitcrm.testing.AddCandidateTesting"></class>
-	  </classes>
-  </test> 
-  <test thread-count="2" parallel="classes" name="TestAddCompany">
-	  <classes>
-		  <class name="com.recruitcrm.testing.AddCompanyTesting"></class>
-	  </classes>
-  </test> 
+<suite name="Recruit CRM Tetsing">
+	<test name="Test_1" group-by-instances="true" thread-count="2">
+		<classes>
+			<class name="com.recruitcrm.testing.Base"></class>
+			<class name="com.recruitcrm.testing.LoginTesting"></class>
+			<class name="com.recruitcrm.testing.AddCandidateTesting"></class>
+			<class name="com.recruitcrm.testing.AddCompanyTesting"></class>
+		</classes>
+	</test>
   <!-- Test -->
 </suite> <!-- Suite -->

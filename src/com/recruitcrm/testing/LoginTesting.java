@@ -1,13 +1,13 @@
 package com.recruitcrm.testing;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
 
 //Class to Test Login Page Functionalities
 public class LoginTesting extends Base {
 
 	// Login using Credentials
-	@Test(priority = 0)
+	@BeforeTest
 	public void testLogin() {
 		
 		//Enter Email

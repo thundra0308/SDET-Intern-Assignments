@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-25T18:57:19 IST" name="Default suite" finished-at="2023-10-25T18:57:42 IST" duration-ms="22087">
+  <suite started-at="2023-10-27T19:36:30 IST" name="Recruit CRM Tetsing" finished-at="2023-10-27T19:37:27 IST" duration-ms="56915">
     <groups>
     </groups>
-    <test started-at="2023-10-25T18:57:19 IST" name="Default test" finished-at="2023-10-25T18:57:42 IST" duration-ms="22087">
-      <class name="com.recruitcrm.testing.AddCompanyTesting">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.recruitcrm.testing.AddCompanyTesting@306e95ec]" started-at="2023-10-25T18:57:19 IST" name="openBrowser" finished-at="2023-10-25T18:57:22 IST" duration-ms="2557" status="PASS">
+    <test started-at="2023-10-27T19:36:30 IST" name="Test_1" finished-at="2023-10-27T19:37:27 IST" duration-ms="56915">
+      <class name="com.recruitcrm.testing.Base">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.recruitcrm.testing.Base@bae7dc0]" started-at="2023-10-27T19:36:27 IST" name="openBrowser" finished-at="2023-10-27T19:36:30 IST" duration-ms="3339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="testLogin()[pri:0, instance:com.recruitcrm.testing.AddCompanyTesting@306e95ec]" started-at="2023-10-25T18:57:22 IST" name="testLogin" finished-at="2023-10-25T18:57:24 IST" duration-ms="2276" status="PASS">
+      </class> <!-- com.recruitcrm.testing.Base -->
+      <class name="com.recruitcrm.testing.AddCandidateTesting">
+        <test-method signature="addCandidateTest_1()[pri:1, instance:com.recruitcrm.testing.AddCandidateTesting@2805d709]" started-at="2023-10-27T19:36:33 IST" name="addCandidateTest_1" finished-at="2023-10-27T19:36:50 IST" duration-ms="16386" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="addCompanyTest()[pri:3, instance:com.recruitcrm.testing.AddCompanyTesting@306e95ec]" started-at="2023-10-25T18:57:24 IST" name="addCompanyTest" finished-at="2023-10-25T18:57:42 IST" duration-ms="17223" status="PASS">
+        </test-method> <!-- addCandidateTest_1 -->
+        <test-method signature="addCandidateTest_2()[pri:2, instance:com.recruitcrm.testing.AddCandidateTesting@2805d709]" started-at="2023-10-27T19:36:50 IST" name="addCandidateTest_2" finished-at="2023-10-27T19:37:16 IST" duration-ms="26613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCandidateTest_2 -->
+      </class> <!-- com.recruitcrm.testing.AddCandidateTesting -->
+      <class name="com.recruitcrm.testing.AddCompanyTesting">
+        <test-method signature="addCompanyTest()[pri:3, instance:com.recruitcrm.testing.AddCompanyTesting@3ee37e5a]" started-at="2023-10-27T19:37:16 IST" name="addCompanyTest" finished-at="2023-10-27T19:37:27 IST" duration-ms="11049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCompanyTest -->
       </class> <!-- com.recruitcrm.testing.AddCompanyTesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.recruitcrm.testing.LoginTesting">
+        <test-method is-config="true" signature="testLogin()[pri:0, instance:com.recruitcrm.testing.LoginTesting@c88a337]" started-at="2023-10-27T19:36:30 IST" name="testLogin" finished-at="2023-10-27T19:36:33 IST" duration-ms="2848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- com.recruitcrm.testing.LoginTesting -->
+    </test> <!-- Test_1 -->
+  </suite> <!-- Recruit CRM Tetsing -->
 </testng-results>

@@ -7,8 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddContact extends Login {
+//Class to Test Add Contact Functionalities
+public class AddContact extends LoginAndLogout {
 
+	//Test Method to Add Contact
 	@Test(priority = 4)
 	public void addContact() {
 
@@ -18,13 +20,16 @@ public class AddContact extends Login {
 		// Click on Add Button Appeared on Top
 		elementClick("addBtnTop_css");
 		
+		//Click on Add Contact Button in the Appeared Dialog
 		elementClick("addContactBtnTop_css");
 		
+		//Enter the Contact Name
 		String contactFirstName = "Jhon";
 		String contactLastName = "Snow";
 		elementEnterText("addContactFirstName_css", contactFirstName);
 		elementEnterText("addContactLastName_css", contactLastName);
 		
+		//Select the Names of the Company the Contact Belong To
 		List<String> companyBelongToNameList = new ArrayList<>();
 		companyBelongToNameList.add("Capsule Corporation");
 		companyBelongToNameList.add("Dunder Mifflin");
@@ -32,8 +37,10 @@ public class AddContact extends Login {
 		
 		explicitWait("addCompanyBtnSubmit_css",30);
 		
+		//Click on the Submit Button
 		elementClick("addCompanyBtnSubmit_css");
 		
+		//Verify If the Contact has been Added Successfully
 		verifyContactAdded(contactFirstName+" "+contactLastName);
 
 	}
@@ -47,6 +54,7 @@ public class AddContact extends Login {
 
 	}
 	
+	//Select Company, the Contact Belong To.
 	public void addAndSelectCompanies(List<String> companyBelongToNameList) {
 		
 		for (String name : companyBelongToNameList) {

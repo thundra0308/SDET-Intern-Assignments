@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="Test">
-		<packages>
-			<package name="com.selenium.assignment.testing"></package>
-		</packages>
+	<test thread-count="5" group-by-instances="true" name="Test">
+		<classes>
+			<class name="com.selenium.assignment.testing.LoginAndLogout"></class>
+			<class name="com.selenium.assignment.testing.AddCandidate"></class>
+			<class name="com.selenium.assignment.testing.AddCompany"></class>
+			<class name="com.selenium.assignment.testing.AddContact"></class>
+			<class name="com.selenium.assignment.testing.AddJob"></class>
+		</classes>
 	</test> <!--
 	Test -->
 </suite> <!--

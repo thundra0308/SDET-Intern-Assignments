@@ -3,8 +3,10 @@ package com.selenium.assignment.testing;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddJob extends Login {
+//Class to Test the Add Job Functionalities
+public class AddJob extends LoginAndLogout {
 	
+	//Test Method to Add Job
 	@Test(priority = 5)
 	public void addJobTest() {
 		
@@ -17,20 +19,24 @@ public class AddJob extends Login {
 		// Click on Add Job Icon Button on Appeared Dialog Menu
 		elementClick("addJobBtnTop_css");
 		
+		//Select Hiring Pipeline
 		String pipeline = "Hiring Pipeline 1";
 		String pipelineSearchKey = "addJobHiringPipelineSearchInput_css";
 		String pipelineSearchResult = "addJobHiringPipelineSearchResult_css";
 		select(pipeline,pipelineSearchKey,pipelineSearchResult);
 		
+		//Enter Job Title
 		String jobTitle = "Automation Testing";
 		elementEnterText("addJobTitle_css", jobTitle);
 		
+		//Select Number of Job Opening
 		String numberOfJobs = "2";
 		elementClick("addNumberOfJobBox_css");
 		String numberOfJobsSearchKey = "addNumberOfJobSearchBox_css";
 		String numberOfJobsSearchResult = "addNumberOfJobsResult_css";
 		select(numberOfJobs,numberOfJobsSearchKey,numberOfJobsSearchResult);
 		
+		//Select the Company, the Job Belong To
 		String jobCompany = "Capsule Corporation";
 		String jobCompanySearchKey = "addJobCompanySearchInput_css";
 		String jobCompanySearchResult = "addJobCompanySearchResult_css";
@@ -38,6 +44,7 @@ public class AddJob extends Login {
 		
 		explicitWait("addJobPrimaryContactSearchInput_css", 30);
 		
+		//Select the Primary Contact that Belongs to the Job Company
 		String contactName = "Bulma";
 		String contactNameSearchKey = "addJobPrimaryContactSearchInput_css";
 		String contactNameSearchResult = "addJobPrimaryContactSeacrhResult_css";
@@ -45,8 +52,10 @@ public class AddJob extends Login {
 		
 		explicitWait("addJobSubmitBtn_css", 30);
 		
+		//Click on Submit Button
 		elementClick("addJobSubmitBtn_css");
 		
+		//Verify that the Job has been Added Successfully
 		verifyJobAdded(jobTitle);
 		
 	}

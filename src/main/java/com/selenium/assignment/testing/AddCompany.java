@@ -1,12 +1,10 @@
 package com.selenium.assignment.testing;
 
-import java.util.List;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 //Class to Test Add Company Functionalities
-public class AddCompany extends Login {
+public class AddCompany extends LoginAndLogout {
 
 	//Add Company by Filling the Required Details
 	@Test(priority = 3)
@@ -51,22 +49,9 @@ public class AddCompany extends Login {
 		
 	}
 	
+	//Select the Industry Type
 	public void selectIndustryType(String industry_type) {
-		
-		elementEnterText("addCompanyTypeSearchBox_css", industry_type);
-		waitLoad(2);
-		List<WebElement> industry_search_result = getElements("addCompanyTypeSearchResults_css");
-		for(WebElement e : industry_search_result) {
-			String curr_industry = e.getText();
-			if(curr_industry.equals(industry_type)) {
-				e.click();
-				break;
-			}
-		}
-		
-		//Verify the Industry Type Selected
-		Assert.assertEquals(getElement("addCompanyTypeText_css").getText(), industry_type);
-		
+		select(industry_type, "addCompanyTypeSearchBox_css", "addCompanyTypeSearchResults_css");
 	}
 	
 }

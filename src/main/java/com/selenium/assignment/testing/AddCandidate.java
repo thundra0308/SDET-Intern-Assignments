@@ -7,8 +7,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddCandidate extends Login {
+//Class to Test Add Candidate Functionalities
+public class AddCandidate extends LoginAndLogout {
 
+	//Test Method to Add Candidate by Manually Filling the Details
 	@Test(priority = 1)
 	public void addCandidate_Manual() {
 
@@ -36,7 +38,7 @@ public class AddCandidate extends Login {
 
 	}
 
-	// Add Candidate by Uploading the CV
+	//Test Method to Add Candidate by Uploading the CV
 	@Test(priority = 2)
 	public void addCandidateTest_Auto() {
 
@@ -57,7 +59,6 @@ public class AddCandidate extends Login {
 		WebDriverWait wait_1 = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait_1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#sTest-candidateAddBtn.is-loading")));
 		
-
 		// Click on Submit Button
 		elementClick("addCandidateBtnSubmit_css");
 

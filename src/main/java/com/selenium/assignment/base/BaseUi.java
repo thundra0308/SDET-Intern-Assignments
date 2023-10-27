@@ -23,11 +23,11 @@ import com.selenium.assignment.utils.ExtentReportManager;
 
 public class BaseUi {
 
-	public WebDriver driver;
-	public Properties prop;
-	public ExtentReports report = ExtentReportManager.getReportInstance();
-	public ExtentTest logger;
-	public WebDriverWait webDriverWait;
+	public static WebDriver driver;
+	public static Properties prop;
+	public static ExtentReports report = ExtentReportManager.getReportInstance();
+	public static ExtentTest logger;
+	public static WebDriverWait webDriverWait;
 
 	public void invokeBrower() {
 

@@ -17,7 +17,7 @@ public class ExtentReportManager {
 				report =  new ExtentReports();
 				report.attachReporter(htmlReporter);
 				
-				report.setSystemInfo("OS", "Windows 10");
+				report.setSystemInfo("OS", "Windows 11");
 				report.setSystemInfo("Environment", "UAT");
 				report.setSystemInfo("Build Number", "10.8.1");
 				report.setSystemInfo("Browser", "Chrome");

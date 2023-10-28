@@ -14,6 +14,8 @@ public class AddContact extends LoginAndLogout {
 	@Test(priority = 4)
 	public void addContactTest() {
 
+		logger = report.createTest("Test : Add Contact");
+		
 		// Wait for Add Button on Top to be Available
 		explicitWait("addBtnTop_css",30);
 

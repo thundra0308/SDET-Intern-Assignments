@@ -10,6 +10,8 @@ public class AddJob extends LoginAndLogout {
 	@Test(priority = 5)
 	public void addJobTest() {
 		
+		logger = report.createTest("Test : Add Job");
+		
 		// Wait for Add Button on Top to be Available
 		explicitWait("addBtnTop_css", 30);
 

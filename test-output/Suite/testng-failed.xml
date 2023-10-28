@@ -3,20 +3,30 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.selenium.assignment.testing.AddContact">
+      <class name="com.selenium.assignment.testing.AddCompany">
         <methods>
+          <include name="afterTestMethod"/>
           <include name="loginTest"/>
-          <include name="addContactTest"/>
+          <include name="addCompanyTest"/>
           <include name="logoutTest"/>
         </methods>
-      </class> <!-- com.selenium.assignment.testing.AddContact -->
+      </class> <!-- com.selenium.assignment.testing.AddCompany -->
       <class name="com.selenium.assignment.testing.AddJob">
         <methods>
+          <include name="afterTestMethod"/>
           <include name="loginTest"/>
           <include name="addJobTest"/>
           <include name="logoutTest"/>
         </methods>
       </class> <!-- com.selenium.assignment.testing.AddJob -->
+      <class name="com.selenium.assignment.testing.AddContact">
+        <methods>
+          <include name="afterTestMethod"/>
+          <include name="loginTest"/>
+          <include name="addContactTest"/>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.selenium.assignment.testing.AddContact -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

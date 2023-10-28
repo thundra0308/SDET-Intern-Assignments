@@ -14,6 +14,8 @@ public class AddCandidate extends LoginAndLogout {
 	@Test(priority = 1)
 	public void addCandidateTest_Manual() {
 
+		logger = report.createTest("Test : Add Candidate Manually");
+		
 		// Wait for Add Button on Top to be Available
 		explicitWait("addBtnTop_css", 30);
 
@@ -28,7 +30,7 @@ public class AddCandidate extends LoginAndLogout {
 		// Enter Last Name
 		elementEnterText("addCandidateLastName_css", "Walker");
 		
-		explicitWait("addCandidateBtnSubmit_css", 30);
+		waitLoad(2);
 
 		// Click on Submit Button
 		elementClick("addCandidateBtnSubmit_css");
@@ -42,6 +44,8 @@ public class AddCandidate extends LoginAndLogout {
 	@Test(priority = 2)
 	public void addCandidateTest_Auto() {
 
+		logger = report.createTest("Test : Add Candidate Automatically");
+		
 		// Wait for Previous Test Processing
 		explicitWait("addBtnTop_css", 30);
 

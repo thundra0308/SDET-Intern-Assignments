@@ -1,12 +1,18 @@
 package com.selenium.assignment.base;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,11 +21,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.asserts.SoftAssert;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.selenium.assignment.utils.DateUtil;
 import com.selenium.assignment.utils.ExtentReportManager;
-
 
 public class BaseUi {
 
@@ -28,17 +37,16 @@ public class BaseUi {
 	public static ExtentReports report = ExtentReportManager.getReportInstance();
 	public static ExtentTest logger;
 	public static WebDriverWait webDriverWait;
+	SoftAssert softAssert = new SoftAssert();
 
 	public void invokeBrower() {
 
 		prop = new Properties();
 		try {
-			FileInputStream file = new FileInputStream(System
-					.getProperty("user.dir")
-					+ "/src/test/resources/objectRepository/projectConfig.properties");
+			FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/objectRepository/projectConfig.properties");
 			prop.load(file);
 		} catch (Exception e) {
-			e.printStackTrace();
+			reportFail(e.getMessage());
 		}
 
 		try {
@@ -67,6 +75,7 @@ public class BaseUi {
 
 		try {
 			driver.get(prop.getProperty(page));
+			reportPass(page + " : URL is Identified Successfully");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 			e.printStackTrace();
@@ -126,13 +135,10 @@ public class BaseUi {
 				element = driver.findElement(By.name(locator));
 				logger.log(Status.INFO, "locatorKey Identidied : " + locatorKey);
 			} else {
-				reportFail(
-						"Failing the Testcase, Invalid locatorKey " + locatorKey);
+				reportFail("Failing the Testcase, Invalid locatorKey " + locatorKey);
 			}
 		} catch (Exception e) {
-
 			reportFail(e.getMessage());
-			e.printStackTrace();
 		}
 
 		return element;
@@ -164,13 +170,10 @@ public class BaseUi {
 				element.addAll(driver.findElements(By.name(locator)));
 				logger.log(Status.INFO, "locatorKey Identidied : " + locatorKey);
 			} else {
-				reportFail(
-						"Failing the Testcase, Invalid locatorKey " + locatorKey);
+				reportFail("Failing the Testcase, Invalid locatorKey " + locatorKey);
 			}
 		} catch (Exception e) {
-
 			reportFail(e.getMessage());
-			e.printStackTrace();
 		}
 
 		return element;
@@ -178,7 +181,6 @@ public class BaseUi {
 	
 	public void waitForPageLoad() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-
 		int i = 0;
 		while (i != 180) {
 			String pageState = (String) js.executeScript("return document.readyState;");
@@ -287,14 +289,55 @@ public class BaseUi {
 		}
 
 	}
+	
+	public void assertTrue(boolean flag) {
+		softAssert.assertTrue(flag);
+	}
+
+	public void assertfalse(boolean flag) {
+		softAssert.assertFalse(flag);
+	}
+
+	public void assertequals(String actual, String expected) {
+		try{
+			logger.log(Status.INFO, "Assertion : Actual is -" + actual + " And Expacted is - " + expected);
+			softAssert.assertEquals(actual, expected);
+		}catch(Exception e){
+			reportFail(e.getMessage());
+		}
+		
+	}
 
 	public void reportFail(String reportString) {
 		logger.log(Status.FAIL, reportString);
+		takeScreenShotOnFailure();
 		Assert.fail(reportString);
 	}
 
 	public void reportPass(String reportString) {
 		logger.log(Status.PASS, reportString);
+	}
+	
+	public void takeScreenShotOnFailure() {
+		TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
+		File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File(System.getProperty("user.dir") + "/ScreenShots/" + DateUtil.getTimeStamp() + ".png");
+		try {
+			FileUtils.copyFile(sourceFile, destFile);
+			logger.addScreenCaptureFromPath(System.getProperty("user.dir") + "/ScreenShots/" + DateUtil.getTimeStamp() + ".png");
+		} catch (IOException e) {
+			reportFail(e.getMessage());
+		}
+
+	}
+	
+	@AfterMethod
+	public void afterTestMethod() {
+		softAssert.assertAll();
+	}
+	
+	public void endReport() {
+	report.flush();
 	}
 	
 }

@@ -10,6 +10,8 @@ public class AddCompany extends LoginAndLogout {
 	@Test(priority = 3)
 	public void addCompanyTest() {
 		
+		logger = report.createTest("Test : Add Company Test");
+		
 		//Wait for Add Button on Top to be Available
 		explicitWait("addBtnTop_css", 30);
 		
@@ -22,6 +24,8 @@ public class AddCompany extends LoginAndLogout {
 		//Enter Company Name
 		String compnayName = "Stark Industries";
 		elementEnterText("addCompnayName_css", compnayName);
+		
+		waitLoad(2);
 		
 		//Click on Industry Button
 		elementClick("addCompnayTypeBox_css");

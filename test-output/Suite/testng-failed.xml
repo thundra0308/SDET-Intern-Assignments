@@ -3,6 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.selenium.assignment.testing.AddCandidate">
+        <methods>
+          <include name="afterTestMethod"/>
+          <include name="loginTest"/>
+          <include name="addCandidateTest_Auto"/>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.selenium.assignment.testing.AddCandidate -->
       <class name="com.selenium.assignment.testing.AddCompany">
         <methods>
           <include name="afterTestMethod"/>

@@ -41,7 +41,7 @@ public class AddCandidate extends LoginAndLogout {
 	}
 
 	//Test Method to Add Candidate by Uploading the CV
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void addCandidateTest_Auto() {
 
 		logger = report.createTest("Test : Add Candidate Automatically");

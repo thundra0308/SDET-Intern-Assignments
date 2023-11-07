@@ -1,229 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 2px;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
 body {
-	background-size: 100% 100%;
-	height: 100vh;
-}
-
-.wrapper {
-  max-width: 650px;
-  width: 100%;
-  background: white;
-  margin: 50px auto;
-  padding: 30px;
-  border-width: 4px;
-  border-style: solid;
-  border-image: linear-gradient(to top left, #ff0000 0%, #ff0000 100%) 1;
-}
-
-.wrapper .title {
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 25px;
-  color: #ff8787;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.wrapper .form {
-  width: 100%;
-
-}
-
-.wrapper .form .inputfield {
-  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #333, #555, #333, #555); /* Animated gradient background */
+  background-size: 400% 400%; /* Background size for animation */
+  animation: gradientAnimation 15s linear infinite; /* Animation properties */
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
-
-.wrapper .form .inputfield label {
-  width: 200px;
-  color: rgb(255, 109, 109);
-  margin-right: 10px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.wrapper .form .inputfield .input,
-.wrapper .form .inputfield .textarea {
-  width: 100%;
-  outline: none;
-  border: 1px solid #ff0000;
-  font-size: 15px;
-  padding: 8px 10px;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-.wrapper .form .inputfield .textarea {
-  width: 100%;
-  height: 125px;
-  resize: none;
-}
-
-.wrapper .form .inputfield .custom_select {
-  position: relative;
-  width: 100%;
-  height: 37px;
-}
-
-.wrapper .form .inputfield .custom_select:before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  border: 8px solid;
-  border-color: #fe1e50 transparent transparent transparent;
-  pointer-events: none;
-}
-
-.wrapper .form .inputfield .custom_select select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  width: 100%;
-  height: 100%;
-  border: 0px;
-  padding: 8px 10px;
-  font-size: 15px;
-  border: 1px solid #fe1e50;
-  border-radius: 3px;
-}
-
-.wrapper .form .inputfield .input:focus,
-.wrapper .form .inputfield .textarea:focus,
-.wrapper .form .inputfield .custom_select select:focus {
-  border: 1px solid #282881;
-}
-
-.wrapper .form .inputfield p {
-  font-size: 14px;
-}
-
-.wrapper .form .inputfield .check {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-.wrapper .form .inputfield .check input[type="checkbox"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.wrapper .form .inputfield .check .checkmark {
-  width: 15px;
-  height: 15px;
-  border: 1px solid #fe1e50;
-  display: block;
-  position: relative;
-}
-
-.wrapper .form .inputfield .check .checkmark:before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 2px;
-  width: 5px;
-  height: 2px;
-  border: 2px solid;
-  border-color: transparent transparent #fff #fff;
-  transform: rotate(-45deg);
-  display: none;
-}
-
-.wrapper .form .inputfield .check input[type="checkbox"]:checked~.checkmark {
-  background: #ff8787;
-}
-
-.wrapper .form .inputfield .check input[type="checkbox"]:checked~.checkmark:before {
-  display: block;
-}
-
-.wrapper .form .inputfield .btn {
-  width: 40%;
-  padding: 8px 10px;
-  font-size: 15px;
-  font-weight: bold;
-  border: 0px;
-  background: linear-gradient(to bottom right, #ff0011 0%, #ff0011 100%);
+.container {
+  max-width: 500px;
+  padding: 20px;
+  background: #444;
+  border: 2px solid #007bff;
+  border-radius: 10px;
   color: #fff;
-  transition: transform 0.5s ease;
+  text-align: center;
+  animation: neonGlow 1.5s ease-in-out infinite alternate; /* Neon glow animation */
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="number"],
+select,
+input[type="file"],
+input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  background: #555;
+  color: #fff;
+}
+input[type="file"] {
   cursor: pointer;
-  border-radius: 3px;
-  outline: none;
 }
-
-.wrapper .form .inputfield .btn:hover {
-  background: linear-gradient(to bottom right, #ff0011 0%, #ff0011 100%);
-  transform: scale(1.1);
+input[type="email"]:valid {
+  background: #555;
 }
-
-.wrapper .form .inputfield:last-child {
-  margin-bottom: 0;
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-
-@media (max-width:420px) {
-  .wrapper .form .inputfield {
-    flex-direction: column;
-    align-items: flex-start;
+button:hover {
+  background: #0056b3;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-
-  .wrapper .form .inputfield label {
-    margin-bottom: 5px;
+  50% {
+    background-position: 100% 50%;
   }
-
-  .wrapper .form .inputfield.terms {
-    flex-direction: row;
+  100% {
+    background-position: 0% 50%;
   }
-
-  #btn {
-    flex-direction: row;
-    align-items: flex-start;
+}
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 3px rgba(0, 0, 255, 0.5);
   }
-  
-}
-
-#btn,
-#phone-codes {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#phone-codes {
-  width: 20%;
-  height: 37px;
-
-}
-
-#phone-number {
-  width: 83%;
-}
-
-#message {
-  font-size: 14px;
-  margin: 2px 0;
-  display: inline-block;
-  color: black;
-  padding: 5px 150px;
-}
-
-#name {
-  text-transform: capitalize;
-}
-#file-size{
-  color: #fe1e50;
+  100% {
+    box-shadow: 0 0 7px rgba(0, 0, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8);
+  }
 }

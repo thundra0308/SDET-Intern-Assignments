@@ -32,6 +32,7 @@ public class AddCandidatePageClass extends PageBaseClass {
 	public CandidateDetailsPageClass addCandidate(String firstName, String lastName) {
 		input(firstName_Input,firstName);
 		input(lastName_Input, lastName);
+		waitLoad(1);
 		click(submit_Btn);
 		verifyDataAdded();
 		candidateDetailsPageClass = new CandidateDetailsPageClass(driver, logger);

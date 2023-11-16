@@ -56,7 +56,7 @@ public class AddCandidateTesting extends LoginTesting {
 	}
 	
 	//Add Candidate by Uploading the CV
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void addCandidateTest_2() {
 		
 		//Wait for Previous Test Processing

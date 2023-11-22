@@ -1,0 +1,693 @@
+{
+	"info": {
+		"_postman_id": "aa5844b7-31fd-419e-be41-5cf2c34c7ce8",
+		"name": "Assignment_11",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31213777"
+	},
+	"item": [
+		{
+			"name": "Create a New Candidate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Parse the JSON response\r",
+							"const jsonResponse = pm.response.json();\r",
+							"\r",
+							"// Extract the 'id' field from the JSON response\r",
+							"const candidate_slug = jsonResponse.slug;\r",
+							"\r",
+							"// Set the extracted 'id' as a collection variable\r",
+							"pm.collectionVariables.set('CANDIDATE_SLUG', candidate_slug);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\" : \"Alan\",\r\n    \"last_name\" : \"Wake\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/candidates",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show All Candidates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Candidate by Slug",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search for Candidates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/search?first_name=Alan&last_name=Wake",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"search"
+					],
+					"query": [
+						{
+							"key": "linkedin",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "first_name",
+							"value": "Alan"
+						},
+						{
+							"key": "last_name",
+							"value": "Wake"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a Candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"alanwake@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apply to Job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/apply?job_slug={{JOB_SLUG}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"apply"
+					],
+					"query": [
+						{
+							"key": "job_slug",
+							"value": "{{JOB_SLUG}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/assign?job_slug={{JOB_SLUG_ALTERNATE}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"assign"
+					],
+					"query": [
+						{
+							"key": "job_slug",
+							"value": "{{JOB_SLUG_ALTERNATE}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Un-Assign Candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/unassign?job_slug={{JOB_SLUG_ALTERNATE}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"unassign"
+					],
+					"query": [
+						{
+							"key": "job_slug",
+							"value": "{{JOB_SLUG_ALTERNATE}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Candidate Hiring Stage",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "candidate_slug",
+							"value": "{{CANDIDATE_SLUG}}",
+							"type": "text"
+						},
+						{
+							"key": "job_slug",
+							"value": "{{JOB_SLUG}}",
+							"type": "text"
+						},
+						{
+							"key": "status_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/hiring-stages/{{JOB_SLUG}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"hiring-stages",
+						"{{JOB_SLUG}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Candidate Visibility in a Job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/visibility/{{JOB_SLUG}}?visibility=1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"visibility",
+						"{{JOB_SLUG}}"
+					],
+					"query": [
+						{
+							"key": "visibility",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Work Experience",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"candidate_slug\": \"{{CANDIDATE_SLUG}}\",\r\n    \"title\": \"Software Developer\",\r\n    \"work_company_name\": \"Recruit CRM\",\r\n    \"employment_type\": 2,\r\n    \"industry_id\": 3,\r\n    \"work_location\": \"New York\",\r\n    \"salary\": 150090,\r\n    \"is_currently_working\": 0,\r\n    \"work_start_date\": 1603684640,\r\n    \"work_end_date\": 1603684678,\r\n    \"work_description\": \"Supervised a team of 9 employees in all technical and creative aspects of digital advertising campaigns with budgets over $300,000.\"\r\n  }]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/work-history/create",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"work-history",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidate Work Experience",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Parse the JSON response\r",
+							"let jsonResponse = pm.response.json();\r",
+							"\r",
+							"// Extract the 'id' field from the JSON response\r",
+							"let workId = jsonResponse[0].id;\r",
+							"\r",
+							"// Set the extracted 'id' as a collection variable\r",
+							"pm.collectionVariables.set('WORK_ID', workId);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/work-history",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"work-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Work Experience",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"UI/UX Engineer\",\r\n  \"work_company_name\": \"Recruit CRM\",\r\n  \"employment_type\": 2,\r\n  \"industry_id\": 3,\r\n  \"work_location\": \"New York\",\r\n  \"salary\": 100000,\r\n  \"is_currently_working\": 0,\r\n  \"work_start_date\": 1603684640,\r\n  \"work_end_date\": 1603684678,\r\n  \"work_description\": \"Supervised a team of 9 employees in all technical and creative aspects of digital advertising campaigns with budgets over $300,000.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/work-history/{{WORK_ID}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"work-history",
+						"{{WORK_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Education History",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"candidate_slug\": \"{{CANDIDATE_SLUG}}\",\r\n    \"institute_name\": \"Scott Academy\",\r\n    \"educational_qualification\": \"Bachelor\",\r\n    \"educational_specialization\": \"Computer Science\",\r\n    \"grade\": \"A+\",\r\n    \"education_location\": \"NY\",\r\n    \"education_start_date\": 1283711400,\r\n    \"education_end_date\": 1365445800,\r\n    \"education_description\": \"Engineering Degree in Computer Science\"\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/education-history/create",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"education-history",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidate Education History",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Parse the JSON response\r",
+							"const jsonResponse = pm.response.json();\r",
+							"\r",
+							"// Extract the 'id' field from the JSON response\r",
+							"const educationId = jsonResponse[0].id;\r",
+							"\r",
+							"// Set the extracted 'id' as a collection variable\r",
+							"pm.collectionVariables.set('EDUCATION_ID', educationId);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/education-history",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"education-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Education History",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"institute_name\": \"Stanford University\",\r\n  \"educational_qualification\": \"Bachelor in Technology\",\r\n  \"educational_specialization\": \"Computer Science\",\r\n  \"grade\": \"A+\",\r\n  \"education_location\": \"NY\",\r\n  \"education_start_date\": 1283711400,\r\n  \"education_end_date\": 1365445800,\r\n  \"education_description\": \"Engineering Degree in Computer Science\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/education-history/{{EDUCATION_ID}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"education-history",
+						"{{EDUCATION_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hiring Stages of Candidate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/hiring-stages",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"hiring-stages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hiring Stages of Candidate for Job",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/hiring-stages/{{JOB_SLUG}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"hiring-stages",
+						"{{JOB_SLUG}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Updated Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/request-update",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"request-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Returns All hiring Stages of Candidate for Jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}/history",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Candidate Work Experience",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/work-history/{{WORK_ID}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"work-history",
+						"{{WORK_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Candidate Education History",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/education-history/{{EDUCATION_ID}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"education-history",
+						"{{EDUCATION_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Candidate",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/candidates/{{CANDIDATE_SLUG}}",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"candidates",
+						"{{CANDIDATE_SLUG}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "SYmq5RJLyoV5BZi1HPzN1VxJhwQHDTHxMe8VtdgmLmOIIDgQ9J20EwO88K-qdPu6lIMEHHwZJ0QKa_G6unwSbF8xNzAwNTc1MzQy",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "CANDIDATE_SLUG",
+			"value": "17006381136650816982bYs"
+		},
+		{
+			"key": "JOB_SLUG",
+			"value": "16965149457190816982mhv"
+		},
+		{
+			"key": "BASE_URL",
+			"value": "https://neo-mrapi.recruitcrm.io/v1",
+			"type": "string"
+		},
+		{
+			"key": "WORK_ID",
+			"value": "1476534"
+		},
+		{
+			"key": "EDUCATION_ID",
+			"value": "2072427"
+		},
+		{
+			"key": "JOB_SLUG_ALTERNATE",
+			"value": "16965749734700816982KkH",
+			"type": "string"
+		}
+	]
+}

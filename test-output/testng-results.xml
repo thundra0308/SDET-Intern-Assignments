@@ -2,70 +2,70 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-11T18:03:45 IST" name="Default suite" finished-at="2023-11-11T18:06:25 IST" duration-ms="159579">
+  <suite started-at="2023-11-27T16:13:41 IST" name="Suite" finished-at="2023-11-27T16:16:07 IST" duration-ms="146154">
     <groups>
     </groups>
-    <test started-at="2023-11-11T18:03:45 IST" name="Default test" finished-at="2023-11-11T18:06:25 IST" duration-ms="159579">
+    <test started-at="2023-11-27T16:13:41 IST" name="Test" finished-at="2023-11-27T16:16:07 IST" duration-ms="146154">
       <class name="testCases.AddContactTestClass">
-        <test-method signature="addContactTest()[pri:0, instance:testCases.AddContactTestClass@7c8c9a05]" started-at="2023-11-11T18:03:45 IST" name="addContactTest" finished-at="2023-11-11T18:04:11 IST" duration-ms="25922" status="PASS">
+        <test-method signature="addContactTest()[pri:0, instance:testCases.AddContactTestClass@3cdf2c61]" started-at="2023-11-27T16:15:04 IST" name="addContactTest" finished-at="2023-11-27T16:15:28 IST" duration-ms="23719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContactTest -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddContactTestClass@7c8c9a05]" started-at="2023-11-11T18:04:11 IST" name="flushReports" finished-at="2023-11-11T18:04:11 IST" duration-ms="352" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddContactTestClass@3cdf2c61]" started-at="2023-11-27T16:15:28 IST" name="flushReports" finished-at="2023-11-27T16:15:28 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- testCases.AddContactTestClass -->
       <class name="testCases.AddJobTestClass">
-        <test-method signature="addJobTest()[pri:0, instance:testCases.AddJobTestClass@13ad5cd3]" started-at="2023-11-11T18:04:11 IST" name="addJobTest" finished-at="2023-11-11T18:04:33 IST" duration-ms="21985" status="PASS">
+        <test-method signature="addJobTest()[pri:0, instance:testCases.AddJobTestClass@13ad5cd3]" started-at="2023-11-27T16:15:28 IST" name="addJobTest" finished-at="2023-11-27T16:15:49 IST" duration-ms="20680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTest -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddJobTestClass@13ad5cd3]" started-at="2023-11-11T18:04:33 IST" name="flushReports" finished-at="2023-11-11T18:04:33 IST" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddJobTestClass@13ad5cd3]" started-at="2023-11-27T16:15:49 IST" name="flushReports" finished-at="2023-11-27T16:15:49 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- testCases.AddJobTestClass -->
       <class name="testCases.LoginTestClass">
-        <test-method signature="loginTest()[pri:0, instance:testCases.LoginTestClass@1c33c17b]" started-at="2023-11-11T18:04:33 IST" name="loginTest" finished-at="2023-11-11T18:04:37 IST" duration-ms="4115" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:testCases.LoginTestClass@1c33c17b]" started-at="2023-11-27T16:15:49 IST" name="loginTest" finished-at="2023-11-27T16:15:53 IST" duration-ms="4605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.LoginTestClass@1c33c17b]" started-at="2023-11-11T18:04:37 IST" name="flushReports" finished-at="2023-11-11T18:04:38 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.LoginTestClass@1c33c17b]" started-at="2023-11-27T16:15:53 IST" name="flushReports" finished-at="2023-11-27T16:15:53 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- testCases.LoginTestClass -->
       <class name="testCases.AddCandidateTestClass">
-        <test-method signature="addCandidateTest()[pri:0, instance:testCases.AddCandidateTestClass@1e097d59]" started-at="2023-11-11T18:04:38 IST" name="addCandidateTest" finished-at="2023-11-11T18:05:06 IST" duration-ms="28848" status="PASS">
+        <test-method signature="addCandidateTest()[pri:0, instance:testCases.AddCandidateTestClass@4f0100a7]" started-at="2023-11-27T16:14:53 IST" name="addCandidateTest" finished-at="2023-11-27T16:15:04 IST" duration-ms="11612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCandidateTest -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddCandidateTestClass@1e097d59]" started-at="2023-11-11T18:05:06 IST" name="flushReports" finished-at="2023-11-11T18:05:06 IST" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddCandidateTestClass@4f0100a7]" started-at="2023-11-27T16:15:04 IST" name="flushReports" finished-at="2023-11-27T16:15:04 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- testCases.AddCandidateTestClass -->
       <class name="testCases.AddCandidateCustomFieldTestClass">
-        <test-method signature="addCandidateCustomFieldTest()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@673be18f]" started-at="2023-11-11T18:05:06 IST" name="addCandidateCustomFieldTest" finished-at="2023-11-11T18:06:14 IST" duration-ms="67201" status="PASS">
+        <test-method signature="addCandidateCustomFieldTest()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@26ceffa8]" started-at="2023-11-27T16:13:41 IST" name="addCandidateCustomFieldTest" finished-at="2023-11-27T16:14:52 IST" duration-ms="71019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCandidateCustomFieldTest -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@673be18f]" started-at="2023-11-11T18:06:14 IST" name="flushReports" finished-at="2023-11-11T18:06:14 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@26ceffa8]" started-at="2023-11-27T16:14:52 IST" name="flushReports" finished-at="2023-11-27T16:14:53 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- testCases.AddCandidateCustomFieldTestClass -->
       <class name="testCases.AddCompanyTestClass">
-        <test-method signature="addCompanyTest()[pri:0, instance:testCases.AddCompanyTestClass@6581dc0a]" started-at="2023-11-11T18:06:14 IST" name="addCompanyTest" finished-at="2023-11-11T18:06:25 IST" duration-ms="10987" status="PASS">
+        <test-method signature="addCompanyTest()[pri:0, instance:testCases.AddCompanyTestClass@5bf0fe62]" started-at="2023-11-27T16:15:53 IST" name="addCompanyTest" finished-at="2023-11-27T16:16:07 IST" duration-ms="14153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCompanyTest -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddCompanyTestClass@6581dc0a]" started-at="2023-11-11T18:06:25 IST" name="flushReports" finished-at="2023-11-11T18:06:25 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:testCases.AddCompanyTestClass@5bf0fe62]" started-at="2023-11-27T16:16:07 IST" name="flushReports" finished-at="2023-11-27T16:16:07 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- testCases.AddCompanyTestClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

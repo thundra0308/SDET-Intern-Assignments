@@ -22,7 +22,7 @@ public class DeleteCandidateCustomFieldTestClass extends TestBaseClass {
 	public CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
 	
 	// Method to Test the Functionality of Deleting Candidate Custom Fields
-//	@Test
+	@Test
 	public void deleteCandidateCustomFieldTest() {
 		logger = report.createTest("Delete Custom Field Test : 1");
 		invokeBrowser(Constants.browser);

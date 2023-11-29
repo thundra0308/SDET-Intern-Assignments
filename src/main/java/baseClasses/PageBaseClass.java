@@ -23,10 +23,12 @@ import utilities.DateUtil;
 public class PageBaseClass extends TestBaseClass {
 
 	public ExtentTest logger;
+	public int testStep;
 
-	public PageBaseClass(WebDriver driver, ExtentTest logger) {
+	public PageBaseClass(WebDriver driver, ExtentTest logger, int testStep) {
 		this.driver = driver;
 		this.logger = logger;
+		this.testStep = testStep;
 		webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	}
 	
@@ -35,25 +37,29 @@ public class PageBaseClass extends TestBaseClass {
 
 	/****************** OpenApplication ***********************/
 	public LoginPageClass openPage(String url) {
-		logger.log(Status.INFO, "Opening the WebSite");
+		reportInfo("Opening the WebSite");
 		driver.get(url);
-		logger.log(Status.PASS, "Successfully Opened the URL : "+url);
-		LoginPageClass loginPage = new LoginPageClass(driver, logger);
+		reportPass("Successfully Opened the URL");
+		LoginPageClass loginPage = new LoginPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, loginPage);
 		return loginPage;
 	}
 
 	/****************** Reporting Functions ***********************/
 	public void reportFail(String reportString) {
-		logger.log(Status.FAIL, reportString);
+		logger.log(Status.FAIL, "Step - "+testStep+" : Failed -> "+reportString);
 		takeScreenShotOnFailure();
 		Assert.fail(reportString);
 	}
 
 	public void reportPass(String reportString) {
-		logger.log(Status.PASS, reportString);
+		logger.log(Status.PASS, "Step - "+testStep+" : Successfull -> "+reportString);
 	}
 
+	public void reportInfo(String reportString) {
+		logger.log(Status.INFO, "Step - "+(++testStep)+" -> "+reportString);
+	}
+	
 	/****************** Capture Screen Shot ***********************/
 	public void takeScreenShotOnFailure() {
 		TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
@@ -69,8 +75,8 @@ public class PageBaseClass extends TestBaseClass {
 	}
 	
 	/****************** Select the Item from Drop-Down Menu ******************/
-	public void select(String value, WebElement searchBox, List<WebElement> searchResult) {
-		input(searchBox,value);
+	public void select(String value, WebElement searchBox, List<WebElement> searchResult, String inputFieldName) {
+		input(searchBox,value, inputFieldName);
 		List<WebElement> result = new ArrayList<>();
 		int i = 1;
 		while (i != 10) {
@@ -88,7 +94,7 @@ public class PageBaseClass extends TestBaseClass {
 			for (WebElement e : result) {
 				if (value.equals(e.getText())) {
 					found = true;
-					click(e);
+					click(e,e.getText());
 					break;
 				}
 			}
@@ -104,19 +110,23 @@ public class PageBaseClass extends TestBaseClass {
 		webDriverWait.until(ExpectedConditions.elementToBeClickable(webElement));
 	}
 	
-	public void input(WebElement input, String value) {
+	public void input(WebElement input, String value, String inputFieldName) {
 		try {
+			reportInfo("Entering Input in : "+inputFieldName);
 			waitVisibilityAndClickable(input);
 			input.sendKeys(value);
+			reportPass("Entered Input Successfully in : "+inputFieldName);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
 	}
 	
-	public void click(WebElement btn) {
+	public void click(WebElement btn, String inputFieldName) {
 		try {
+			reportInfo("Clicking on : "+inputFieldName);
 			waitVisibilityAndClickable(btn);
 			btn.click();
+			reportPass("Clicked : "+inputFieldName);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -124,10 +134,11 @@ public class PageBaseClass extends TestBaseClass {
 	
 	public void verifyDataAdded() {
 		try {
+			reportInfo("Verifying the Added Data...");
 			WebDriverWait wait_1 = new WebDriverWait(driver, Duration.ofSeconds(30));
 			wait_1.until(ExpectedConditions.visibilityOf(isSuccess_Toast));
 			if(isSuccess_Toast.isDisplayed()) {
-				reportPass("Candidate Added Successfully");
+				reportPass("Verified the Added Data Successfully");
 			} else {
 				reportFail("Failed to Add Candidate");
 			}	

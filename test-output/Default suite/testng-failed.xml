@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.DeleteCandidateCustomFieldTestClass">
+      <class name="testCases.AddCandidateTestClass">
         <methods>
-          <include name="deleteCandidateCustomFieldTest"/>
+          <include name="quitDriverSession"/>
+          <include name="addCandidateTest"/>
           <include name="flushReports"/>
         </methods>
-      </class> <!-- testCases.DeleteCandidateCustomFieldTestClass -->
+      </class> <!-- testCases.AddCandidateTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

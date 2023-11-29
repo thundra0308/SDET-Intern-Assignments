@@ -1,10 +1,7 @@
 package baseClasses;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,8 +9,11 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+
 import utilities.ExtentReportManager;
 
 public class TestBaseClass {
@@ -43,42 +43,12 @@ public class TestBaseClass {
 	@AfterMethod
 	public void flushReports() {
 		report.flush();
+		driver.close();
 	}
 	
-	/***************** Select Date From Calendar *****************/
-	public void selectDateIncalendar(String date) {
-
-		Date currentDate = new Date();
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		try {
-			Date expectedDate = dateFormat.parse(date);
-
-			String day = new SimpleDateFormat("dd").format(expectedDate);
-			String month = new SimpleDateFormat("MMMM").format(expectedDate);
-			String year = new SimpleDateFormat("yyyy").format(expectedDate);
-
-			String expectedMonthYear = month + " " + year;
-
-			while (true) {
-				String displayDate = driver.findElement(By.className("dpTitleText")).getText();
-
-				if (expectedMonthYear.equals(displayDate)) {
-
-					driver.findElement(By.xpath("//td[text()= '" + day + "']")).click();
-
-					break;
-				} else if (expectedDate.compareTo(currentDate) > 0) {
-					driver.findElement(By.xpath("//*[@id='datepicker']/table/tbody/tr[1]/td[4]/button")).click();
-				} else {
-					driver.findElement(By.xpath("//*[@id='datepicker']/table/tbody/tr[1]/td[2]/button")).click();
-				}
-
-			}
-
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-
+	@AfterSuite
+	public void quitDriverSession() {
+		driver.quit();
 	}
 
 	/***************** Wait Functions in Framework *****************/

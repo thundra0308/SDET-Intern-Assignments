@@ -21,13 +21,15 @@ public class AddJobTestClass extends TestBaseClass {
 	public TopNavBarClass topNavBarClass;
 	public AddJobPageClass addJobPageClass;
 	public JobDetailsPageClass jobDetailsPageClass;
+	int testStep;
 	
 	// Method to Test the Functionality of Adding a Job
 	@Test
 	public void addJobTest() {
 		logger = report.createTest("Add Job Test : 1");
+		testStep = 0;
 		invokeBrowser(Constants.browser);
-		pageBaseClass = new PageBaseClass(driver, logger);
+		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
 		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
 		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);

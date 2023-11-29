@@ -2,6 +2,7 @@ package testCases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+
 import baseClasses.PageBaseClass;
 import baseClasses.SideNavBarClass;
 import baseClasses.TestBaseClass;
@@ -20,13 +21,15 @@ public class AddCandidateCustomFieldTestClass extends TestBaseClass {
 	public SideNavBarClass sideNavBarClass;
 	public AdminSettingPageClass adminSettingPageClass;
 	public CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
+	int testStep = 0;
 	
 	// Method to Test the Functionality of Adding a Custom Field in Candidate Model
 	@Test
 	public void addCandidateCustomFieldTest() {
 		logger = report.createTest("Add Candidate Custom Field Test : 1");
+		testStep = 0;
 		invokeBrowser(Constants.browser);
-		pageBaseClass = new PageBaseClass(driver, logger);
+		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
 		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
 		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);

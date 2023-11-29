@@ -20,13 +20,15 @@ public class DeleteCandidateCustomFieldTestClass extends TestBaseClass {
 	public SideNavBarClass sideNavBarClass;
 	public AdminSettingPageClass adminSettingPageClass;
 	public CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
+	int testStep;
 	
 	// Method to Test the Functionality of Deleting Candidate Custom Fields
 	@Test
 	public void deleteCandidateCustomFieldTest() {
 		logger = report.createTest("Delete Custom Field Test : 1");
+		testStep = 0;
 		invokeBrowser(Constants.browser);
-		pageBaseClass = new PageBaseClass(driver, logger);
+		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
 		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
 		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);

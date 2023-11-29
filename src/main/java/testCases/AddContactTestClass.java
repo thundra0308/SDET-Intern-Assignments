@@ -21,13 +21,15 @@ public class AddContactTestClass extends TestBaseClass {
 	public TopNavBarClass topNavBarClass;
 	public AddContactPageClass addContactPageClass;
 	public ContactDetailsPageClass contactDetailsPageClass;
+	int testStep = 0;
 	
 	// Method to Test the Functionality of Adding a Contact
 	@Test
 	public void addContactTest() {
 		logger = report.createTest("Add Contact Test : 1");
+		testStep = 0;
 		invokeBrowser(Constants.browser);
-		pageBaseClass = new PageBaseClass(driver, logger);
+		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
 		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
 		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);

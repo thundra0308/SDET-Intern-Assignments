@@ -13,8 +13,8 @@ public class AdminSettingPageClass extends PageBaseClass {
 	public CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
-	public AdminSettingPageClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public AdminSettingPageClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "a[href='/v1/candidate-custom-fields']")
@@ -22,8 +22,8 @@ public class AdminSettingPageClass extends PageBaseClass {
 	
 	// Method to Implement the Process of Opening the Candidate Custom Fields Page
 	public CandidateCustomFieldsPageClass openCandidateCustomFieldsPage() {
-		click(dc_candidateFields_Btn);
-		candidateCustomFieldsPageClass = new CandidateCustomFieldsPageClass(driver, logger);
+		click(dc_candidateFields_Btn, "Candidate Fields");
+		candidateCustomFieldsPageClass = new CandidateCustomFieldsPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, candidateCustomFieldsPageClass);
 		reportPass("Opened Candidate Custom Filed Page");
 		return candidateCustomFieldsPageClass;

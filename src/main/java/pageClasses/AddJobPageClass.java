@@ -14,8 +14,8 @@ public class AddJobPageClass extends PageBaseClass {
 	public JobDetailsPageClass jobDetailsPageClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
-	public AddJobPageClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public AddJobPageClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "div#sTest-hiringPipelineTxtBox div.vs__selected-options input")
@@ -53,15 +53,15 @@ public class AddJobPageClass extends PageBaseClass {
 	
 	// Method to Implement the Process of Adding a Job
 	public JobDetailsPageClass addJob(String pipeline, String jobTitle, String vacancy, String compnay, String primaryContact) {
-		select(pipeline, hiringPipeline_SearchInput, hiringPipeline_SearchResult);
-		input(jobTitle_Input, jobTitle);
-		click(numberOfVacancy_Btn);
-		select(vacancy, numberOfVacancy_SearchInput, numberOfVacancy_SearchResult);
-		select(compnay, company_SearchInput, company_SearchResult);
-		select(primaryContact, primaryContact_SearchInput, primaryContact_SearchResult);
-		click(submit_Btn);
+		select(pipeline, hiringPipeline_SearchInput, hiringPipeline_SearchResult, "Hiring Pipeline");
+		input(jobTitle_Input, jobTitle, "Job Title");
+		click(numberOfVacancy_Btn, "Vacancy");
+		select(vacancy, numberOfVacancy_SearchInput, numberOfVacancy_SearchResult, "Vacancy");
+		select(compnay, company_SearchInput, company_SearchResult, "Company");
+		select(primaryContact, primaryContact_SearchInput, primaryContact_SearchResult, "Primary Contact");
+		click(submit_Btn, "Submit");
 		verifyDataAdded();
-		jobDetailsPageClass = new JobDetailsPageClass(driver, logger);
+		jobDetailsPageClass = new JobDetailsPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, jobDetailsPageClass);
 		reportPass("Opened Job Details Page");
 		return jobDetailsPageClass;

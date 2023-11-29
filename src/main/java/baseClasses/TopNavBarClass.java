@@ -17,8 +17,8 @@ public class TopNavBarClass extends PageBaseClass {
 	public AddContactPageClass addContactPageClass;
 	public AddJobPageClass addJobPageClass;
 	
-	public TopNavBarClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public TopNavBarClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "#sTest-addInAppBtn")
@@ -37,36 +37,36 @@ public class TopNavBarClass extends PageBaseClass {
 	public WebElement quickAddJob_Btn;
 	
 	public AddCandidatePageClass openAddCandidatePage() {
-		click(quickAdd_Btn);
-		click(quickAddCandidate_Btn);
-		addCandidatePageClass = new AddCandidatePageClass(driver, logger);
+		click(quickAdd_Btn, "QuickAdd Button");
+		click(quickAddCandidate_Btn, "Add Candidate Button");
+		addCandidatePageClass = new AddCandidatePageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, addCandidatePageClass);
 		reportPass("Opened Add Candidate Page");
 		return addCandidatePageClass;
 	}
 
 	public AddCompanyPageClass openAddCompanyPage() {
-		click(quickAdd_Btn);
-		click(quickAddCompany_Btn);
-		addCompanyPageClass = new AddCompanyPageClass(driver, logger);
+		click(quickAdd_Btn, "QuickAdd Button");
+		click(quickAddCompany_Btn, "Add Company Button");
+		addCompanyPageClass = new AddCompanyPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, addCompanyPageClass);
 		reportPass("Opened Add Candidate Page");
 		return addCompanyPageClass;
 	}
 	
 	public AddContactPageClass openAddContactPage() {
-		click(quickAdd_Btn);
-		click(quickAddContact_Btn);
-		addContactPageClass = new AddContactPageClass(driver, logger);
+		click(quickAdd_Btn, "QuickAdd Button");
+		click(quickAddContact_Btn, "Add Contact Button");
+		addContactPageClass = new AddContactPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, addContactPageClass);
 		reportPass("Opened Add Candidate Page");
 		return addContactPageClass;
 	}
 	
 	public AddJobPageClass openAddJobPage() {
-		click(quickAdd_Btn);
-		click(quickAddJob_Btn);
-		addJobPageClass = new AddJobPageClass(driver, logger);
+		click(quickAdd_Btn, "QuickAdd Button");
+		click(quickAddJob_Btn, "Add Job Button");
+		addJobPageClass = new AddJobPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, addJobPageClass);
 		reportPass("Opened Add Candidate Page");
 		return addJobPageClass;

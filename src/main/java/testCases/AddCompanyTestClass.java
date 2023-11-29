@@ -20,13 +20,15 @@ public class AddCompanyTestClass extends TestBaseClass {
 	public TopNavBarClass topNavBarClass;
 	public AddCompanyPageClass addCompanyPageClass;
 	public CompanyDetailsPageClass companyDetailsPageClass;
+	int testStep = 0;
 	
 	// Method to Test the Functionality of Adding a Company
 	@Test
 	public void addCompanyTest() {
 		logger = report.createTest("Add Company Test : 1");
+		testStep = 0;
 		invokeBrowser(Constants.browser);
-		pageBaseClass = new PageBaseClass(driver, logger);
+		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
 		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
 		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);

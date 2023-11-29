@@ -11,16 +11,16 @@ public class SideNavBarClass extends PageBaseClass {
 
 	public AdminSettingPageClass adminSettingPageClass;
 	
-	public SideNavBarClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public SideNavBarClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "a.menu-link.setting")
 	public WebElement adminSetting_Btn;
 	
 	public AdminSettingPageClass openAdminSettingPage() {
-		click(adminSetting_Btn);
-		adminSettingPageClass = new AdminSettingPageClass(driver, logger);
+		click(adminSetting_Btn, "Admin Setting Button");
+		adminSettingPageClass = new AdminSettingPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, adminSettingPageClass);
 		reportPass("Opened Admin Setting Page Successfully");
 		return adminSettingPageClass;

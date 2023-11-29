@@ -24,9 +24,10 @@ public class AddCandidateTestClass extends TestBaseClass {
 	// Method to Test the Functionality of Adding a Candidate
 	@Test
 	public void addCandidateTest() {
-		logger = report.createTest("Login Test : 1");
+		logger = report.createTest("Add Candidate Test : 1");
+		int testStep = 0;
 		invokeBrowser(Constants.browser);
-		pageBaseClass = new PageBaseClass(driver, logger);
+		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
 		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
 		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);

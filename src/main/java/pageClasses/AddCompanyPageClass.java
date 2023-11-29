@@ -17,8 +17,8 @@ public class AddCompanyPageClass extends PageBaseClass {
 	public CompanyDetailsPageClass companyDetailsPageClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
-	public AddCompanyPageClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public AddCompanyPageClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "#sTest-companyNameTxt")
@@ -38,12 +38,13 @@ public class AddCompanyPageClass extends PageBaseClass {
 	
 	// Method to Implement the Process of Adding a Company
 	public CompanyDetailsPageClass addCompany(String companyName, String industryType) {
-		input(compnayName_Input, companyName);
-		click(industryType_Btn);
-		select(industryType, industryType_SearchInput, industryType_SearchResult);
-		click(submit_Btn);
+		input(compnayName_Input, companyName, "Company Name");
+		waitLoad(1);
+		click(industryType_Btn, "Industry Type");
+		select(industryType, industryType_SearchInput, industryType_SearchResult, "Industry Type");
+		click(submit_Btn, "Submit");
 		verifyDataAdded();
-		companyDetailsPageClass = new CompanyDetailsPageClass(driver, logger);
+		companyDetailsPageClass = new CompanyDetailsPageClass(driver, logger, testStep);
 		PageFactory.initElements(driver, companyDetailsPageClass);
 		reportPass("Opened the Added Companie's Details Page");
 		return companyDetailsPageClass;

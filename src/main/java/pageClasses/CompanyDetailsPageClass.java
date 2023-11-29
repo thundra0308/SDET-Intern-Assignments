@@ -8,8 +8,8 @@ import baseClasses.PageBaseClass;
 
 public class CompanyDetailsPageClass extends PageBaseClass {
 
-	public CompanyDetailsPageClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public CompanyDetailsPageClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
 	}
 
 }

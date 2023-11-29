@@ -16,8 +16,8 @@ import baseClasses.PageBaseClass;
 public class CandidateCustomFieldsPageClass extends PageBaseClass {
 
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
-	public CandidateCustomFieldsPageClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public CandidateCustomFieldsPageClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "#sTest-addFieldBtn")
@@ -49,15 +49,16 @@ public class CandidateCustomFieldsPageClass extends PageBaseClass {
 	
 	// Method to Implement the Process of Adding a Single Candidate Custom Field
 	public void addCustomField(String customFieldName, String customFieldType, String customFieldOptions) {
-		click(newCustomField_Btn);
-		input(customFieldName_Input, customFieldName);
-		click(customFieldType_Btn);
-		select(customFieldType, customFieldType_SearchInput, customFieldType_SearchResult);
+		click(newCustomField_Btn, "New Custom Field Button");
+		input(customFieldName_Input, customFieldName, "Field Name");
+		click(customFieldType_Btn, "Field Type");
+		select(customFieldType, customFieldType_SearchInput, customFieldType_SearchResult, "Field Type");
 		if(customFieldOptions.length()>0) {
-			input(customFieldOptions_Input, customFieldOptions);
+			input(customFieldOptions_Input, customFieldOptions, "Field Options");
 		}
-		click(save_Btn);
+		click(save_Btn, "Save Button");
 		waitVisibilityAndClickable(newCustomField_Btn);
+		reportPass(customFieldType+": Type Field Added Successfully");
 	}
 	
 	// Method to Implement the Process of Adding a Multiple Candidate Custom Fields
@@ -94,8 +95,8 @@ public class CandidateCustomFieldsPageClass extends PageBaseClass {
 			wait_1.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'"+customFieldName+"')]/parent::p/parent::div/parent::div/parent::div//a[@id='sTest-removeCustomBtn']")));
 			List<WebElement> list = driver.findElements(By.xpath("//span[contains(text(),'"+customFieldName+"')]/parent::p/parent::div/parent::div/parent::div//a[@id='sTest-removeCustomBtn']"));
 			if(list.size()>0) {
-				click(list.get(0));
-				click(deleteCustomFieldConfirm_Btn);
+				click(list.get(0), "Delete Button");
+				click(deleteCustomFieldConfirm_Btn, "Confirm Button");
 				webDriverWait.until(ExpectedConditions.invisibilityOf(deleteCustomFieldConfirm_Btn));
 			}
 		}

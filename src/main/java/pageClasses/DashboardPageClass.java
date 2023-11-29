@@ -14,11 +14,11 @@ public class DashboardPageClass extends PageBaseClass {
 	public SideNavBarClass sideNavBarClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
-	public DashboardPageClass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
-		topNavBarClass = new TopNavBarClass(driver, logger);
+	public DashboardPageClass(WebDriver driver, ExtentTest logger, int testStep) {
+		super(driver, logger, testStep);
+		topNavBarClass = new TopNavBarClass(driver, logger, testStep);
 		PageFactory.initElements(driver, topNavBarClass);
-		sideNavBarClass = new SideNavBarClass(driver, logger);
+		sideNavBarClass = new SideNavBarClass(driver, logger, testStep);
 		PageFactory.initElements(driver, sideNavBarClass);
 	}
 	

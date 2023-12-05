@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="userModel.createUser.CreateUserTestClass" />
+			<class name="userModel.getUser.GetUserTestClass" />
+			<class name="userModel.updateUser.UpdateUserTestClass" />
+			<class name="userModel.deleteUser.DeleteUserTestClass" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

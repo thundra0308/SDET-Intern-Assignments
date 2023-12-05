@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-05T17:26:08 IST" name="Suite" finished-at="2023-12-05T17:26:16 IST" duration-ms="7334">
+    <groups>
+    </groups>
+    <test started-at="2023-12-05T17:26:08 IST" name="Test" finished-at="2023-12-05T17:26:16 IST" duration-ms="7334">
+      <class name="userModel.deleteUser.DeleteUserTestClass">
+        <test-method signature="deleteUserTestCase_1(org.testng.ITestContext)[pri:0, instance:userModel.deleteUser.DeleteUserTestClass@5cdec700]" started-at="2023-12-05T17:26:14 IST" name="deleteUserTestCase_1" finished-at="2023-12-05T17:26:16 IST" duration-ms="1610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@397f925e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserTestCase_1 -->
+      </class> <!-- userModel.deleteUser.DeleteUserTestClass -->
+      <class name="userModel.getUser.GetUserTestClass">
+        <test-method signature="getUserTest_1()[pri:0, instance:userModel.getUser.GetUserTestClass@7d3d101b]" started-at="2023-12-05T17:26:11 IST" name="getUserTest_1" finished-at="2023-12-05T17:26:13 IST" duration-ms="1688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserTest_1 -->
+      </class> <!-- userModel.getUser.GetUserTestClass -->
+      <class name="userModel.createUser.CreateUserTestClass">
+        <test-method signature="createUserTest_1()[pri:0, instance:userModel.createUser.CreateUserTestClass@57576994]" started-at="2023-12-05T17:26:08 IST" name="createUserTest_1" finished-at="2023-12-05T17:26:11 IST" duration-ms="2923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest_1 -->
+      </class> <!-- userModel.createUser.CreateUserTestClass -->
+      <class name="userModel.updateUser.UpdateUserTestClass">
+        <test-method signature="updateUserTest_1()[pri:0, instance:userModel.updateUser.UpdateUserTestClass@30c8681]" started-at="2023-12-05T17:26:13 IST" name="updateUserTest_1" finished-at="2023-12-05T17:26:14 IST" duration-ms="1072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest_1 -->
+      </class> <!-- userModel.updateUser.UpdateUserTestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

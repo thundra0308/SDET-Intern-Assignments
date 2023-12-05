@@ -9,7 +9,6 @@
 			<class name="com.selenium.assignment.testing.AddContact"></class>
 			<class name="com.selenium.assignment.testing.AddJob"></class>
 		</classes>
-	</test> <!--
-	Test -->
+	</test>
 </suite> <!--
 Suite -->

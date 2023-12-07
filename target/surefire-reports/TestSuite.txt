@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 135.791 s - in TestSuite
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 14.41 s <<< FAILURE! - in TestSuite
+testCases.LoginTestClass.loginTest  Time elapsed: 3.526 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testCases.LoginTestClass.loginTest(LoginTestClass.java:30)
+
+testCases.AddCandidateCustomFieldTestClass.quitDriverSession  Time elapsed: 3.715 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+

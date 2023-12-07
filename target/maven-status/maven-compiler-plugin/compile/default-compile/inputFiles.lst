@@ -1,3 +1,4 @@
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\handleRetry\RetryManager.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\pageClasses\CompanyDetailsPageClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\testCases\AddCandidateTestClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\pageClasses\AddCompanyPageClass.java
@@ -11,6 +12,7 @@ E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\baseClasses\TestBaseClass.ja
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\pageClasses\AdminSettingPageClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\testCases\AddJobTestClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\utilities\Constants.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\handleRetry\TransformationManager.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\pageClasses\LoginPageClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\pageClasses\JobDetailsPageClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\testCases\DeleteCandidateCustomFieldTestClass.java

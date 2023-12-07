@@ -5,7 +5,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReportManager {
 	
-	//public static ExtentHtmlReporter htmlReporter;
 		public static ExtentReports report;
 		
 		public static ExtentReports getReportInstance(){

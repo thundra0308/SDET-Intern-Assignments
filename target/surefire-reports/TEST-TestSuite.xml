@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="135.791" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="14.41" tests="4" errors="0" skipped="2" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="D:\IDEs\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\surya\AppData\Local\Temp\surefire11632528757255603358\surefirebooter7729379801689858434.jar C:\Users\surya\AppData\Local\Temp\surefire11632528757255603358 2023-12-05T17-17-29_716-jvmRun1 surefire7658968416870423413tmp surefire_03479292267228316455tmp"/>
+    <property name="sun.java.command" value="C:\Users\surya\AppData\Local\Temp\surefire12970259413972842113\surefirebooter11466255600991285915.jar C:\Users\surya\AppData\Local\Temp\surefire12970259413972842113 2023-12-07T16-20-34_633-jvmRun1 surefire11660454346712497519tmp surefire_013054168392816037908tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\RecruitCRM\SDET-Intern-Assignments\target\test-classes;E:\RecruitCRM\SDET-Intern-Assignments\target\classes;C:\Users\surya\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\surya\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\surya\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\surya\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-java\4.14.0\selenium-java-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-api\4.14.0\selenium-api-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.14.0\selenium-chrome-driver-4.14.0.jar;C:\Users\surya\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\surya\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\surya\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\surya\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\surya\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\surya\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\surya\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\surya\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.14.0\selenium-chromium-driver-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-json\4.14.0\selenium-json-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.14.0\selenium-manager-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.14.0\selenium-devtools-v116-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.14.0\selenium-devtools-v117-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.14.0\selenium-devtools-v118-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.14.0\selenium-devtools-v85-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.14.0\selenium-edge-driver-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.14.0\selenium-firefox-driver-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-http\4.14.0\selenium-http-4.14.0.jar;C:\Users\surya\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.14.0\selenium-ie-driver-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.14.0\selenium-remote-driver-4.14.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\surya\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\surya\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-os\4.14.0\selenium-os-4.14.0.jar;C:\Users\surya\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.14.0\selenium-safari-driver-4.14.0.jar;C:\Users\surya\.m2\repository\org\seleniumhq\selenium\selenium-support\4.14.0\selenium-support-4.14.0.jar;C:\Users\surya\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\surya\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\surya\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\surya\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\surya\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\surya\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\surya\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\surya\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\surya\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\surya\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\surya\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\surya\.m2\repository\commons-io\commons-io\2.14.0\commons-io-2.14.0.jar;C:\Users\surya\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\surya\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\surya\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\surya\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\surya\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\surya\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\surya\AppData\Local\Temp\surefire11632528757255603358\surefirebooter7729379801689858434.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\surya\AppData\Local\Temp\surefire12970259413972842113\surefirebooter11466255600991285915.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8.1+1"/>
@@ -58,36 +58,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="addCandidateCustomFieldTest" classname="testCases.AddCandidateCustomFieldTestClass" time="56.52">
+  <testcase name="loginTest" classname="testCases.LoginTestClass" time="0">
+    <skipped message="expected [true] but found [false]"/>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Dec 05, 2023 5:17:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Dec 07, 2023 4:20:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 119, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 119
 ]]></system-err>
   </testcase>
-  <testcase name="addCandidateTest" classname="testCases.AddCandidateTestClass" time="17.022">
-    <system-err><![CDATA[Dec 05, 2023 5:18:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="loginTest" classname="testCases.LoginTestClass" time="0">
+    <skipped message="expected [true] but found [false]"/>
+    <system-err><![CDATA[Dec 07, 2023 4:20:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 119, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 119
 ]]></system-err>
   </testcase>
-  <testcase name="addContactTest" classname="testCases.AddContactTestClass" time="21.607">
-    <system-err><![CDATA[Dec 05, 2023 5:18:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 119, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 119
-]]></system-err>
-  </testcase>
-  <testcase name="addJobTest" classname="testCases.AddJobTestClass" time="20.064">
-    <system-err><![CDATA[Dec 05, 2023 5:19:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 119, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 119
-]]></system-err>
-  </testcase>
-  <testcase name="loginTest" classname="testCases.LoginTestClass" time="3.623">
-    <system-err><![CDATA[Dec 05, 2023 5:19:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 119, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 119
-]]></system-err>
-  </testcase>
-  <testcase name="addCompanyTest" classname="testCases.AddCompanyTestClass" time="14.892">
-    <system-err><![CDATA[Dec 05, 2023 5:19:31 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+  <testcase name="loginTest" classname="testCases.LoginTestClass" time="3.526">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at testCases.LoginTestClass.loginTest(LoginTestClass.java:30)
+]]></failure>
+    <system-err><![CDATA[Dec 07, 2023 4:20:45 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
@@ -106,8 +96,12 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
 
-Dec 05, 2023 5:19:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Dec 07, 2023 4:20:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 119, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 119
 ]]></system-err>
+  </testcase>
+  <testcase name="quitDriverSession" classname="testCases.AddCandidateCustomFieldTestClass" time="3.715">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+]]></failure>
   </testcase>
 </testsuite>

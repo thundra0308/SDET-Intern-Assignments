@@ -2,7 +2,6 @@ package baseClasses;
 
 import java.time.Duration;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -49,33 +48,6 @@ public class TestBaseClass {
 	@AfterSuite
 	public void quitDriverSession() {
 		driver.quit();
-	}
-
-	/***************** Wait Functions in Framework *****************/
-	public void waitForPageLoad() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-
-		int i = 0;
-		while (i != 180) {
-			String pageState = (String) js.executeScript("return document.readyState;");
-			if (pageState.equals("complete")) {
-				break;
-			} else {
-				waitLoad(1);
-			}
-		}
-
-		waitLoad(2);
-
-		i = 0;
-		while (i != 180) {
-			Boolean jsState = (Boolean) js.executeScript("return window.jQuery != undefined && jQuery.active == 0;");
-			if (jsState) {
-				break;
-			} else {
-				waitLoad(1);
-			}
-		}
 	}
 
 	public void waitLoad(int i) {

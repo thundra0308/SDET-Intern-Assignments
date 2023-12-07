@@ -1,8 +1,10 @@
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\testing\AddContact.java
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\testing\AddCandidate.java
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\base\BaseUi.java
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\testing\Login.java
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\testing\AddCompany.java
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\testing\AddJob.java
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\utils\DateUtil.java
-E:\Java Web Automation Testing\Assignment_5_2\src\main\java\com\selenium\assignment\utils\ExtentReportManager.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\testing\AddCompany.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\testing\LoginAndLogout.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\testing\AddCandidate.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\testing\AddContact.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\utils\ExtentReportManager.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\handleRetry\RetryManager.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\handleRetry\TransformationManager.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\base\BaseUi.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\testing\AddJob.java
+E:\RecruitCRM\SDET-Intern-Assignments\src\main\java\com\selenium\assignment\utils\DateUtil.java

@@ -257,37 +257,41 @@ public class BaseUi {
 	}
 	
 	public void select(String name, String searchBoxKey, String resultKey) {
-
-		elementEnterText(searchBoxKey, name);
-		List<WebElement> result = new ArrayList<>();
-		int i = 1;
-		while (i != 10) {
-			result = getElements(resultKey);
-			if (result.size() > 0 && !result.get(0).getText()
-					.equals("Sorry, no matching options.")) {
-				break;
-			} else {
-				waitLoad(1);
-			}
-			i++;
-		}
-		if (result.size() > 0) {
-			boolean found = false;
-			for (WebElement e : result) {
-				if (name.equals(e.getText())) {
-					found = true;
-					e.click();
+		
+		try {
+			elementEnterText(searchBoxKey, name);
+			List<WebElement> result = new ArrayList<>();
+			int i = 1;
+			while (i != 10) {
+				result = getElements(resultKey);
+				if (result.size() > 0 && !result.get(0).getText()
+						.equals("Sorry, no matching options.")) {
 					break;
+				} else {
+					waitLoad(1);
 				}
+				i++;
 			}
-			if (!found)
-				Assert.assertTrue(false, "Given Input '" + name
-						+ "' is Not Present! --- Input Size " + result.size());
-		} else {
-			Assert.assertTrue(false,
-					"Given Input '" + name + "' is Not Present!");
+			if (result.size() > 0) {
+				boolean found = false;
+				for (WebElement e : result) {
+					if (name.equals(e.getText())) {
+						found = true;
+						e.click();
+						break;
+					}
+				}
+				if (!found)
+					Assert.assertTrue(false, "Given Input '" + name
+							+ "' is Not Present! --- Input Size " + result.size());
+			} else {
+				Assert.assertTrue(false,
+						"Given Input '" + name + "' is Not Present!");
+			}
+		} catch (Exception e) {
+			reportFail(e.getMessage());
 		}
-
+		
 	}
 	
 	public void assertTrue(boolean flag) {

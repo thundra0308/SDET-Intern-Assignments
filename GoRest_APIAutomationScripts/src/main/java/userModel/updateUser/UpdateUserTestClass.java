@@ -15,6 +15,7 @@ public class UpdateUserTestClass extends BaseClass {
 	UpdateUserResponseModel responseModel;
 	String bearerToken = Authentication.getBearerToken();
 
+	// Test Method to Update User Data
 	@Test
 	public void updateUserTest_1() throws JsonProcessingException {
 		// Initialize Log4j
@@ -23,14 +24,14 @@ public class UpdateUserTestClass extends BaseClass {
 		// Start the Test Case
 		startTestCase("'Update User' Test Case - 1");
 
-		// Generate Request Model Data
+		// Generate POJO Request Model Data
 		requestModel = new UpdateUserRequestModel();
 		generateRequestModelData(requestModel);
 
-		// Generate PayLoad String from Request Model
+		// Serialization of POJO Request Model to PayLoad String
 		String payLoad = requestModelToString(requestModel);
 
-		// Generate URI
+		// Generate Full URI
 		String uri = generateURI("/users/"+5809217);
 
 		// Send Request and Capture Response
@@ -39,11 +40,11 @@ public class UpdateUserTestClass extends BaseClass {
 		// Generate Response String from Response
 		String responseString = responseToString(response);
 
-		// Generate Response Model from Response String
+		// De-Serialization of Response String to POJO Response Model
 		responseModel = new UpdateUserResponseModel();
 		responseModel = (UpdateUserResponseModel) stringToResponseModel(responseModel, responseString, UpdateUserResponseModel.class);
 
-		printTheResponse(responseModel);
+		logResponse(responseModel);
 
 		// End Test Case
 		endTestCase();
@@ -71,7 +72,7 @@ public class UpdateUserTestClass extends BaseClass {
 		info("Successfull : Created Request Body");
 	}
 
-	public void printTheResponse(UpdateUserResponseModel responseModel) {
+	public void logResponse(UpdateUserResponseModel responseModel) {
         info("id : "+responseModel.id);
         info("name : "+responseModel.name);
         info("email : "+responseModel.email);

@@ -10,6 +10,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class RequestManager extends LoggerManager {
 
+	// Send 'GET' Request and Return Response
 	public Response getRequest(String requestURI, String bearerToken, int statusCode) {
 		try {
 			info("Initiate : Adding Headers to the Request Body...");
@@ -35,6 +36,7 @@ public class RequestManager extends LoggerManager {
 
 	}
 
+	// Send 'POST' Request and Return Response
 	public Response postRequest(String requestURI, String requestPayLoad, String bearer_token, int statusCode) {
 		try {
 			info("Initiate : Adding Headers to the Request Body...");
@@ -59,6 +61,7 @@ public class RequestManager extends LoggerManager {
 		}
 	}
 
+	// Send 'PUT' Request and Return Response
 	public Response putRequest(String requestURI, String requestPayLoad, String bearer_token, int statusCode) {
 		try {
 			info("Initiate : Adding Headers to the Request Body...");
@@ -83,6 +86,7 @@ public class RequestManager extends LoggerManager {
 		}
 	}
 
+	// Send 'DELETE' Request and Return Response
 	public Response deleteRequest(String requestURI, String bearer_token, int statusCode) {
 		try {
 			info("Initiate : Adding Headers to the Request Body...");

@@ -16,7 +16,7 @@ public class CreateUserTestClass extends BaseClass {
 	private String bearerToken  = Authentication.getBearerToken();
 
 	// Test Method to Create a New User
-	@Test(priority = 0)
+	@Test
 	public void createUserTest_1() throws JsonProcessingException {
 		// Initialize Log4J Logger
 		initLogger();
@@ -24,14 +24,14 @@ public class CreateUserTestClass extends BaseClass {
 		// Start the Test
 		startTestCase("Create User Test : 1");
 
-		// Generate Data for Request Model using Faker Library
+		// Generate Data for Request POJO Model using Faker Library
 		requestModel = new CreateUserRequestModel();
 		generateRequestModelData(requestModel);
 
-		// Convert the Generated Request Model to String
+		// Serialization of Request POJO Model to String PayLoad
 		String payLoad = requestModelToString(requestModel);
 
-		// Generate Resource Path or URI
+		// Generate Full URI
 		String uri = generateURI("/users");
 
 		// Send the Request and Capture the Response
@@ -40,17 +40,17 @@ public class CreateUserTestClass extends BaseClass {
 		// Convert the Response to a String
 		String responseString = responseToString(response);
 
-		//Convert the Response String to the Response Model
+		// De-Serialization of Response String to Response POJO Model 
 		responseModel = new CreateUserResponseModel();
 		responseModel = (CreateUserResponseModel) stringToResponseModel(responseModel, responseString, CreateUserResponseModel.class);
 
-		printTheResponse(responseModel);
+		logResponse(responseModel);
 
 		// End the Test
 		endTestCase();
 	}
 
-	// Method to Generate Request Model Data
+	// Method to Generate Request POJO Model Data
 	public void generateRequestModelData(CreateUserRequestModel requestModel) {
 		Faker faker = new Faker();
 
@@ -73,7 +73,8 @@ public class CreateUserTestClass extends BaseClass {
 		info("Successfull : Created Request Body");
 	}
 
-	public void printTheResponse(CreateUserResponseModel responseModel) {
+	// Log the Response Data
+	public void logResponse(CreateUserResponseModel responseModel) {
         info("id : "+responseModel.id);
         setProperty("USER_ID", responseModel.id+"");
         info("name : "+responseModel.name);

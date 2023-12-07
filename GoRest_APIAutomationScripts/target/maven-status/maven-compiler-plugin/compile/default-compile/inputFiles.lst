@@ -1,5 +1,6 @@
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\deleteUser\DeleteUserTestClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\getUser\GetUserTestClass.java
+E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\handle\retry\RetryManager.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\createUser\CreateUserRequestModel.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\base\RequestManager.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\createUser\CreateUserResponseModel.java
@@ -12,3 +13,4 @@ E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\updateUser\UpdateUserRequestModel.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\updateUser\UpdateUserTestClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\base\LoggerManager.java
+E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\handle\retry\TransformationManager.java

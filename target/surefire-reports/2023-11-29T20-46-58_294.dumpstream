@@ -1,4 +1,0 @@
-# Created at 2023-11-29T20:46:58.673
-Boot Manifest-JAR contains absolute paths in classpath 'E:\RecruitCRM\SDET-Intern-Assignments\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-

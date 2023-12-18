@@ -16,7 +16,7 @@ public class UpdateUserTestClass extends BaseClass {
 	String bearerToken = Authentication.getBearerToken();
 
 	// Test Method to Update User Data
-	@Test
+	@Test(priority = 2)
 	public void updateUserTest_1() throws JsonProcessingException {
 		// Initialize Log4j
 		initLogger();
@@ -32,7 +32,7 @@ public class UpdateUserTestClass extends BaseClass {
 		String payLoad = requestModelToString(requestModel);
 
 		// Generate Full URI
-		String uri = generateURI("/users/"+5809217);
+		String uri = generateURI("/users/"+getProperty("USER_ID"));
 
 		// Send Request and Capture Response
 		Response response = putRequest(uri, payLoad, bearerToken, 200);

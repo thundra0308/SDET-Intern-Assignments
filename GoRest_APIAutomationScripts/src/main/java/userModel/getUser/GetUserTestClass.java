@@ -1,7 +1,5 @@
 package userModel.getUser;
 
-import static org.testng.Assert.assertFalse;
-
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -16,7 +14,7 @@ public class GetUserTestClass extends BaseClass {
 	private String bearerToken  = Authentication.getBearerToken();
 
 	// Test Method to Fetch User Data
-	@Test
+	@Test(priority = 1)
 	public void getUserTest_1() throws JsonProcessingException {
 		// Initialize Log4J
 		initLogger();
@@ -25,7 +23,7 @@ public class GetUserTestClass extends BaseClass {
 		startTestCase("'Get User' Test Case - 1");
 
 		// Generate Full URI
-		String uri = generateURI("/users/"+5809217);
+		String uri = generateURI("/users/"+getProperty("USER_ID"));
 
 		// Send Request and Capture Response
 		Response response = getRequest(uri, bearerToken, 200);

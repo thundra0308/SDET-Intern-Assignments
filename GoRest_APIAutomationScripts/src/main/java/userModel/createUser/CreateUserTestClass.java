@@ -16,7 +16,7 @@ public class CreateUserTestClass extends BaseClass {
 	private String bearerToken  = Authentication.getBearerToken();
 
 	// Test Method to Create a New User
-	@Test
+	@Test(priority = 0)
 	public void createUserTest_1() throws JsonProcessingException {
 		// Initialize Log4J Logger
 		initLogger();

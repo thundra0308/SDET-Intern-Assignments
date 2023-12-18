@@ -1,95 +1,1072 @@
-2023-12-07 14:06:13,690 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-2023-12-07 14:06:13,716 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
-2023-12-07 14:06:13,717 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:13,753 INFO  - Initiate : Creating Request Body...
-2023-12-07 14:06:13,886 INFO  - name = Jeana Kutch
-2023-12-07 14:06:13,890 INFO  - gender = Female
-2023-12-07 14:06:13,915 INFO  - email = caleb.becker@gmail.com
-2023-12-07 14:06:13,915 INFO  - status = inactive
-2023-12-07 14:06:13,916 INFO  - Successfull : Created Request Body
-2023-12-07 14:06:13,916 INFO  - Initiate : Converting Request Body to a String Sequence...
-2023-12-07 14:06:13,982 INFO  - Successfull : Converted Request Body to a String Sequence
-2023-12-07 14:06:13,982 INFO  - Initiate : Generating URI
-2023-12-07 14:06:13,983 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
-2023-12-07 14:06:13,983 INFO  - Initiate : Adding Headers to the Request Body...
-2023-12-07 14:06:14,513 INFO  - Adding Header : Content Type
-2023-12-07 14:06:14,599 INFO  - Added Header
-2023-12-07 14:06:14,599 INFO  - Adding Header : Bearer Token
-2023-12-07 14:06:14,603 INFO  - Added Header
-2023-12-07 14:06:14,603 INFO  - Successfull : Added Headers to the Request Body
-2023-12-07 14:06:14,603 INFO  - Initiate : Sending the Request and Fetching the Response...
-2023-12-07 14:06:16,572 INFO  - Successfull : Request Sended and Response Fetched
-2023-12-07 14:06:16,609 INFO  - id : 5819940
-2023-12-07 14:06:16,705 INFO  - name : Jeana Kutch
-2023-12-07 14:06:16,705 INFO  - email : caleb.becker@gmail.com
-2023-12-07 14:06:16,705 INFO  - gender : female
-2023-12-07 14:06:16,706 INFO  - status : inactive
-2023-12-07 14:06:16,706 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:16,706 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
-2023-12-07 14:06:16,706 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-2023-12-07 14:06:16,712 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-2023-12-07 14:06:16,712 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
-2023-12-07 14:06:16,712 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:16,712 INFO  - Initiate : Generating URI
-2023-12-07 14:06:16,712 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5809217
-2023-12-07 14:06:16,712 INFO  - Initiate : Adding Headers to the Request Body...
-2023-12-07 14:06:16,712 INFO  - Adding Header : Content Type
-2023-12-07 14:06:16,713 INFO  - Added Header
-2023-12-07 14:06:16,713 INFO  - Adding Header : Bearer Token
-2023-12-07 14:06:16,713 INFO  - Added Header
-2023-12-07 14:06:16,713 INFO  - Successfull : Added Headers to the Request Body
-2023-12-07 14:06:16,713 INFO  - Initiate : Sending the Request and Fetching the Response...
-2023-12-07 14:06:17,773 INFO  - Successfull : Request Sended and Response Fetched
-2023-12-07 14:06:17,775 INFO  - id : 5809217
-2023-12-07 14:06:17,775 INFO  - name : Caridad Kuhn DVM
-2023-12-07 14:06:17,776 INFO  - email : rosalind.mitchell@hotmail.com
-2023-12-07 14:06:17,776 INFO  - gender : female
-2023-12-07 14:06:17,776 INFO  - status : active
-2023-12-07 14:06:17,776 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:17,776 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
-2023-12-07 14:06:17,776 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-2023-12-07 14:06:17,778 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-2023-12-07 14:06:17,779 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
-2023-12-07 14:06:17,779 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:17,780 INFO  - Initiate : Creating Request Body...
-2023-12-07 14:06:17,805 INFO  - name = Gigi Stroman
-2023-12-07 14:06:17,807 INFO  - gender = Male
-2023-12-07 14:06:17,814 INFO  - email = kerrie.hermiston@gmail.com
-2023-12-07 14:06:17,814 INFO  - status = active
-2023-12-07 14:06:17,814 INFO  - Successfull : Created Request Body
-2023-12-07 14:06:17,814 INFO  - Initiate : Converting Request Body to a String Sequence...
-2023-12-07 14:06:17,816 INFO  - Successfull : Converted Request Body to a String Sequence
-2023-12-07 14:06:17,816 INFO  - Initiate : Generating URI
-2023-12-07 14:06:17,816 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5809217
-2023-12-07 14:06:17,816 INFO  - Initiate : Adding Headers to the Request Body...
-2023-12-07 14:06:17,816 INFO  - Adding Header : Content Type
-2023-12-07 14:06:17,817 INFO  - Added Header
-2023-12-07 14:06:17,817 INFO  - Adding Header : Bearer Token
-2023-12-07 14:06:17,819 INFO  - Added Header
-2023-12-07 14:06:17,820 INFO  - Successfull : Added Headers to the Request Body
-2023-12-07 14:06:17,820 INFO  - Initiate : Sending the Request and Fetching the Response...
-2023-12-07 14:06:18,558 INFO  - Successfull : Request Sended and Response Fetched
-2023-12-07 14:06:18,560 INFO  - id : 5809217
-2023-12-07 14:06:18,560 INFO  - name : Gigi Stroman
-2023-12-07 14:06:18,560 INFO  - email : kerrie.hermiston@gmail.com
-2023-12-07 14:06:18,560 INFO  - gender : male
-2023-12-07 14:06:18,560 INFO  - status : active
-2023-12-07 14:06:18,560 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:18,560 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
-2023-12-07 14:06:18,560 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-2023-12-07 14:06:18,563 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-2023-12-07 14:06:18,563 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
-2023-12-07 14:06:18,564 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:18,564 INFO  - Initiate : Generating URI
-2023-12-07 14:06:18,564 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5819940
-2023-12-07 14:06:18,564 INFO  - Initiate : Adding Headers to the Request Body...
-2023-12-07 14:06:18,564 INFO  - Adding Header : Content Type
-2023-12-07 14:06:18,564 INFO  - Added Header
-2023-12-07 14:06:18,564 INFO  - Adding Header : Bearer Token
-2023-12-07 14:06:18,564 INFO  - Added Header
-2023-12-07 14:06:18,564 INFO  - Successfull : Added Headers to the Request Body
-2023-12-07 14:06:18,564 INFO  - Initiate : Sending the Request and Fetching the Response...
-2023-12-07 14:06:19,674 INFO  - Successfull : Request Sended and Response Fetched
-2023-12-07 14:06:19,674 INFO  - ****************************************************************************************************************
-2023-12-07 14:06:19,674 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
-2023-12-07 14:06:19,674 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-15 16:49:45,747 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-15 16:49:45,748 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-15 16:49:45,748 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:45,785 INFO  - Initiate : Creating Request Body...
+2023-12-15 16:49:45,920 INFO  - name = Joseph Ankunding
+2023-12-15 16:49:45,923 INFO  - gender = Female
+2023-12-15 16:49:45,951 INFO  - email = julian.schuppe@hotmail.com
+2023-12-15 16:49:45,951 INFO  - status = active
+2023-12-15 16:49:45,952 INFO  - Successfull : Created Request Body
+2023-12-15 16:49:45,952 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-15 16:49:46,007 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-15 16:49:46,008 INFO  - Initiate : Generating URI
+2023-12-15 16:49:46,008 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-15 16:49:46,008 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-15 16:49:46,513 INFO  - Adding Header : Content Type
+2023-12-15 16:49:46,573 INFO  - Added Header
+2023-12-15 16:49:46,573 INFO  - Adding Header : Bearer Token
+2023-12-15 16:49:46,581 INFO  - Added Header
+2023-12-15 16:49:46,581 INFO  - Successfull : Added Headers to the Request Body
+2023-12-15 16:49:46,581 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-15 16:49:51,047 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-15 16:49:51,083 INFO  - id : 5833197
+2023-12-15 16:49:51,093 INFO  - name : Joseph Ankunding
+2023-12-15 16:49:51,093 INFO  - email : julian.schuppe@hotmail.com
+2023-12-15 16:49:51,093 INFO  - gender : female
+2023-12-15 16:49:51,093 INFO  - status : active
+2023-12-15 16:49:51,093 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:51,093 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-15 16:49:51,093 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-15 16:49:51,100 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-15 16:49:51,100 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-15 16:49:51,100 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:51,100 INFO  - Initiate : Generating URI
+2023-12-15 16:49:51,100 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5833197
+2023-12-15 16:49:51,100 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-15 16:49:51,101 INFO  - Adding Header : Content Type
+2023-12-15 16:49:51,102 INFO  - Added Header
+2023-12-15 16:49:51,102 INFO  - Adding Header : Bearer Token
+2023-12-15 16:49:51,102 INFO  - Added Header
+2023-12-15 16:49:51,102 INFO  - Successfull : Added Headers to the Request Body
+2023-12-15 16:49:51,102 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-15 16:49:51,853 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-15 16:49:51,854 INFO  - id : 5833197
+2023-12-15 16:49:51,855 INFO  - name : Joseph Ankunding
+2023-12-15 16:49:51,855 INFO  - email : julian.schuppe@hotmail.com
+2023-12-15 16:49:51,855 INFO  - gender : female
+2023-12-15 16:49:51,855 INFO  - status : active
+2023-12-15 16:49:51,855 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:51,855 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-15 16:49:51,855 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-15 16:49:51,857 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-15 16:49:51,858 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-15 16:49:51,858 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:51,859 INFO  - Initiate : Creating Request Body...
+2023-12-15 16:49:51,883 INFO  - name = Mr. Augustine Pfeffer
+2023-12-15 16:49:51,885 INFO  - gender = Male
+2023-12-15 16:49:51,893 INFO  - email = mark.treutel@hotmail.com
+2023-12-15 16:49:51,893 INFO  - status = inactive
+2023-12-15 16:49:51,893 INFO  - Successfull : Created Request Body
+2023-12-15 16:49:51,893 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-15 16:49:51,895 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-15 16:49:51,895 INFO  - Initiate : Generating URI
+2023-12-15 16:49:51,896 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5833197
+2023-12-15 16:49:51,896 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-15 16:49:51,896 INFO  - Adding Header : Content Type
+2023-12-15 16:49:51,896 INFO  - Added Header
+2023-12-15 16:49:51,896 INFO  - Adding Header : Bearer Token
+2023-12-15 16:49:51,899 INFO  - Added Header
+2023-12-15 16:49:51,899 INFO  - Successfull : Added Headers to the Request Body
+2023-12-15 16:49:51,899 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-15 16:49:53,016 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-15 16:49:53,018 INFO  - id : 5833197
+2023-12-15 16:49:53,018 INFO  - name : Mr. Augustine Pfeffer
+2023-12-15 16:49:53,018 INFO  - email : mark.treutel@hotmail.com
+2023-12-15 16:49:53,018 INFO  - gender : male
+2023-12-15 16:49:53,018 INFO  - status : inactive
+2023-12-15 16:49:53,018 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:53,018 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-15 16:49:53,018 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-15 16:49:53,021 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-15 16:49:53,022 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-15 16:49:53,022 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:53,022 INFO  - Initiate : Generating URI
+2023-12-15 16:49:53,022 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5833197
+2023-12-15 16:49:53,022 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-15 16:49:53,022 INFO  - Adding Header : Content Type
+2023-12-15 16:49:53,023 INFO  - Added Header
+2023-12-15 16:49:53,023 INFO  - Adding Header : Bearer Token
+2023-12-15 16:49:53,023 INFO  - Added Header
+2023-12-15 16:49:53,023 INFO  - Successfull : Added Headers to the Request Body
+2023-12-15 16:49:53,023 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-15 16:49:54,067 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-15 16:49:54,067 INFO  - ****************************************************************************************************************
+2023-12-15 16:49:54,067 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-15 16:49:54,067 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:39:43,654 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:39:43,655 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:39:43,655 INFO  - ****************************************************************************************************************
+2023-12-17 19:39:43,698 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:39:43,842 INFO  - name = Tory Koch
+2023-12-17 19:39:43,845 INFO  - gender = Male
+2023-12-17 19:39:43,872 INFO  - email = lonnie.funk@yahoo.com
+2023-12-17 19:39:43,872 INFO  - status = active
+2023-12-17 19:39:43,872 INFO  - Successfull : Created Request Body
+2023-12-17 19:39:43,872 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:39:43,935 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:39:43,936 INFO  - Initiate : Generating URI
+2023-12-17 19:39:43,942 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:39:43,942 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:39:44,378 INFO  - Adding Header : Content Type
+2023-12-17 19:39:44,452 INFO  - Added Header
+2023-12-17 19:39:44,452 INFO  - Adding Header : Bearer Token
+2023-12-17 19:39:44,455 INFO  - Added Header
+2023-12-17 19:39:44,455 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:39:44,456 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:39:46,633 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:39:46,672 INFO  - id : 5836163
+2023-12-17 19:39:46,673 INFO  - name : Tory Koch
+2023-12-17 19:39:46,673 INFO  - email : lonnie.funk@yahoo.com
+2023-12-17 19:39:46,673 INFO  - gender : male
+2023-12-17 19:39:46,673 INFO  - status : active
+2023-12-17 19:39:46,673 INFO  - ****************************************************************************************************************
+2023-12-17 19:39:46,674 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:39:46,674 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:39:46,679 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:39:46,679 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:39:46,679 INFO  - ****************************************************************************************************************
+2023-12-17 19:39:46,679 INFO  - Initiate : Generating URI
+2023-12-17 19:39:46,679 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836163
+2023-12-17 19:39:46,679 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:39:46,680 INFO  - Adding Header : Content Type
+2023-12-17 19:39:46,680 INFO  - Added Header
+2023-12-17 19:39:46,680 INFO  - Adding Header : Bearer Token
+2023-12-17 19:39:46,681 INFO  - Added Header
+2023-12-17 19:39:46,681 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:39:46,681 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:39:47,693 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:39:47,693 INFO  - ****************************************************************************************************************
+2023-12-17 19:39:47,693 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:39:47,693 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:39:47,696 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:39:47,696 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:39:47,696 INFO  - ****************************************************************************************************************
+2023-12-17 19:39:47,697 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:39:47,740 INFO  - name = Miss Jamey Effertz
+2023-12-17 19:39:47,743 INFO  - gender = Female
+2023-12-17 19:39:47,752 INFO  - email = susan.heidenreich@gmail.com
+2023-12-17 19:39:47,752 INFO  - status = inactive
+2023-12-17 19:39:47,752 INFO  - Successfull : Created Request Body
+2023-12-17 19:39:47,752 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:39:47,754 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:39:47,754 INFO  - Initiate : Generating URI
+2023-12-17 19:39:47,754 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:39:47,754 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:39:47,755 INFO  - Adding Header : Content Type
+2023-12-17 19:39:47,756 INFO  - Added Header
+2023-12-17 19:39:47,756 INFO  - Adding Header : Bearer Token
+2023-12-17 19:39:47,759 INFO  - Added Header
+2023-12-17 19:39:47,759 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:39:47,759 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:39:49,559 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:39:49,559 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:39:49,559 INFO  - ****************************************************************************************************************
+2023-12-17 19:39:49,559 INFO  - Initiate : Generating URI
+2023-12-17 19:39:49,559 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:39:49,559 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:39:49,560 INFO  - Adding Header : Content Type
+2023-12-17 19:39:49,560 INFO  - Added Header
+2023-12-17 19:39:49,560 INFO  - Adding Header : Bearer Token
+2023-12-17 19:39:49,560 INFO  - Added Header
+2023-12-17 19:39:49,561 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:39:49,561 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:39:52,350 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:43:03,390 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:43:03,390 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:43:03,390 INFO  - ****************************************************************************************************************
+2023-12-17 19:43:03,424 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:43:03,600 INFO  - name = Letha Murray
+2023-12-17 19:43:03,604 INFO  - gender = Male
+2023-12-17 19:43:03,639 INFO  - email = jeff.lockman@gmail.com
+2023-12-17 19:43:03,640 INFO  - status = active
+2023-12-17 19:43:03,640 INFO  - Successfull : Created Request Body
+2023-12-17 19:43:03,640 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:43:03,712 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:43:03,712 INFO  - Initiate : Generating URI
+2023-12-17 19:43:03,713 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:43:03,713 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:43:04,153 INFO  - Adding Header : Content Type
+2023-12-17 19:43:04,231 INFO  - Added Header
+2023-12-17 19:43:04,231 INFO  - Adding Header : Bearer Token
+2023-12-17 19:43:04,234 INFO  - Added Header
+2023-12-17 19:43:04,234 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:43:04,234 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:43:07,311 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:43:07,349 INFO  - id : 5836164
+2023-12-17 19:43:07,349 INFO  - name : Letha Murray
+2023-12-17 19:43:07,349 INFO  - email : jeff.lockman@gmail.com
+2023-12-17 19:43:07,349 INFO  - gender : male
+2023-12-17 19:43:07,349 INFO  - status : active
+2023-12-17 19:43:07,349 INFO  - ****************************************************************************************************************
+2023-12-17 19:43:07,349 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:43:07,350 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:43:07,356 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:43:07,356 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:43:07,356 INFO  - ****************************************************************************************************************
+2023-12-17 19:43:07,356 INFO  - Initiate : Generating URI
+2023-12-17 19:43:07,357 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836164
+2023-12-17 19:43:07,357 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:43:07,357 INFO  - Adding Header : Content Type
+2023-12-17 19:43:07,357 INFO  - Added Header
+2023-12-17 19:43:07,358 INFO  - Adding Header : Bearer Token
+2023-12-17 19:43:07,358 INFO  - Added Header
+2023-12-17 19:43:07,358 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:43:07,358 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:43:09,453 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:43:09,454 INFO  - ****************************************************************************************************************
+2023-12-17 19:43:09,454 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:43:09,454 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:43:09,456 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:43:09,456 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:43:09,456 INFO  - ****************************************************************************************************************
+2023-12-17 19:43:09,457 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:43:09,489 INFO  - name = Evia Gulgowski
+2023-12-17 19:43:09,491 INFO  - gender = Female
+2023-12-17 19:43:09,499 INFO  - email = bernetta.hoeger@yahoo.com
+2023-12-17 19:43:09,499 INFO  - status = active
+2023-12-17 19:43:09,499 INFO  - Successfull : Created Request Body
+2023-12-17 19:43:09,499 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:43:09,501 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:43:09,501 INFO  - Initiate : Generating URI
+2023-12-17 19:43:09,501 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:43:09,501 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:43:09,501 INFO  - Adding Header : Content Type
+2023-12-17 19:43:09,502 INFO  - Added Header
+2023-12-17 19:43:09,502 INFO  - Adding Header : Bearer Token
+2023-12-17 19:43:09,503 INFO  - Added Header
+2023-12-17 19:43:09,503 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:43:09,503 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:43:10,710 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:43:10,710 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:43:10,710 INFO  - ****************************************************************************************************************
+2023-12-17 19:43:10,711 INFO  - Initiate : Generating URI
+2023-12-17 19:43:10,711 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:43:10,711 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:43:10,711 INFO  - Adding Header : Content Type
+2023-12-17 19:43:10,711 INFO  - Added Header
+2023-12-17 19:43:10,712 INFO  - Adding Header : Bearer Token
+2023-12-17 19:43:10,712 INFO  - Added Header
+2023-12-17 19:43:10,712 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:43:10,712 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:43:11,726 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:44:15,875 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:44:15,876 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:44:15,876 INFO  - ****************************************************************************************************************
+2023-12-17 19:44:15,935 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:44:16,110 INFO  - name = Marivel Klocko III
+2023-12-17 19:44:16,115 INFO  - gender = Female
+2023-12-17 19:44:16,150 INFO  - email = carey.lemke@hotmail.com
+2023-12-17 19:44:16,151 INFO  - status = active
+2023-12-17 19:44:16,151 INFO  - Successfull : Created Request Body
+2023-12-17 19:44:16,151 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:44:16,231 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:44:16,231 INFO  - Initiate : Generating URI
+2023-12-17 19:44:16,232 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:44:16,232 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:44:16,691 INFO  - Adding Header : Content Type
+2023-12-17 19:44:16,770 INFO  - Added Header
+2023-12-17 19:44:16,770 INFO  - Adding Header : Bearer Token
+2023-12-17 19:44:16,773 INFO  - Added Header
+2023-12-17 19:44:16,773 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:44:16,773 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:44:19,633 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:44:19,674 INFO  - id : 5836165
+2023-12-17 19:44:19,675 INFO  - name : Marivel Klocko III
+2023-12-17 19:44:19,675 INFO  - email : carey.lemke@hotmail.com
+2023-12-17 19:44:19,675 INFO  - gender : female
+2023-12-17 19:44:19,675 INFO  - status : active
+2023-12-17 19:44:19,676 INFO  - ****************************************************************************************************************
+2023-12-17 19:44:19,719 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:44:19,719 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:44:19,725 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:44:19,725 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:44:19,725 INFO  - ****************************************************************************************************************
+2023-12-17 19:44:19,725 INFO  - Initiate : Generating URI
+2023-12-17 19:44:19,726 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836165
+2023-12-17 19:44:19,726 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:44:19,726 INFO  - Adding Header : Content Type
+2023-12-17 19:44:19,726 INFO  - Added Header
+2023-12-17 19:44:19,727 INFO  - Adding Header : Bearer Token
+2023-12-17 19:44:19,727 INFO  - Added Header
+2023-12-17 19:44:19,727 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:44:19,727 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:44:20,759 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:44:20,759 INFO  - ****************************************************************************************************************
+2023-12-17 19:44:20,759 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:44:20,759 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:44:20,762 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:44:20,762 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:44:20,762 INFO  - ****************************************************************************************************************
+2023-12-17 19:44:20,763 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:44:20,810 INFO  - name = Allan Kohler
+2023-12-17 19:44:20,813 INFO  - gender = Male
+2023-12-17 19:44:20,822 INFO  - email = patti.konopelski@yahoo.com
+2023-12-17 19:44:20,822 INFO  - status = inactive
+2023-12-17 19:44:20,822 INFO  - Successfull : Created Request Body
+2023-12-17 19:44:20,822 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:44:20,823 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:44:20,823 INFO  - Initiate : Generating URI
+2023-12-17 19:44:20,824 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:44:20,824 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:44:20,824 INFO  - Adding Header : Content Type
+2023-12-17 19:44:20,826 INFO  - Added Header
+2023-12-17 19:44:20,826 INFO  - Adding Header : Bearer Token
+2023-12-17 19:44:20,829 INFO  - Added Header
+2023-12-17 19:44:20,829 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:44:20,829 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:44:21,598 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:44:21,598 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:44:21,598 INFO  - ****************************************************************************************************************
+2023-12-17 19:44:21,598 INFO  - Initiate : Generating URI
+2023-12-17 19:44:21,598 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:44:21,598 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:44:21,599 INFO  - Adding Header : Content Type
+2023-12-17 19:44:21,599 INFO  - Added Header
+2023-12-17 19:44:21,599 INFO  - Adding Header : Bearer Token
+2023-12-17 19:44:21,599 INFO  - Added Header
+2023-12-17 19:44:21,599 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:44:21,599 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:44:22,650 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:21,391 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:21,465 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:47:21,465 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:21,500 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:47:21,641 INFO  - name = Zane Heidenreich
+2023-12-17 19:47:21,646 INFO  - gender = Male
+2023-12-17 19:47:21,678 INFO  - email = rodolfo.haley@yahoo.com
+2023-12-17 19:47:21,678 INFO  - status = active
+2023-12-17 19:47:21,678 INFO  - Successfull : Created Request Body
+2023-12-17 19:47:21,678 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:47:21,735 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:47:21,735 INFO  - Initiate : Generating URI
+2023-12-17 19:47:21,736 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:47:21,736 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:22,545 INFO  - Adding Header : Content Type
+2023-12-17 19:47:22,611 INFO  - Added Header
+2023-12-17 19:47:22,611 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:22,613 INFO  - Added Header
+2023-12-17 19:47:22,613 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:22,613 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:24,681 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:24,724 INFO  - id : 5836167
+2023-12-17 19:47:24,725 INFO  - name : Zane Heidenreich
+2023-12-17 19:47:24,725 INFO  - email : rodolfo.haley@yahoo.com
+2023-12-17 19:47:24,725 INFO  - gender : male
+2023-12-17 19:47:24,725 INFO  - status : active
+2023-12-17 19:47:24,725 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:24,726 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:47:24,726 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:47:24,732 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:24,732 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:47:24,732 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:24,732 INFO  - Initiate : Generating URI
+2023-12-17 19:47:24,732 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836167
+2023-12-17 19:47:24,732 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:24,733 INFO  - Adding Header : Content Type
+2023-12-17 19:47:24,733 INFO  - Added Header
+2023-12-17 19:47:24,733 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:24,734 INFO  - Added Header
+2023-12-17 19:47:24,734 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:24,734 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:26,438 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:26,438 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:26,439 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:47:26,439 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:47:26,441 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:26,441 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:47:26,441 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:26,442 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:47:26,477 INFO  - name = Gale Dare Sr.
+2023-12-17 19:47:26,480 INFO  - gender = Female
+2023-12-17 19:47:26,487 INFO  - email = archie.bahringer@hotmail.com
+2023-12-17 19:47:26,487 INFO  - status = active
+2023-12-17 19:47:26,487 INFO  - Successfull : Created Request Body
+2023-12-17 19:47:26,487 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:47:26,488 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:47:26,488 INFO  - Initiate : Generating URI
+2023-12-17 19:47:26,488 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:47:26,488 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:26,489 INFO  - Adding Header : Content Type
+2023-12-17 19:47:26,490 INFO  - Added Header
+2023-12-17 19:47:26,490 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:26,493 INFO  - Added Header
+2023-12-17 19:47:26,554 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:26,554 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:27,684 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:27,684 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:47:27,684 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:27,684 INFO  - Initiate : Generating URI
+2023-12-17 19:47:27,684 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/
+2023-12-17 19:47:27,684 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:27,685 INFO  - Adding Header : Content Type
+2023-12-17 19:47:27,685 INFO  - Added Header
+2023-12-17 19:47:27,685 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:27,685 INFO  - Added Header
+2023-12-17 19:47:27,685 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:27,685 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:28,675 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:42,990 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:42,990 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:47:42,990 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:43,041 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:47:43,248 INFO  - name = Emmett Kessler
+2023-12-17 19:47:43,254 INFO  - gender = Male
+2023-12-17 19:47:43,290 INFO  - email = adelina.dare@yahoo.com
+2023-12-17 19:47:43,290 INFO  - status = active
+2023-12-17 19:47:43,290 INFO  - Successfull : Created Request Body
+2023-12-17 19:47:43,290 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:47:43,354 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:47:43,355 INFO  - Initiate : Generating URI
+2023-12-17 19:47:43,355 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:47:43,355 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:43,800 INFO  - Adding Header : Content Type
+2023-12-17 19:47:43,884 INFO  - Added Header
+2023-12-17 19:47:43,884 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:43,890 INFO  - Added Header
+2023-12-17 19:47:43,890 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:43,890 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:45,738 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:45,787 INFO  - id : 5836168
+2023-12-17 19:47:45,788 INFO  - name : Emmett Kessler
+2023-12-17 19:47:45,788 INFO  - email : adelina.dare@yahoo.com
+2023-12-17 19:47:45,788 INFO  - gender : male
+2023-12-17 19:47:45,789 INFO  - status : active
+2023-12-17 19:47:45,789 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:45,789 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:47:45,789 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:47:45,796 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:45,796 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:47:45,796 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:45,796 INFO  - Initiate : Generating URI
+2023-12-17 19:47:45,796 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836168
+2023-12-17 19:47:45,797 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:45,797 INFO  - Adding Header : Content Type
+2023-12-17 19:47:45,798 INFO  - Added Header
+2023-12-17 19:47:45,798 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:45,798 INFO  - Added Header
+2023-12-17 19:47:45,798 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:45,799 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:47,314 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:47,316 INFO  - id : 5836168
+2023-12-17 19:47:47,316 INFO  - name : Emmett Kessler
+2023-12-17 19:47:47,316 INFO  - email : adelina.dare@yahoo.com
+2023-12-17 19:47:47,316 INFO  - gender : male
+2023-12-17 19:47:47,316 INFO  - status : active
+2023-12-17 19:47:47,316 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:47,316 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:47:47,316 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:47:47,319 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:47,319 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:47:47,319 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:47,320 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:47:47,360 INFO  - name = Edwardo Dietrich
+2023-12-17 19:47:47,363 INFO  - gender = Female
+2023-12-17 19:47:47,372 INFO  - email = sabine.gislason@hotmail.com
+2023-12-17 19:47:47,372 INFO  - status = active
+2023-12-17 19:47:47,373 INFO  - Successfull : Created Request Body
+2023-12-17 19:47:47,373 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:47:47,375 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:47:47,376 INFO  - Initiate : Generating URI
+2023-12-17 19:47:47,376 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836168
+2023-12-17 19:47:47,376 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:47,376 INFO  - Adding Header : Content Type
+2023-12-17 19:47:47,377 INFO  - Added Header
+2023-12-17 19:47:47,377 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:47,380 INFO  - Added Header
+2023-12-17 19:47:47,380 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:47,382 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:48,507 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:48,508 INFO  - id : 5836168
+2023-12-17 19:47:48,508 INFO  - name : Edwardo Dietrich
+2023-12-17 19:47:48,508 INFO  - email : sabine.gislason@hotmail.com
+2023-12-17 19:47:48,508 INFO  - gender : female
+2023-12-17 19:47:48,508 INFO  - status : active
+2023-12-17 19:47:48,508 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:48,508 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:47:48,508 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:47:48,513 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:47:48,513 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:47:48,513 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:48,513 INFO  - Initiate : Generating URI
+2023-12-17 19:47:48,513 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836168
+2023-12-17 19:47:48,513 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:47:48,514 INFO  - Adding Header : Content Type
+2023-12-17 19:47:48,514 INFO  - Added Header
+2023-12-17 19:47:48,514 INFO  - Adding Header : Bearer Token
+2023-12-17 19:47:48,514 INFO  - Added Header
+2023-12-17 19:47:48,514 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:47:48,514 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:47:49,506 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:47:49,506 INFO  - ****************************************************************************************************************
+2023-12-17 19:47:49,507 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:47:49,507 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:30,425 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:30,426 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:52:30,426 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:30,466 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:52:30,619 INFO  - name = Foster DuBuque
+2023-12-17 19:52:30,624 INFO  - gender = Male
+2023-12-17 19:52:30,651 INFO  - email = dann.orn@yahoo.com
+2023-12-17 19:52:30,652 INFO  - status = inactive
+2023-12-17 19:52:30,652 INFO  - Successfull : Created Request Body
+2023-12-17 19:52:30,652 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:52:30,707 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:52:30,708 INFO  - Initiate : Generating URI
+2023-12-17 19:52:30,709 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:52:30,709 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:31,177 INFO  - Adding Header : Content Type
+2023-12-17 19:52:31,251 INFO  - Added Header
+2023-12-17 19:52:31,251 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:31,255 INFO  - Added Header
+2023-12-17 19:52:31,255 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:31,255 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:33,441 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:33,475 INFO  - id : 5836175
+2023-12-17 19:52:33,485 INFO  - name : Foster DuBuque
+2023-12-17 19:52:33,486 INFO  - email : dann.orn@yahoo.com
+2023-12-17 19:52:33,486 INFO  - gender : male
+2023-12-17 19:52:33,486 INFO  - status : inactive
+2023-12-17 19:52:33,486 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:33,486 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:33,486 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:33,493 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:33,493 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:52:33,493 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:33,494 INFO  - Initiate : Generating URI
+2023-12-17 19:52:33,494 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836175
+2023-12-17 19:52:33,494 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:33,494 INFO  - Adding Header : Content Type
+2023-12-17 19:52:33,495 INFO  - Added Header
+2023-12-17 19:52:33,495 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:33,496 INFO  - Added Header
+2023-12-17 19:52:33,496 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:33,496 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:34,607 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:34,608 INFO  - id : 5836175
+2023-12-17 19:52:34,608 INFO  - name : Foster DuBuque
+2023-12-17 19:52:34,609 INFO  - email : dann.orn@yahoo.com
+2023-12-17 19:52:34,609 INFO  - gender : male
+2023-12-17 19:52:34,609 INFO  - status : inactive
+2023-12-17 19:52:34,609 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:34,609 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:34,609 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:34,613 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:34,613 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:52:34,613 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:34,614 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:52:34,635 INFO  - name = Cierra Grant
+2023-12-17 19:52:34,645 INFO  - gender = Female
+2023-12-17 19:52:34,650 INFO  - email = lashunda.trantow@hotmail.com
+2023-12-17 19:52:34,651 INFO  - status = inactive
+2023-12-17 19:52:34,651 INFO  - Successfull : Created Request Body
+2023-12-17 19:52:34,651 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:52:34,653 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:52:34,653 INFO  - Initiate : Generating URI
+2023-12-17 19:52:34,653 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836175
+2023-12-17 19:52:34,653 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:34,653 INFO  - Adding Header : Content Type
+2023-12-17 19:52:34,654 INFO  - Added Header
+2023-12-17 19:52:34,654 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:34,657 INFO  - Added Header
+2023-12-17 19:52:34,657 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:34,657 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:35,452 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:35,454 INFO  - id : 5836175
+2023-12-17 19:52:35,454 INFO  - name : Cierra Grant
+2023-12-17 19:52:35,454 INFO  - email : lashunda.trantow@hotmail.com
+2023-12-17 19:52:35,454 INFO  - gender : female
+2023-12-17 19:52:35,454 INFO  - status : inactive
+2023-12-17 19:52:35,454 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:35,454 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:35,454 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:35,458 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:35,458 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:52:35,459 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:35,459 INFO  - Initiate : Generating URI
+2023-12-17 19:52:35,459 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836175
+2023-12-17 19:52:35,459 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:35,459 INFO  - Adding Header : Content Type
+2023-12-17 19:52:35,459 INFO  - Added Header
+2023-12-17 19:52:35,460 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:35,460 INFO  - Added Header
+2023-12-17 19:52:35,460 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:35,460 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:37,548 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:37,549 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:37,549 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:37,549 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:40,465 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:40,799 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:52:40,799 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:40,824 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:52:40,954 INFO  - name = Antonio Homenick
+2023-12-17 19:52:40,958 INFO  - gender = Female
+2023-12-17 19:52:40,985 INFO  - email = jacqueline.frami@hotmail.com
+2023-12-17 19:52:40,985 INFO  - status = active
+2023-12-17 19:52:40,985 INFO  - Successfull : Created Request Body
+2023-12-17 19:52:40,985 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:52:41,061 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:52:41,061 INFO  - Initiate : Generating URI
+2023-12-17 19:52:41,062 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:52:41,062 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:41,498 INFO  - Adding Header : Content Type
+2023-12-17 19:52:41,571 INFO  - Added Header
+2023-12-17 19:52:41,571 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:41,575 INFO  - Added Header
+2023-12-17 19:52:41,575 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:41,575 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:44,544 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:44,582 INFO  - id : 5836176
+2023-12-17 19:52:44,583 INFO  - name : Antonio Homenick
+2023-12-17 19:52:44,583 INFO  - email : jacqueline.frami@hotmail.com
+2023-12-17 19:52:44,583 INFO  - gender : female
+2023-12-17 19:52:44,583 INFO  - status : active
+2023-12-17 19:52:44,583 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:44,583 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:44,583 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:44,588 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:44,588 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:52:44,589 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:44,589 INFO  - Initiate : Generating URI
+2023-12-17 19:52:44,589 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836176
+2023-12-17 19:52:44,589 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:44,589 INFO  - Adding Header : Content Type
+2023-12-17 19:52:44,590 INFO  - Added Header
+2023-12-17 19:52:44,590 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:44,590 INFO  - Added Header
+2023-12-17 19:52:44,591 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:44,591 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:45,718 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:45,720 INFO  - id : 5836176
+2023-12-17 19:52:45,720 INFO  - name : Antonio Homenick
+2023-12-17 19:52:45,720 INFO  - email : jacqueline.frami@hotmail.com
+2023-12-17 19:52:45,720 INFO  - gender : female
+2023-12-17 19:52:45,720 INFO  - status : active
+2023-12-17 19:52:45,720 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:45,720 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:45,720 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:45,722 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:45,722 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:52:45,722 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:45,723 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:52:45,764 INFO  - name = Jeneva Huel
+2023-12-17 19:52:45,767 INFO  - gender = Male
+2023-12-17 19:52:45,776 INFO  - email = harley.anderson@yahoo.com
+2023-12-17 19:52:45,776 INFO  - status = inactive
+2023-12-17 19:52:45,776 INFO  - Successfull : Created Request Body
+2023-12-17 19:52:45,776 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:52:45,779 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:52:45,779 INFO  - Initiate : Generating URI
+2023-12-17 19:52:45,779 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836176
+2023-12-17 19:52:45,779 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:45,780 INFO  - Adding Header : Content Type
+2023-12-17 19:52:45,780 INFO  - Added Header
+2023-12-17 19:52:45,781 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:45,784 INFO  - Added Header
+2023-12-17 19:52:45,784 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:45,784 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:46,642 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:46,643 INFO  - id : 5836176
+2023-12-17 19:52:46,643 INFO  - name : Jeneva Huel
+2023-12-17 19:52:46,643 INFO  - email : harley.anderson@yahoo.com
+2023-12-17 19:52:46,643 INFO  - gender : male
+2023-12-17 19:52:46,643 INFO  - status : inactive
+2023-12-17 19:52:46,643 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:46,643 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:46,643 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:52:46,648 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:52:46,649 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:52:46,649 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:46,649 INFO  - Initiate : Generating URI
+2023-12-17 19:52:46,649 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836176
+2023-12-17 19:52:46,649 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:52:46,649 INFO  - Adding Header : Content Type
+2023-12-17 19:52:46,650 INFO  - Added Header
+2023-12-17 19:52:46,650 INFO  - Adding Header : Bearer Token
+2023-12-17 19:52:46,650 INFO  - Added Header
+2023-12-17 19:52:46,650 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:52:46,650 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:52:48,474 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:52:48,475 INFO  - ****************************************************************************************************************
+2023-12-17 19:52:48,475 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:52:48,475 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:54:48,100 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:54:48,100 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:54:48,100 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:48,133 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:54:48,258 INFO  - name = Chi Hirthe Sr.
+2023-12-17 19:54:48,263 INFO  - gender = Male
+2023-12-17 19:54:48,294 INFO  - email = raymundo.koch@yahoo.com
+2023-12-17 19:54:48,294 INFO  - status = active
+2023-12-17 19:54:48,294 INFO  - Successfull : Created Request Body
+2023-12-17 19:54:48,295 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:54:48,353 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:54:48,353 INFO  - Initiate : Generating URI
+2023-12-17 19:54:48,354 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:54:48,354 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:54:48,877 INFO  - Adding Header : Content Type
+2023-12-17 19:54:48,955 INFO  - Added Header
+2023-12-17 19:54:48,955 INFO  - Adding Header : Bearer Token
+2023-12-17 19:54:48,958 INFO  - Added Header
+2023-12-17 19:54:48,958 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:54:48,958 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:54:52,702 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:54:52,734 INFO  - id : 5836178
+2023-12-17 19:54:52,742 INFO  - name : Chi Hirthe Sr.
+2023-12-17 19:54:52,742 INFO  - email : raymundo.koch@yahoo.com
+2023-12-17 19:54:52,742 INFO  - gender : male
+2023-12-17 19:54:52,742 INFO  - status : active
+2023-12-17 19:54:52,742 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:52,742 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:54:52,742 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:54:52,750 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:54:52,750 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:54:52,750 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:52,751 INFO  - Initiate : Generating URI
+2023-12-17 19:54:52,751 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836178
+2023-12-17 19:54:52,751 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:54:52,751 INFO  - Adding Header : Content Type
+2023-12-17 19:54:52,752 INFO  - Added Header
+2023-12-17 19:54:52,752 INFO  - Adding Header : Bearer Token
+2023-12-17 19:54:52,752 INFO  - Added Header
+2023-12-17 19:54:52,752 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:54:52,752 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:54:53,764 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:54:53,766 INFO  - id : 5836178
+2023-12-17 19:54:53,766 INFO  - name : Chi Hirthe Sr.
+2023-12-17 19:54:53,766 INFO  - email : raymundo.koch@yahoo.com
+2023-12-17 19:54:53,766 INFO  - gender : male
+2023-12-17 19:54:53,766 INFO  - status : active
+2023-12-17 19:54:53,766 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:53,767 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:54:53,767 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:54:53,770 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:54:53,770 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:54:53,770 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:53,771 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:54:53,812 INFO  - name = Dr. Joellen Auer
+2023-12-17 19:54:53,814 INFO  - gender = Female
+2023-12-17 19:54:53,823 INFO  - email = edyth.stamm@gmail.com
+2023-12-17 19:54:53,823 INFO  - status = inactive
+2023-12-17 19:54:53,824 INFO  - Successfull : Created Request Body
+2023-12-17 19:54:53,824 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:54:53,826 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:54:53,826 INFO  - Initiate : Generating URI
+2023-12-17 19:54:53,826 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836178
+2023-12-17 19:54:53,827 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:54:53,827 INFO  - Adding Header : Content Type
+2023-12-17 19:54:53,828 INFO  - Added Header
+2023-12-17 19:54:53,828 INFO  - Adding Header : Bearer Token
+2023-12-17 19:54:53,833 INFO  - Added Header
+2023-12-17 19:54:53,833 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:54:53,833 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:54:54,637 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:54:54,638 INFO  - id : 5836178
+2023-12-17 19:54:54,638 INFO  - name : Dr. Joellen Auer
+2023-12-17 19:54:54,638 INFO  - email : edyth.stamm@gmail.com
+2023-12-17 19:54:54,638 INFO  - gender : female
+2023-12-17 19:54:54,638 INFO  - status : inactive
+2023-12-17 19:54:54,638 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:54,639 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:54:54,639 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:54:54,644 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:54:54,644 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:54:54,644 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:54,644 INFO  - Initiate : Generating URI
+2023-12-17 19:54:54,644 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836178
+2023-12-17 19:54:54,644 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:54:54,644 INFO  - Adding Header : Content Type
+2023-12-17 19:54:54,645 INFO  - Added Header
+2023-12-17 19:54:54,645 INFO  - Adding Header : Bearer Token
+2023-12-17 19:54:54,645 INFO  - Added Header
+2023-12-17 19:54:54,645 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:54:54,645 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:54:56,510 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:54:56,511 INFO  - ****************************************************************************************************************
+2023-12-17 19:54:56,511 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:54:56,511 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:55:25,900 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:55:25,900 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:55:25,900 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:25,930 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:55:26,059 INFO  - name = Hector Armstrong
+2023-12-17 19:55:26,063 INFO  - gender = Male
+2023-12-17 19:55:26,092 INFO  - email = jewell.auer@yahoo.com
+2023-12-17 19:55:26,093 INFO  - status = active
+2023-12-17 19:55:26,093 INFO  - Successfull : Created Request Body
+2023-12-17 19:55:26,093 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:55:26,155 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:55:26,155 INFO  - Initiate : Generating URI
+2023-12-17 19:55:26,155 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:55:26,156 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:55:26,610 INFO  - Adding Header : Content Type
+2023-12-17 19:55:26,698 INFO  - Added Header
+2023-12-17 19:55:26,698 INFO  - Adding Header : Bearer Token
+2023-12-17 19:55:26,702 INFO  - Added Header
+2023-12-17 19:55:26,702 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:55:26,703 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:55:29,740 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:55:29,779 INFO  - id : 5836181
+2023-12-17 19:55:29,787 INFO  - name : Hector Armstrong
+2023-12-17 19:55:29,787 INFO  - email : jewell.auer@yahoo.com
+2023-12-17 19:55:29,788 INFO  - gender : male
+2023-12-17 19:55:29,788 INFO  - status : active
+2023-12-17 19:55:29,788 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:29,788 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:55:29,788 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:55:29,794 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:55:29,794 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:55:29,794 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:29,794 INFO  - Initiate : Generating URI
+2023-12-17 19:55:29,794 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836181
+2023-12-17 19:55:29,794 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:55:29,794 INFO  - Adding Header : Content Type
+2023-12-17 19:55:29,795 INFO  - Added Header
+2023-12-17 19:55:29,795 INFO  - Adding Header : Bearer Token
+2023-12-17 19:55:29,796 INFO  - Added Header
+2023-12-17 19:55:29,796 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:55:29,796 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:55:32,618 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:55:32,619 INFO  - id : 5836181
+2023-12-17 19:55:32,619 INFO  - name : Hector Armstrong
+2023-12-17 19:55:32,619 INFO  - email : jewell.auer@yahoo.com
+2023-12-17 19:55:32,620 INFO  - gender : male
+2023-12-17 19:55:32,620 INFO  - status : active
+2023-12-17 19:55:32,620 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:32,620 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:55:32,620 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:55:32,622 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:55:32,623 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:55:32,623 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:32,623 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:55:32,645 INFO  - name = Mr. Laurence Steuber
+2023-12-17 19:55:32,647 INFO  - gender = Male
+2023-12-17 19:55:32,667 INFO  - email = willis.macejkovic@hotmail.com
+2023-12-17 19:55:32,667 INFO  - status = active
+2023-12-17 19:55:32,667 INFO  - Successfull : Created Request Body
+2023-12-17 19:55:32,667 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:55:32,669 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:55:32,669 INFO  - Initiate : Generating URI
+2023-12-17 19:55:32,669 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836181
+2023-12-17 19:55:32,669 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:55:32,670 INFO  - Adding Header : Content Type
+2023-12-17 19:55:32,670 INFO  - Added Header
+2023-12-17 19:55:32,670 INFO  - Adding Header : Bearer Token
+2023-12-17 19:55:32,672 INFO  - Added Header
+2023-12-17 19:55:32,672 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:55:32,672 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:55:33,730 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:55:33,731 INFO  - id : 5836181
+2023-12-17 19:55:33,732 INFO  - name : Mr. Laurence Steuber
+2023-12-17 19:55:33,732 INFO  - email : willis.macejkovic@hotmail.com
+2023-12-17 19:55:33,732 INFO  - gender : male
+2023-12-17 19:55:33,732 INFO  - status : active
+2023-12-17 19:55:33,732 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:33,732 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:55:33,732 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:55:33,735 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:55:33,735 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:55:33,735 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:33,735 INFO  - Initiate : Generating URI
+2023-12-17 19:55:33,735 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836181
+2023-12-17 19:55:33,736 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:55:33,736 INFO  - Adding Header : Content Type
+2023-12-17 19:55:33,736 INFO  - Added Header
+2023-12-17 19:55:33,736 INFO  - Adding Header : Bearer Token
+2023-12-17 19:55:33,736 INFO  - Added Header
+2023-12-17 19:55:33,736 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:55:33,737 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:55:35,073 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:55:35,073 INFO  - ****************************************************************************************************************
+2023-12-17 19:55:35,073 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:55:35,073 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:57:53,082 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:57:53,196 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-17 19:57:53,196 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:53,230 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:57:53,365 INFO  - name = Weston Shields
+2023-12-17 19:57:53,368 INFO  - gender = Female
+2023-12-17 19:57:53,396 INFO  - email = pok.koelpin@gmail.com
+2023-12-17 19:57:53,396 INFO  - status = active
+2023-12-17 19:57:53,396 INFO  - Successfull : Created Request Body
+2023-12-17 19:57:53,396 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:57:53,459 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:57:53,459 INFO  - Initiate : Generating URI
+2023-12-17 19:57:53,459 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-17 19:57:53,459 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:57:53,999 INFO  - Adding Header : Content Type
+2023-12-17 19:57:54,072 INFO  - Added Header
+2023-12-17 19:57:54,085 INFO  - Adding Header : Bearer Token
+2023-12-17 19:57:54,087 INFO  - Added Header
+2023-12-17 19:57:54,087 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:57:54,087 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:57:55,949 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:57:55,984 INFO  - id : 5836190
+2023-12-17 19:57:55,994 INFO  - name : Weston Shields
+2023-12-17 19:57:55,994 INFO  - email : pok.koelpin@gmail.com
+2023-12-17 19:57:55,994 INFO  - gender : female
+2023-12-17 19:57:55,994 INFO  - status : active
+2023-12-17 19:57:55,995 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:55,995 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:57:55,995 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:57:56,000 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:57:56,001 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-17 19:57:56,001 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:56,001 INFO  - Initiate : Generating URI
+2023-12-17 19:57:56,001 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836190
+2023-12-17 19:57:56,001 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:57:56,002 INFO  - Adding Header : Content Type
+2023-12-17 19:57:56,003 INFO  - Added Header
+2023-12-17 19:57:56,003 INFO  - Adding Header : Bearer Token
+2023-12-17 19:57:56,003 INFO  - Added Header
+2023-12-17 19:57:56,004 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:57:56,004 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:57:57,095 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:57:57,096 INFO  - id : 5836190
+2023-12-17 19:57:57,096 INFO  - name : Weston Shields
+2023-12-17 19:57:57,096 INFO  - email : pok.koelpin@gmail.com
+2023-12-17 19:57:57,096 INFO  - gender : female
+2023-12-17 19:57:57,096 INFO  - status : active
+2023-12-17 19:57:57,097 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:57,097 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:57:57,097 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:57:57,099 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:57:57,099 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-17 19:57:57,099 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:57,101 INFO  - Initiate : Creating Request Body...
+2023-12-17 19:57:57,128 INFO  - name = Palmer Fadel
+2023-12-17 19:57:57,130 INFO  - gender = Male
+2023-12-17 19:57:57,137 INFO  - email = rory.ortiz@gmail.com
+2023-12-17 19:57:57,137 INFO  - status = inactive
+2023-12-17 19:57:57,137 INFO  - Successfull : Created Request Body
+2023-12-17 19:57:57,137 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-17 19:57:57,142 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-17 19:57:57,143 INFO  - Initiate : Generating URI
+2023-12-17 19:57:57,143 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836190
+2023-12-17 19:57:57,143 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:57:57,143 INFO  - Adding Header : Content Type
+2023-12-17 19:57:57,144 INFO  - Added Header
+2023-12-17 19:57:57,144 INFO  - Adding Header : Bearer Token
+2023-12-17 19:57:57,147 INFO  - Added Header
+2023-12-17 19:57:57,147 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:57:57,147 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:57:59,126 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:57:59,128 INFO  - id : 5836190
+2023-12-17 19:57:59,128 INFO  - name : Palmer Fadel
+2023-12-17 19:57:59,128 INFO  - email : rory.ortiz@gmail.com
+2023-12-17 19:57:59,128 INFO  - gender : male
+2023-12-17 19:57:59,128 INFO  - status : inactive
+2023-12-17 19:57:59,128 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:59,128 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:57:59,128 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-17 19:57:59,132 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-17 19:57:59,133 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-17 19:57:59,133 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:59,133 INFO  - Initiate : Generating URI
+2023-12-17 19:57:59,133 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5836190
+2023-12-17 19:57:59,133 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-17 19:57:59,133 INFO  - Adding Header : Content Type
+2023-12-17 19:57:59,134 INFO  - Added Header
+2023-12-17 19:57:59,134 INFO  - Adding Header : Bearer Token
+2023-12-17 19:57:59,134 INFO  - Added Header
+2023-12-17 19:57:59,134 INFO  - Successfull : Added Headers to the Request Body
+2023-12-17 19:57:59,134 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-17 19:57:59,983 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-17 19:57:59,984 INFO  - ****************************************************************************************************************
+2023-12-17 19:57:59,984 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-17 19:57:59,984 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-18 10:56:17,654 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-18 10:56:17,654 INFO  - -------------------------------------- START TEST CASE : Create User Test : 1--------------------------------------
+2023-12-18 10:56:17,654 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:17,694 INFO  - Initiate : Creating Request Body...
+2023-12-18 10:56:17,863 INFO  - name = Duncan Hahn
+2023-12-18 10:56:17,869 INFO  - gender = Female
+2023-12-18 10:56:17,902 INFO  - email = martha.ward@hotmail.com
+2023-12-18 10:56:17,902 INFO  - status = active
+2023-12-18 10:56:17,902 INFO  - Successfull : Created Request Body
+2023-12-18 10:56:17,902 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-18 10:56:17,958 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-18 10:56:17,958 INFO  - Initiate : Generating URI
+2023-12-18 10:56:17,964 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users
+2023-12-18 10:56:17,964 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-18 10:56:18,473 INFO  - Adding Header : Content Type
+2023-12-18 10:56:18,553 INFO  - Added Header
+2023-12-18 10:56:18,553 INFO  - Adding Header : Bearer Token
+2023-12-18 10:56:18,557 INFO  - Added Header
+2023-12-18 10:56:18,557 INFO  - Successfull : Added Headers to the Request Body
+2023-12-18 10:56:18,557 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-18 10:56:20,652 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-18 10:56:20,693 INFO  - id : 5837575
+2023-12-18 10:56:20,702 INFO  - name : Duncan Hahn
+2023-12-18 10:56:20,702 INFO  - email : martha.ward@hotmail.com
+2023-12-18 10:56:20,702 INFO  - gender : female
+2023-12-18 10:56:20,702 INFO  - status : active
+2023-12-18 10:56:20,702 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:20,702 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-18 10:56:20,702 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-18 10:56:20,708 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-18 10:56:20,708 INFO  - -------------------------------------- START TEST CASE : 'Get User' Test Case - 1--------------------------------------
+2023-12-18 10:56:20,708 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:20,708 INFO  - Initiate : Generating URI
+2023-12-18 10:56:20,708 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5837575
+2023-12-18 10:56:20,708 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-18 10:56:20,709 INFO  - Adding Header : Content Type
+2023-12-18 10:56:20,709 INFO  - Added Header
+2023-12-18 10:56:20,709 INFO  - Adding Header : Bearer Token
+2023-12-18 10:56:20,710 INFO  - Added Header
+2023-12-18 10:56:20,710 INFO  - Successfull : Added Headers to the Request Body
+2023-12-18 10:56:20,754 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-18 10:56:21,440 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-18 10:56:21,441 INFO  - id : 5837575
+2023-12-18 10:56:21,441 INFO  - name : Duncan Hahn
+2023-12-18 10:56:21,441 INFO  - email : martha.ward@hotmail.com
+2023-12-18 10:56:21,441 INFO  - gender : female
+2023-12-18 10:56:21,442 INFO  - status : active
+2023-12-18 10:56:21,442 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:21,442 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-18 10:56:21,442 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-18 10:56:21,444 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-18 10:56:21,444 INFO  - -------------------------------------- START TEST CASE : 'Update User' Test Case - 1--------------------------------------
+2023-12-18 10:56:21,444 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:21,445 INFO  - Initiate : Creating Request Body...
+2023-12-18 10:56:21,476 INFO  - name = Monte Hickle
+2023-12-18 10:56:21,478 INFO  - gender = Male
+2023-12-18 10:56:21,485 INFO  - email = marla.bartell@gmail.com
+2023-12-18 10:56:21,485 INFO  - status = active
+2023-12-18 10:56:21,485 INFO  - Successfull : Created Request Body
+2023-12-18 10:56:21,485 INFO  - Initiate : Converting Request Body to a String Sequence...
+2023-12-18 10:56:21,487 INFO  - Successfull : Converted Request Body to a String Sequence
+2023-12-18 10:56:21,487 INFO  - Initiate : Generating URI
+2023-12-18 10:56:21,487 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5837575
+2023-12-18 10:56:21,487 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-18 10:56:21,488 INFO  - Adding Header : Content Type
+2023-12-18 10:56:21,488 INFO  - Added Header
+2023-12-18 10:56:21,488 INFO  - Adding Header : Bearer Token
+2023-12-18 10:56:21,494 INFO  - Added Header
+2023-12-18 10:56:21,494 INFO  - Successfull : Added Headers to the Request Body
+2023-12-18 10:56:21,494 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-18 10:56:22,514 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-18 10:56:22,516 INFO  - id : 5837575
+2023-12-18 10:56:22,516 INFO  - name : Monte Hickle
+2023-12-18 10:56:22,516 INFO  - email : marla.bartell@gmail.com
+2023-12-18 10:56:22,516 INFO  - gender : male
+2023-12-18 10:56:22,516 INFO  - status : active
+2023-12-18 10:56:22,516 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:22,516 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-18 10:56:22,516 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2023-12-18 10:56:22,519 INFO  - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2023-12-18 10:56:22,519 INFO  - -------------------------------------- START TEST CASE : Delete User Test Case : One--------------------------------------
+2023-12-18 10:56:22,520 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:22,520 INFO  - Initiate : Generating URI
+2023-12-18 10:56:22,520 INFO  - Successfull : Generated URI = https://gorest.co.in/public/v2/users/5837575
+2023-12-18 10:56:22,520 INFO  - Initiate : Adding Headers to the Request Body...
+2023-12-18 10:56:22,520 INFO  - Adding Header : Content Type
+2023-12-18 10:56:22,520 INFO  - Added Header
+2023-12-18 10:56:22,520 INFO  - Adding Header : Bearer Token
+2023-12-18 10:56:22,520 INFO  - Added Header
+2023-12-18 10:56:22,521 INFO  - Successfull : Added Headers to the Request Body
+2023-12-18 10:56:22,521 INFO  - Initiate : Sending the Request and Fetching the Response...
+2023-12-18 10:56:23,548 INFO  - Successfull : Request Sended and Response Fetched
+2023-12-18 10:56:23,549 INFO  - ****************************************************************************************************************
+2023-12-18 10:56:23,549 INFO  - ---------------------------------------------- ++++END TEST CASE++++ ----------------------------------------------
+2023-12-18 10:56:23,549 INFO  - ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

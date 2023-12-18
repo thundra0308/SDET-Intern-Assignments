@@ -7,7 +7,6 @@ import org.apache.log4j.PropertyConfigurator;
 public class LoggerManager {
 
 	public Logger log = LogManager.getLogger(LoggerManager.class);
-	
 
 	public void initLogger() {
 		PropertyConfigurator.configure(System.getProperty("user.dir")+"/properties/"+"log4j.properties");
@@ -44,7 +43,5 @@ public class LoggerManager {
 	public void debug(String message) {
 		log.debug(message);
 	}
-
 	
-
 }

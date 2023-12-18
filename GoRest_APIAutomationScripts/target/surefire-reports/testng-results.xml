@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-07T14:06:13 IST" name="Suite" finished-at="2023-12-07T14:06:19 IST" duration-ms="6042">
+  <suite started-at="2023-12-18T10:56:17 IST" name="Suite" finished-at="2023-12-18T10:56:23 IST" duration-ms="5991">
     <groups>
     </groups>
-    <test started-at="2023-12-07T14:06:13 IST" name="Test" finished-at="2023-12-07T14:06:19 IST" duration-ms="6042">
+    <test started-at="2023-12-18T10:56:17 IST" name="Test" finished-at="2023-12-18T10:56:23 IST" duration-ms="5991">
       <class name="userModel.deleteUser.DeleteUserTestClass">
-        <test-method signature="deleteUserTestCase_1(org.testng.ITestContext)[pri:0, instance:userModel.deleteUser.DeleteUserTestClass@6d026701]" started-at="2023-12-07T14:06:18 IST" name="deleteUserTestCase_1" finished-at="2023-12-07T14:06:19 IST" duration-ms="1112" status="PASS">
+        <test-method signature="deleteUserTestCase_1(org.testng.ITestContext)[pri:3, instance:userModel.deleteUser.DeleteUserTestClass@1b11171f]" started-at="2023-12-18T10:56:22 IST" name="deleteUserTestCase_1" finished-at="2023-12-18T10:56:23 IST" duration-ms="1031" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@397f925e]]>
+                <![CDATA[org.testng.TestRunner@6b9fc5c7]]>
               </value>
             </param>
           </params>
@@ -20,19 +20,19 @@
         </test-method> <!-- deleteUserTestCase_1 -->
       </class> <!-- userModel.deleteUser.DeleteUserTestClass -->
       <class name="userModel.getUser.GetUserTestClass">
-        <test-method signature="getUserTest_1()[pri:0, instance:userModel.getUser.GetUserTestClass@30c8681]" started-at="2023-12-07T14:06:16 IST" name="getUserTest_1" finished-at="2023-12-07T14:06:17 IST" duration-ms="1066" status="PASS">
+        <test-method signature="getUserTest_1()[pri:1, instance:userModel.getUser.GetUserTestClass@4b8ee4de]" started-at="2023-12-18T10:56:20 IST" name="getUserTest_1" finished-at="2023-12-18T10:56:21 IST" duration-ms="735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserTest_1 -->
       </class> <!-- userModel.getUser.GetUserTestClass -->
       <class name="userModel.createUser.CreateUserTestClass">
-        <test-method signature="createUserTest_1()[pri:0, instance:userModel.createUser.CreateUserTestClass@616ac46a]" started-at="2023-12-07T14:06:13 IST" name="createUserTest_1" finished-at="2023-12-07T14:06:16 IST" duration-ms="3046" status="PASS">
+        <test-method signature="createUserTest_1()[pri:0, instance:userModel.createUser.CreateUserTestClass@27462a88]" started-at="2023-12-18T10:56:17 IST" name="createUserTest_1" finished-at="2023-12-18T10:56:20 IST" duration-ms="3105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest_1 -->
       </class> <!-- userModel.createUser.CreateUserTestClass -->
       <class name="userModel.updateUser.UpdateUserTestClass">
-        <test-method signature="updateUserTest_1()[pri:0, instance:userModel.updateUser.UpdateUserTestClass@5cdec700]" started-at="2023-12-07T14:06:17 IST" name="updateUserTest_1" finished-at="2023-12-07T14:06:18 IST" duration-ms="783" status="PASS">
+        <test-method signature="updateUserTest_1()[pri:2, instance:userModel.updateUser.UpdateUserTestClass@27f981c6]" started-at="2023-12-18T10:56:21 IST" name="updateUserTest_1" finished-at="2023-12-18T10:56:22 IST" duration-ms="1073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserTest_1 -->

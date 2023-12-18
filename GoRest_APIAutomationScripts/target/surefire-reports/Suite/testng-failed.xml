@@ -11,6 +11,11 @@
           <include name="getUserTest_1"/>
         </methods>
       </class> <!-- userModel.getUser.GetUserTestClass -->
+      <class name="userModel.updateUser.UpdateUserTestClass">
+        <methods>
+          <include name="updateUserTest_1"/>
+        </methods>
+      </class> <!-- userModel.updateUser.UpdateUserTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

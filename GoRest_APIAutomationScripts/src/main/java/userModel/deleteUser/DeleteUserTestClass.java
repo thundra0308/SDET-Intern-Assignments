@@ -4,8 +4,6 @@ import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import utils.Authentication;
 
 public class DeleteUserTestClass extends BaseClass {
@@ -13,7 +11,7 @@ public class DeleteUserTestClass extends BaseClass {
 	String bearerToken = Authentication.getBearerToken();
 
 	// Test Method to Delete the Created User
-	@Test
+	@Test(priority = 3)
 	public void deleteUserTestCase_1(ITestContext context) {
 		// Initialize the Log4J
 		initLogger();

@@ -4,7 +4,7 @@
 	<listeners>
         <listener class-name="handle.retry.TransformationManager"/>
     </listeners>
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="Test" preserve-order="true">
 		<classes>
 			<class name="userModel.createUser.CreateUserTestClass" />
 			<class name="userModel.getUser.GetUserTestClass" />

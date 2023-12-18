@@ -7,10 +7,12 @@ E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\getUser\GetUserResponseModel.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\utils\CreateURL.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\createUser\CreateUserTestClass.java
+E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\utils\DateUtil.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\updateUser\UpdateUserResponseModel.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\base\BaseClass.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\utils\Authentication.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\updateUser\UpdateUserRequestModel.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\userModel\updateUser\UpdateUserTestClass.java
+E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\utils\ExtentReportManager.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\base\LoggerManager.java
 E:\RecruitCRM\SDET-Intern-Assignments\GoRest_APIAutomationScripts\src\main\java\handle\retry\TransformationManager.java

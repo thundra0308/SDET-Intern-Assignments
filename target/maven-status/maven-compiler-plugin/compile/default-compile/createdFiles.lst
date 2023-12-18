@@ -1,0 +1,10 @@
+com\selenium\assignment\base\BaseUi.class
+com\selenium\assignment\testing\LoginAndLogout.class
+com\selenium\assignment\utils\ExtentReportManager.class
+com\selenium\assignment\testing\AddCompany.class
+com\selenium\assignment\testing\AddCandidate.class
+com\selenium\assignment\testing\AddContact.class
+com\selenium\assignment\testing\AddJob.class
+com\selenium\assignment\utils\DateUtil.class
+com\selenium\handleRetry\RetryManager.class
+com\selenium\handleRetry\TransformationManager.class

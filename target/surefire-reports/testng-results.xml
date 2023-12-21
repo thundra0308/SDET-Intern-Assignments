@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T11:36:04 IST" name="Suite" finished-at="2023-12-18T11:36:58 IST" duration-ms="53694">
+  <suite started-at="2023-12-18T11:45:18 IST" name="Suite" finished-at="2023-12-18T11:46:11 IST" duration-ms="52680">
     <groups>
     </groups>
-    <test started-at="2023-12-18T11:36:04 IST" name="Test" finished-at="2023-12-18T11:36:58 IST" duration-ms="53694">
+    <test started-at="2023-12-18T11:45:18 IST" name="Test" finished-at="2023-12-18T11:46:11 IST" duration-ms="52680">
       <class name="com.selenium.assignment.testing.AddCandidate">
-        <test-method signature="addCandidateTest_Manual()[pri:1, instance:com.selenium.assignment.testing.AddCandidate@672872e1]" started-at="2023-12-18T11:36:04 IST" name="addCandidateTest_Manual" finished-at="2023-12-18T11:36:28 IST" duration-ms="23424" status="PASS">
+        <test-method signature="addCandidateTest_Manual()[pri:1, instance:com.selenium.assignment.testing.AddCandidate@2c78324b]" started-at="2023-12-18T11:45:18 IST" name="addCandidateTest_Manual" finished-at="2023-12-18T11:45:41 IST" duration-ms="23094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCandidateTest_Manual -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddCandidate@672872e1]" started-at="2023-12-18T11:36:28 IST" name="afterTestMethod" finished-at="2023-12-18T11:36:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddCandidate@2c78324b]" started-at="2023-12-18T11:45:41 IST" name="afterTestMethod" finished-at="2023-12-18T11:45:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- com.selenium.assignment.testing.AddCandidate -->
       <class name="com.selenium.assignment.testing.AddContact">
-        <test-method signature="addContactTest()[pri:4, instance:com.selenium.assignment.testing.AddContact@3f56875e]" started-at="2023-12-18T11:36:36 IST" name="addContactTest" finished-at="2023-12-18T11:36:46 IST" duration-ms="9699" status="PASS">
+        <test-method signature="addContactTest()[pri:4, instance:com.selenium.assignment.testing.AddContact@18317edc]" started-at="2023-12-18T11:45:50 IST" name="addContactTest" finished-at="2023-12-18T11:46:00 IST" duration-ms="10231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContactTest -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddContact@3f56875e]" started-at="2023-12-18T11:36:46 IST" name="afterTestMethod" finished-at="2023-12-18T11:36:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddContact@18317edc]" started-at="2023-12-18T11:46:00 IST" name="afterTestMethod" finished-at="2023-12-18T11:46:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- com.selenium.assignment.testing.AddContact -->
       <class name="com.selenium.assignment.testing.LoginAndLogout">
-        <test-method is-config="true" signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.LoginAndLogout@6ff29830]" started-at="2023-12-18T11:36:00 IST" name="loginTest" finished-at="2023-12-18T11:36:04 IST" duration-ms="4271" status="PASS">
+        <test-method is-config="true" signature="loginTest()[pri:0, instance:com.selenium.assignment.testing.LoginAndLogout@7d9f158f]" started-at="2023-12-18T11:45:14 IST" name="loginTest" finished-at="2023-12-18T11:45:18 IST" duration-ms="4220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="logoutTest()[pri:0, instance:com.selenium.assignment.testing.LoginAndLogout@6ff29830]" started-at="2023-12-18T11:36:58 IST" name="logoutTest" finished-at="2023-12-18T11:36:59 IST" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="logoutTest()[pri:0, instance:com.selenium.assignment.testing.LoginAndLogout@7d9f158f]" started-at="2023-12-18T11:46:11 IST" name="logoutTest" finished-at="2023-12-18T11:46:11 IST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
       </class> <!-- com.selenium.assignment.testing.LoginAndLogout -->
       <class name="com.selenium.assignment.testing.AddJob">
-        <test-method signature="addJobTest()[pri:5, instance:com.selenium.assignment.testing.AddJob@2b4bac49]" started-at="2023-12-18T11:36:46 IST" name="addJobTest" finished-at="2023-12-18T11:36:58 IST" duration-ms="11946" status="PASS">
+        <test-method signature="addJobTest()[pri:5, instance:com.selenium.assignment.testing.AddJob@4e0ae11f]" started-at="2023-12-18T11:46:00 IST" name="addJobTest" finished-at="2023-12-18T11:46:11 IST" duration-ms="10353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTest -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddJob@2b4bac49]" started-at="2023-12-18T11:36:58 IST" name="afterTestMethod" finished-at="2023-12-18T11:36:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddJob@4e0ae11f]" started-at="2023-12-18T11:46:11 IST" name="afterTestMethod" finished-at="2023-12-18T11:46:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- com.selenium.assignment.testing.AddJob -->
       <class name="com.selenium.assignment.testing.AddCompany">
-        <test-method signature="addCompanyTest()[pri:3, instance:com.selenium.assignment.testing.AddCompany@32910148]" started-at="2023-12-18T11:36:28 IST" name="addCompanyTest" finished-at="2023-12-18T11:36:36 IST" duration-ms="8598" status="PASS">
+        <test-method signature="addCompanyTest()[pri:3, instance:com.selenium.assignment.testing.AddCompany@79defdc]" started-at="2023-12-18T11:45:41 IST" name="addCompanyTest" finished-at="2023-12-18T11:45:50 IST" duration-ms="8979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCompanyTest -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddCompany@32910148]" started-at="2023-12-18T11:36:36 IST" name="afterTestMethod" finished-at="2023-12-18T11:36:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.selenium.assignment.testing.AddCompany@79defdc]" started-at="2023-12-18T11:45:50 IST" name="afterTestMethod" finished-at="2023-12-18T11:45:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->

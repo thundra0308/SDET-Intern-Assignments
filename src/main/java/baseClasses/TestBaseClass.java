@@ -20,7 +20,6 @@ public class TestBaseClass {
 	public WebDriver driver;
 	public ExtentReports report = ExtentReportManager.getReportInstance();
 	public ExtentTest logger;
-	public WebDriverWait webDriverWait;
 
 	/****************** Invoke Browser ***********************/
 	public void invokeBrowser(String browserName) {
@@ -48,14 +47,6 @@ public class TestBaseClass {
 	@AfterSuite
 	public void quitDriverSession() {
 		driver.quit();
-	}
-
-	public void waitLoad(int i) {
-		try {
-			Thread.sleep(i * 1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
 	
 }

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import baseClasses.PageBaseClass;
 import baseClasses.TestBaseClass;
-import baseClasses.TopNavBarClass;
+import pageClasses.TopNavBarClass;
 import pageClasses.AddContactPageClass;
 import pageClasses.ContactDetailsPageClass;
 import pageClasses.DashboardPageClass;

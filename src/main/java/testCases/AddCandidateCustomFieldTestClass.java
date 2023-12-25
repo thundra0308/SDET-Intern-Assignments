@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import baseClasses.PageBaseClass;
-import baseClasses.SideNavBarClass;
+import pageClasses.SideNavBarClass;
 import baseClasses.TestBaseClass;
 import pageClasses.AdminSettingPageClass;
 import pageClasses.CandidateCustomFieldsPageClass;

@@ -57,7 +57,7 @@ public class CandidateCustomFieldsPageClass extends PageBaseClass {
 			input(customFieldOptions_Input, customFieldOptions, "Field Options");
 		}
 		click(save_Btn, "Save Button");
-		waitVisibilityAndClickable(newCustomField_Btn);
+		expWait_VisibilityClickable(newCustomField_Btn);
 		reportPass(customFieldType+": Type Field Added Successfully");
 	}
 	
@@ -97,7 +97,7 @@ public class CandidateCustomFieldsPageClass extends PageBaseClass {
 			if(list.size()>0) {
 				click(list.get(0), "Delete Button");
 				click(deleteCustomFieldConfirm_Btn, "Confirm Button");
-				webDriverWait.until(ExpectedConditions.invisibilityOf(deleteCustomFieldConfirm_Btn));
+				explicitWait.until(ExpectedConditions.invisibilityOf(deleteCustomFieldConfirm_Btn));
 			}
 		}
 	}

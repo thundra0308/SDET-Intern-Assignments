@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import baseClasses.PageBaseClass;
 import baseClasses.TestBaseClass;
-import baseClasses.TopNavBarClass;
+import pageClasses.TopNavBarClass;
 import pageClasses.AddJobPageClass;
 import pageClasses.DashboardPageClass;
 import pageClasses.JobDetailsPageClass;

@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import baseClasses.PageBaseClass;
 import baseClasses.TestBaseClass;
-import baseClasses.TopNavBarClass;
+import pageClasses.TopNavBarClass;
 import pageClasses.AddCompanyPageClass;
 import pageClasses.CompanyDetailsPageClass;
 import pageClasses.DashboardPageClass;

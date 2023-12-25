@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.ExtentTest;
 import baseClasses.PageBaseClass;
-import baseClasses.SideNavBarClass;
-import baseClasses.TopNavBarClass;
 
 //Class for Elements and Logic Methods of : 'Dashboard Page'
 public class DashboardPageClass extends PageBaseClass {

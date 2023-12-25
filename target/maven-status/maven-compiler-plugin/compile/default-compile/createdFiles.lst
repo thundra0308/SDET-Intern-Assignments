@@ -4,7 +4,6 @@ testCases\LoginTestClass.class
 baseClasses\TestBaseClass.class
 handleRetry\TransformationManager.class
 utilities\Constants.class
-baseClasses\TopNavBarClass.class
 testCases\AddContactTestClass.class
 baseClasses\PageBaseClass.class
 testCases\AddCandidateCustomFieldTestClass.class
@@ -14,7 +13,6 @@ pageClasses\AddCandidatePageClass.class
 testCases\AddJobTestClass.class
 pageClasses\LoginPageClass.class
 utilities\DateUtil.class
-baseClasses\SideNavBarClass.class
 pageClasses\AddCompanyPageClass.class
 pageClasses\AddJobPageClass.class
 testCases\AddCandidateTestClass.class

@@ -15,27 +15,24 @@ import utilities.Constants;
 //Class to Test the Functionalities of Adding Jobs
 public class AddJobTestClass extends TestBaseClass {
 
-	public PageBaseClass pageBaseClass;
-	public LoginPageClass loginPageClass;
-	public DashboardPageClass dashboardPageClass;
-	public TopNavBarClass topNavBarClass;
-	public AddJobPageClass addJobPageClass;
-	public JobDetailsPageClass jobDetailsPageClass;
-	int testStep;
+	PageBaseClass pageBaseClass;
+	LoginPageClass loginPageClass;
+	DashboardPageClass dashboardPageClass;
+	TopNavBarClass topNavBarClass;
+	AddJobPageClass addJobPageClass;
+	JobDetailsPageClass jobDetailsPageClass;
 	
 	// Method to Test the Functionality of Adding a Job
 	@Test
 	public void addJobTest() {
-		logger = report.createTest("Add Job Test : 1");
-		testStep = 0;
-		invokeBrowser(Constants.browser);
+		logger = report.createTest("Add Job Test : 1"); // Create Report for New Test
 		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
-		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
-		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);
+		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL); // Open Login Page
+		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password); // Login and Open Dashboard Page
 		topNavBarClass = dashboardPageClass.getTopNavBarClass();
-		addJobPageClass = topNavBarClass.openAddJobPage();
-		jobDetailsPageClass = addJobPageClass.addJob(Constants.pipeline, Constants.jobTitle, Constants.vacancy, Constants.companyJobBelongTo, Constants.contactOfCompnay);
+		addJobPageClass = topNavBarClass.openAddJobPage(); // Open Add Job Page
+		jobDetailsPageClass = addJobPageClass.addJob(Constants.pipeline, Constants.jobTitle, Constants.vacancy, Constants.companyJobBelongTo, Constants.contactOfCompnay); // Add the Job
 	}
 	
 }

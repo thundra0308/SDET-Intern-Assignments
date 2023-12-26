@@ -14,27 +14,25 @@ import utilities.Constants;
 //Class to Test the Functionalities of Adding Companies
 public class AddCompanyTestClass extends TestBaseClass {
 
-	public PageBaseClass pageBaseClass;
-	public LoginPageClass loginPageClass;
-	public DashboardPageClass dashboardPageClass;
-	public TopNavBarClass topNavBarClass;
-	public AddCompanyPageClass addCompanyPageClass;
-	public CompanyDetailsPageClass companyDetailsPageClass;
+	PageBaseClass pageBaseClass;
+	LoginPageClass loginPageClass;
+	DashboardPageClass dashboardPageClass;
+	TopNavBarClass topNavBarClass;
+	AddCompanyPageClass addCompanyPageClass;
+	CompanyDetailsPageClass companyDetailsPageClass;
 	int testStep = 0;
 	
 	// Method to Test the Functionality of Adding a Company
 	@Test
 	public void addCompanyTest() {
-		logger = report.createTest("Add Company Test : 1");
-		testStep = 0;
-		invokeBrowser(Constants.browser);
+		logger = report.createTest("Add Company Test : 1"); // Create Report for New Test
 		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
-		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
-		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);
+		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL); // Open Login Page
+		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password); // Login and Open Dashboard Page
 		topNavBarClass = dashboardPageClass.getTopNavBarClass();
-		addCompanyPageClass = topNavBarClass.openAddCompanyPage();
-		companyDetailsPageClass = addCompanyPageClass.addCompany(Constants.companyName, Constants.industryType);
+		addCompanyPageClass = topNavBarClass.openAddCompanyPage(); // Open Add Company Page
+		companyDetailsPageClass = addCompanyPageClass.addCompany(Constants.companyName, Constants.industryType); // Add the Company
 	}
 	
 }

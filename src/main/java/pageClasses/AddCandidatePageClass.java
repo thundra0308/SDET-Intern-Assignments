@@ -12,7 +12,7 @@ import baseClasses.PageBaseClass;
 // Class for Elements and Logic Methods of : 'Add Candidate SideBar or Page'
 public class AddCandidatePageClass extends PageBaseClass {
 	
-	public CandidateDetailsPageClass candidateDetailsPageClass;
+	private CandidateDetailsPageClass candidateDetailsPageClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
 	public AddCandidatePageClass(WebDriver driver, ExtentTest logger, int testStep) {
@@ -20,13 +20,13 @@ public class AddCandidatePageClass extends PageBaseClass {
 	}
 	
 	@FindBy(css = "#sTest-candidateFirstName")
-	public WebElement firstName_Input;
+	private WebElement firstName_Input;
 
 	@FindBy(css = "#sTest-candidateLastName")
-	public WebElement lastName_Input;
+	private WebElement lastName_Input;
 	
 	@FindBy(css = "#sTest-candidateAddBtn")
-	public WebElement submit_Btn;
+	private WebElement submit_Btn;
 	
 	// Method to Implement the Process of Adding a Candidate
 	public CandidateDetailsPageClass addCandidate(String firstName, String lastName) {

@@ -10,7 +10,7 @@ import baseClasses.PageBaseClass;
 // Class for Elements and Logic Methods of : 'Login Page'
 public class LoginPageClass extends PageBaseClass {
 
-	public DashboardPageClass dashboardPageClass;
+	private DashboardPageClass dashboardPageClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
 	public LoginPageClass(WebDriver driver, ExtentTest logger, int testStep) {
@@ -18,13 +18,13 @@ public class LoginPageClass extends PageBaseClass {
 	}
 
 	@FindBy(css = "#sTestEmail")
-	public WebElement email_Input;
+	private WebElement email_Input;
 	
 	@FindBy(css = "#sTestPassword")
-	public WebElement password_Input;
+	private WebElement password_Input;
 	
 	@FindBy(css = "#sTestLoginBtn")
-	public WebElement login_Btn;
+	private WebElement login_Btn;
 	
 	// Method to Implement the Process of Logging In
 	public DashboardPageClass login(String email, String password) {

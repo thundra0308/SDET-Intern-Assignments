@@ -15,28 +15,25 @@ import utilities.Constants;
 // Class to Test the Functionalities of Adding Candidate Custom Fields'
 public class AddCandidateCustomFieldTestClass extends TestBaseClass {
 
-	public PageBaseClass pageBaseClass;
-	public LoginPageClass loginPageClass;
-	public DashboardPageClass dashboardPageClass;
-	public SideNavBarClass sideNavBarClass;
-	public AdminSettingPageClass adminSettingPageClass;
-	public CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
-	int testStep = 0;
+	PageBaseClass pageBaseClass;
+	LoginPageClass loginPageClass;
+	DashboardPageClass dashboardPageClass;
+	SideNavBarClass sideNavBarClass;
+	AdminSettingPageClass adminSettingPageClass;
+	CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
 	
 	// Method to Test the Functionality of Adding a Custom Field in Candidate Model
 	@Test
 	public void addCandidateCustomFieldTest() {
-		logger = report.createTest("Add Candidate Custom Field Test : 1");
-		testStep = 0;
-		invokeBrowser(Constants.browser);
+		logger = report.createTest("Add Candidate Custom Field Test : 1"); // Create Report for New Test
 		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
-		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
-		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);
+		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL); // Open Login Page
+		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password); // Login and Open Dashboard Page
 		sideNavBarClass = dashboardPageClass.getSideNavBarClass();
-		adminSettingPageClass = sideNavBarClass.openAdminSettingPage();
-		candidateCustomFieldsPageClass = adminSettingPageClass.openCandidateCustomFieldsPage();
-		candidateCustomFieldsPageClass.addCustomFields(Constants.customFields);
+		adminSettingPageClass = sideNavBarClass.openAdminSettingPage(); // Open Admin Setting Page
+		candidateCustomFieldsPageClass = adminSettingPageClass.openCandidateCustomFieldsPage(); // Open Candidate Custom Field Page
+		candidateCustomFieldsPageClass.addCustomFields(Constants.customFields); // Add Custom Fields
 	}
 	
 }

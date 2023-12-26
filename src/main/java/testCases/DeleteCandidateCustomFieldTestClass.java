@@ -14,28 +14,25 @@ import utilities.Constants;
 //Class to Test the Functionalities of Deleting Candidate Custom Fields
 public class DeleteCandidateCustomFieldTestClass extends TestBaseClass {
 
-	public PageBaseClass pageBaseClass;
-	public LoginPageClass loginPageClass;
-	public DashboardPageClass dashboardPageClass;
-	public SideNavBarClass sideNavBarClass;
-	public AdminSettingPageClass adminSettingPageClass;
-	public CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
-	int testStep;
+	PageBaseClass pageBaseClass;
+	LoginPageClass loginPageClass;
+	DashboardPageClass dashboardPageClass;
+	SideNavBarClass sideNavBarClass;
+	AdminSettingPageClass adminSettingPageClass;
+	CandidateCustomFieldsPageClass candidateCustomFieldsPageClass;
 	
 	// Method to Test the Functionality of Deleting Candidate Custom Fields
 	@Test
 	public void deleteCandidateCustomFieldTest() {
-		logger = report.createTest("Delete Custom Field Test : 1");
-		testStep = 0;
-		invokeBrowser(Constants.browser);
+		logger = report.createTest("Delete Custom Field Test : 1"); // Create Report for New Test
 		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
-		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
-		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);
+		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL); // Open Login Page
+		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password); // Login and Open Dashboard Page
 		sideNavBarClass = dashboardPageClass.getSideNavBarClass();
-		adminSettingPageClass = sideNavBarClass.openAdminSettingPage();
-		candidateCustomFieldsPageClass = adminSettingPageClass.openCandidateCustomFieldsPage();
-		candidateCustomFieldsPageClass.deleteCustomFields(Constants.deleteCustomFields);
+		adminSettingPageClass = sideNavBarClass.openAdminSettingPage(); // Open Admin Setting Page
+		candidateCustomFieldsPageClass = adminSettingPageClass.openCandidateCustomFieldsPage(); // Open Candidate Custom Field Page
+		candidateCustomFieldsPageClass.deleteCustomFields(Constants.deleteCustomFields); // Delete the Candidate Custom Fields
 	}
 	
 }

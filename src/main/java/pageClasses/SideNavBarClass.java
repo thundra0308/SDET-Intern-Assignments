@@ -10,14 +10,14 @@ import pageClasses.AdminSettingPageClass;
 
 public class SideNavBarClass extends PageBaseClass {
 
-	public AdminSettingPageClass adminSettingPageClass;
+	private AdminSettingPageClass adminSettingPageClass;
 	
 	public SideNavBarClass(WebDriver driver, ExtentTest logger, int testStep) {
 		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "a.menu-link.setting")
-	public WebElement adminSetting_Btn;
+	private WebElement adminSetting_Btn;
 	
 	public AdminSettingPageClass openAdminSettingPage() {
 		click(adminSetting_Btn, "Admin Setting Button");

@@ -21,31 +21,31 @@ public class CandidateCustomFieldsPageClass extends PageBaseClass {
 	}
 	
 	@FindBy(css = "#sTest-addFieldBtn")
-	public WebElement newCustomField_Btn;
+	private WebElement newCustomField_Btn;
 	
 	@FindBy(css = "input[name*='custumField']")
-	public WebElement customFieldName_Input;
+	private WebElement customFieldName_Input;
 	
 	@FindBy(css = "#sTest-enabled")
-	public WebElement customFieldType_Btn;
+	private WebElement customFieldType_Btn;
 	
 	@FindBy(css = "#sTest-enabled div.dropdown-menu div.dropdown-content div.dropdown-item input")
-	public WebElement customFieldType_SearchInput;
+	private WebElement customFieldType_SearchInput;
 	
 	@FindBy(css = "#sTest-enabled div.dropdown-menu div.dropdown-content a")
-	public List<WebElement> customFieldType_SearchResult;
+	private List<WebElement> customFieldType_SearchResult;
 	
 	@FindBy(css = "input[name*='dropddown_value']")
-	public WebElement customFieldOptions_Input;
+	private WebElement customFieldOptions_Input;
 	
 	@FindBy(css = "#sTest-saveCustomBtn")
-	public WebElement save_Btn;
+	private WebElement save_Btn;
 	
 	@FindBy(css = "#sTest-deactivateAccountConfirmBtn")
-	public WebElement deleteCustomFieldConfirm_Btn;
+	private WebElement deleteCustomFieldConfirm_Btn;
 	
 	@FindBy(css = "#sTest-customFieldName")
-	public List<WebElement> allAddedCustomFieldNames_Txt;
+	private List<WebElement> allAddedCustomFieldNames_Txt;
 	
 	// Method to Implement the Process of Adding a Single Candidate Custom Field
 	public void addCustomField(String customFieldName, String customFieldType, String customFieldOptions) {

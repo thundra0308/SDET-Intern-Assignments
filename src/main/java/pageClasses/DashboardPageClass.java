@@ -8,8 +8,8 @@ import baseClasses.PageBaseClass;
 //Class for Elements and Logic Methods of : 'Dashboard Page'
 public class DashboardPageClass extends PageBaseClass {
 
-	public TopNavBarClass topNavBarClass;
-	public SideNavBarClass sideNavBarClass;
+	private TopNavBarClass topNavBarClass;
+	private SideNavBarClass sideNavBarClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
 	public DashboardPageClass(WebDriver driver, ExtentTest logger, int testStep) {

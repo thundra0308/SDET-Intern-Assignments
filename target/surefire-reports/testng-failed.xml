@@ -6,20 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="testCases.AddContactTestClass">
+      <class name="testCases.AddCandidateCustomFieldTestClass">
         <methods>
-          <include name="quitDriverSession"/>
-          <include name="addContactTest"/>
-          <include name="flushReports"/>
+          <include name="closeSetup"/>
+          <include name="setup"/>
+          <include name="addCandidateCustomFieldTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.AddContactTestClass -->
-      <class name="testCases.AddJobTestClass">
-        <methods>
-          <include name="quitDriverSession"/>
-          <include name="addJobTest"/>
-          <include name="flushReports"/>
-        </methods>
-      </class> <!-- testCases.AddJobTestClass -->
+      </class> <!-- testCases.AddCandidateCustomFieldTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

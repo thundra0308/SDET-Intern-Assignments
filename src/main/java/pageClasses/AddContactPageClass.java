@@ -14,7 +14,7 @@ import baseClasses.PageBaseClass;
 // Class for Elements and Logic Methods of : 'Add Contact SideBar or Page'
 public class AddContactPageClass extends PageBaseClass {
 
-	public ContactDetailsPageClass contactDetailsPageClass;
+	private ContactDetailsPageClass contactDetailsPageClass;
 	
 	// Constructor to Accept and Initialize the Class with the WebDriver and Extent Test of same Session
 	public AddContactPageClass(WebDriver driver, ExtentTest logger, int testStep) {
@@ -22,19 +22,19 @@ public class AddContactPageClass extends PageBaseClass {
 	}
 	
 	@FindBy(css = "#sTest-contactFirstnameTxt")
-	public WebElement firstName_Input;
+	private WebElement firstName_Input;
 	
 	@FindBy(css = "#sTest-contactLastnameTxt")
-	public WebElement lastName_Input;
+	private WebElement lastName_Input;
 	
 	@FindBy(css = "#sTest-searchCompanyName div.vs__selected-options input")
-	public WebElement companyNames_SearchInput;
+	private WebElement companyNames_SearchInput;
 	
 	@FindBy(css = "#sTest-searchCompanyName ul li")
-	public List<WebElement> compnayNames_SearchResult;
+	private List<WebElement> compnayNames_SearchResult;
 	
 	@FindBy(css = "#sTest-contactAddBtn")
-	public WebElement submit_Btn;
+	private WebElement submit_Btn;
 	
 	// Method to Implement the Process of Adding a Contact
 	public ContactDetailsPageClass addContact(String firstName, String lastName, List<String> companies) {

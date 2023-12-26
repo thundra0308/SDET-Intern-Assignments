@@ -15,27 +15,25 @@ import utilities.Constants;
 // Class to Test the Functionalities of Adding Contacts
 public class AddContactTestClass extends TestBaseClass {
 
-	public PageBaseClass pageBaseClass;
-	public LoginPageClass loginPageClass;
-	public DashboardPageClass dashboardPageClass;
-	public TopNavBarClass topNavBarClass;
-	public AddContactPageClass addContactPageClass;
-	public ContactDetailsPageClass contactDetailsPageClass;
+	PageBaseClass pageBaseClass;
+	LoginPageClass loginPageClass;
+	DashboardPageClass dashboardPageClass;
+	TopNavBarClass topNavBarClass;
+	AddContactPageClass addContactPageClass;
+	ContactDetailsPageClass contactDetailsPageClass;
 	int testStep = 0;
 	
 	// Method to Test the Functionality of Adding a Contact
 	@Test
 	public void addContactTest() {
-		logger = report.createTest("Add Contact Test : 1");
-		testStep = 0;
-		invokeBrowser(Constants.browser);
+		logger = report.createTest("Add Contact Test : 1"); // Create Report for New Test
 		pageBaseClass = new PageBaseClass(driver, logger, testStep);
 		PageFactory.initElements(driver, pageBaseClass);
-		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL);
-		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password);
+		loginPageClass = pageBaseClass.openPage(Constants.loginPageURL); // Open Login Page
+		dashboardPageClass = loginPageClass.login(Constants.email, Constants.password); // Login and Open Dashboard Page
 		topNavBarClass = dashboardPageClass.getTopNavBarClass();
-		addContactPageClass = topNavBarClass.openAddContactPage();
-		contactDetailsPageClass = addContactPageClass.addContact(Constants.contactFirstName, Constants.contactLastName, Constants.companiesContactBelongTo);
+		addContactPageClass = topNavBarClass.openAddContactPage(); // Open Add Contact Page
+		contactDetailsPageClass = addContactPageClass.addContact(Constants.contactFirstName, Constants.contactLastName, Constants.companiesContactBelongTo); // Add the Contact
 	}
 	
 }

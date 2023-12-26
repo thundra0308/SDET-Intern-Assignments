@@ -13,29 +13,29 @@ import pageClasses.AddJobPageClass;
 
 public class TopNavBarClass extends PageBaseClass {
 
-	public AddCandidatePageClass addCandidatePageClass;
-	public AddCompanyPageClass addCompanyPageClass;
-	public AddContactPageClass addContactPageClass;
-	public AddJobPageClass addJobPageClass;
+	private AddCandidatePageClass addCandidatePageClass;
+	private AddCompanyPageClass addCompanyPageClass;
+	private AddContactPageClass addContactPageClass;
+	private AddJobPageClass addJobPageClass;
 	
 	public TopNavBarClass(WebDriver driver, ExtentTest logger, int testStep) {
 		super(driver, logger, testStep);
 	}
 	
 	@FindBy(css = "#sTest-addInAppBtn")
-	public WebElement quickAdd_Btn;
+	private WebElement quickAdd_Btn;
 	
 	@FindBy(css = "#sTest-addCandidateInAppBtn")
-	public WebElement quickAddCandidate_Btn;
+	private WebElement quickAddCandidate_Btn;
 	
 	@FindBy(css = "#sTest-addCompanyInAppBtn")
-	public WebElement quickAddCompany_Btn;
+	private WebElement quickAddCompany_Btn;
 	
 	@FindBy(css = "#sTest-addContactInAppBtn")
-	public WebElement quickAddContact_Btn;
+	private WebElement quickAddContact_Btn;
 	
 	@FindBy(css = "a#sTest-addJobInAppBtn")
-	public WebElement quickAddJob_Btn;
+	private WebElement quickAddJob_Btn;
 	
 	public AddCandidatePageClass openAddCandidatePage() {
 		click(quickAdd_Btn, "QuickAdd Button");

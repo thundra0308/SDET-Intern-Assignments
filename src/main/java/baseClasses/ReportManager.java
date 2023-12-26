@@ -30,6 +30,10 @@ public class ReportManager extends WaitManager {
         logger.log(Status.INFO, "Step - "+(++testStep)+" -> "+reportString);
     }
 
+    public void reportWarning(String reportString) {
+        logger.log(Status.WARNING, "Step - "+testStep+" : Warning -> "+reportString);
+    }
+
     /****************** Capture Screen Shot ***********************/
     public void takeScreenShotOnFailure() {
         TakesScreenshot takeScreenShot = (TakesScreenshot) driver;

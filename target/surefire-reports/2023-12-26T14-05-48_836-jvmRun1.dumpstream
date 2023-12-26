@@ -1,0 +1,56 @@
+# Created at 2023-12-26T14:12:16.226
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2023-12-26T14:12:17.762
+Unexpected IOException: 9,1,testCases.AddJobTestClass,addJobTest(testCases.AddJobTestClass),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=120.0.6099.129)\000ABuild info: version: '4.14.0'\002C revision: 'e5a96349ce'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [9cbff7faeb78750ed281d5a2465e83ba\002C screenshot {}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 120.0.6099.129\002C chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...\002C userDataDir: C:\005CUsers\005Csurya\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:49221}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:49221/devtoo...\002C se:cdpVersion: 120.0.6099.129\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9cbff7faeb78750ed281d5a2465e83ba,null
+
+
+# Created at 2023-12-26T14:12:17.826
+Unexpected IOException: 8,1,testCases.AddJobTestClass,flushReports(testCases.AddJobTestClass),null,disconnected: not connected to DevTools\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=120.0.6099.129)\000ABuild info: version: '4.14.0'\002C revision: 'e5a96349ce'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [9cbff7faeb78750ed281d5a2465e83ba\002C close {}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 120.0.6099.129\002C chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...\002C userDataDir: C:\005CUsers\005Csurya\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:49221}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:49221/devtoo...\002C se:cdpVersion: 120.0.6099.129\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9cbff7faeb78750ed281d5a2465e83ba,null,disconnected: not connected to DevTools\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=120.0.6099.129)\000ABuild info: version: '4.14.0'\002C revision: 'e5a96349ce'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [9cbff7faeb78750ed281d5a2465e83ba\002C close {}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 120.0.6099.129\002C chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...\002C userDataDir: C:\005CUsers\005Csurya\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:49221}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:49221/devtoo...\002C se:cdpVersion: 120.0.6099.129\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9cbff7faeb78750ed281d5a2465e83ba,AddJobTestClass>TestBaseClass.flushReports:44 \00BB WebDriver disconnected: not co...,org.openqa.selenium.WebDriverException: \000Adisconnected: not connected to DevTools\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=120.0.6099.129)\000ABuild info: version: '4.14.0'\002C revision: 'e5a96349ce'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [9cbff7faeb78750ed281d5a2465e83ba\002C close {}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 120.0.6099.129\002C chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...\002C userDataDir: C:\005CUsers\005Csurya\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:49221}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:49221/devtoo...\002C se:cdpVersion: 120.0.6099.129\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9cbff7faeb78750ed281d5a2465e83ba\000A
+
+
+# Created at 2023-12-26T14:12:17.829
+Unexpected IOException: 5,1,testCases.AddJobTestClass,addJobTest(testCases.AddJobTestClass),testCases.AddJobTestClass,null,null
+
+
+# Created at 2023-12-26T14:12:18.824
+Unexpected IOException with stream: Dec 26, 2023 2:12:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 120
+
+
+# Created at 2023-12-26T14:12:42.760
+Unexpected IOException: 6,1,testCases.AddJobTestClass,addJobTest(testCases.AddJobTestClass),null,null,null
+
+
+# Created at 2023-12-26T14:12:42.760
+Unexpected IOException: 9,1,testCases.AddJobTestClass,flushReports(testCases.AddJobTestClass),null,null,null
+
+
+# Created at 2023-12-26T14:12:42.760
+Unexpected IOException: 5,1,testCases.LoginTestClass,loginTest(testCases.LoginTestClass),testCases.LoginTestClass,null,null
+
+
+# Created at 2023-12-26T14:12:43.766
+Unexpected IOException with stream: Dec 26, 2023 2:12:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 120
+
+
+# Created at 2023-12-26T14:12:46.480
+Unexpected IOException: 6,1,testCases.LoginTestClass,loginTest(testCases.LoginTestClass),null,null,null
+
+
+# Created at 2023-12-26T14:12:46.615
+Unexpected IOException: 5,1,testCases.AddCompanyTestClass,addCompanyTest(testCases.AddCompanyTestClass),testCases.AddCompanyTestClass,null,null
+
+
+# Created at 2023-12-26T14:12:47.702
+Unexpected IOException with stream: Dec 26, 2023 2:12:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 120
+
+

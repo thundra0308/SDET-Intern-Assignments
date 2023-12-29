@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+<suite name="Failed suite [Suite : 1]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
-    <listener class-name="handle.retry.TransformationManager"/>
+    <listener class-name="retry.TransformationManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)" verbose="0">
+  <test thread-count="5" name="Test : 1(failed)" verbose="0">
     <classes>
-      <class name="userModel.getUser.GetUserTestClass">
+      <class name="tests.DeleteUserTest">
         <methods>
-          <include name="getUserTest_1"/>
+          <include name="deleteUserTest_1"/>
         </methods>
-      </class> <!-- userModel.getUser.GetUserTestClass -->
-      <class name="userModel.updateUser.UpdateUserTestClass">
-        <methods>
-          <include name="updateUserTest_1"/>
-        </methods>
-      </class> <!-- userModel.updateUser.UpdateUserTestClass -->
+      </class> <!-- tests.DeleteUserTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test : 1(failed) -->
+</suite> <!-- Failed suite [Suite : 1] -->

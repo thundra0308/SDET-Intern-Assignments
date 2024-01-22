@@ -1,153 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-21T17:02:08 IST" name="Suite" finished-at="2024-01-21T17:06:12 IST" duration-ms="244334">
+  <suite started-at="2024-01-22T17:30:37 IST" name="Suite" finished-at="2024-01-22T17:33:16 IST" duration-ms="158985">
     <groups>
     </groups>
-    <test started-at="2024-01-21T17:02:08 IST" name="Test" finished-at="2024-01-21T17:06:12 IST" duration-ms="244334">
+    <test started-at="2024-01-22T17:30:37 IST" name="Test" finished-at="2024-01-22T17:33:16 IST" duration-ms="158985">
       <class name="testCases.AddContactTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddContactTestClass@75d3a5e0]" started-at="2024-01-21T17:04:40 IST" name="setup" finished-at="2024-01-21T17:04:41 IST" duration-ms="1133" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddContactTestClass@75d3a5e0]" started-at="2024-01-22T17:32:06 IST" name="setup" finished-at="2024-01-22T17:32:08 IST" duration-ms="1312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addContactTest()[pri:0, instance:testCases.AddContactTestClass@75d3a5e0]" started-at="2024-01-21T17:04:41 IST" name="addContactTest" finished-at="2024-01-21T17:05:09 IST" duration-ms="27081" status="PASS">
+        <test-method signature="addContactTest()[pri:0, instance:testCases.AddContactTestClass@75d3a5e0]" started-at="2024-01-22T17:32:08 IST" name="addContactTest" finished-at="2024-01-22T17:32:27 IST" duration-ms="19703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContactTest -->
-        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddContactTestClass@75d3a5e0]" started-at="2024-01-21T17:05:09 IST" name="closeSetup" finished-at="2024-01-21T17:05:09 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddContactTestClass@75d3a5e0]" started-at="2024-01-22T17:32:27 IST" name="closeSetup" finished-at="2024-01-22T17:32:28 IST" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSetup -->
       </class> <!-- testCases.AddContactTestClass -->
       <class name="testCases.AddJobTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddJobTestClass@74d1dc36]" started-at="2024-01-21T17:05:09 IST" name="setup" finished-at="2024-01-21T17:05:10 IST" duration-ms="1208" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddJobTestClass@74d1dc36]" started-at="2024-01-22T17:32:28 IST" name="setup" finished-at="2024-01-22T17:32:29 IST" duration-ms="1270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addJobTest()[pri:0, instance:testCases.AddJobTestClass@74d1dc36]" started-at="2024-01-21T17:05:10 IST" name="addJobTest" finished-at="2024-01-21T17:05:39 IST" duration-ms="29061" status="PASS">
+        <test-method signature="addJobTest()[pri:0, instance:testCases.AddJobTestClass@74d1dc36]" started-at="2024-01-22T17:32:29 IST" name="addJobTest" finished-at="2024-01-22T17:32:53 IST" duration-ms="23746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTest -->
-        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddJobTestClass@74d1dc36]" started-at="2024-01-21T17:05:39 IST" name="closeSetup" finished-at="2024-01-21T17:05:39 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddJobTestClass@74d1dc36]" started-at="2024-01-22T17:32:53 IST" name="closeSetup" finished-at="2024-01-22T17:32:53 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSetup -->
       </class> <!-- testCases.AddJobTestClass -->
       <class name="testCases.LoginTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTestClass@7161d8d1]" started-at="2024-01-21T17:05:39 IST" name="setup" finished-at="2024-01-21T17:05:40 IST" duration-ms="1220" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTestClass@7161d8d1]" started-at="2024-01-22T17:32:53 IST" name="setup" finished-at="2024-01-22T17:32:54 IST" duration-ms="1176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:testCases.LoginTestClass@7161d8d1]" started-at="2024-01-21T17:05:40 IST" name="loginTest" finished-at="2024-01-21T17:05:45 IST" duration-ms="4832" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:testCases.LoginTestClass@7161d8d1]" started-at="2024-01-22T17:32:54 IST" name="loginTest" finished-at="2024-01-22T17:32:57 IST" duration-ms="3218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.LoginTestClass@7161d8d1]" started-at="2024-01-21T17:05:45 IST" name="closeSetup" finished-at="2024-01-21T17:05:45 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.LoginTestClass@7161d8d1]" started-at="2024-01-22T17:32:57 IST" name="closeSetup" finished-at="2024-01-22T17:32:57 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSetup -->
       </class> <!-- testCases.LoginTestClass -->
       <class name="testCases.AddCandidateTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCandidateTestClass@2034b64c]" started-at="2024-01-21T17:04:12 IST" name="setup" finished-at="2024-01-21T17:04:13 IST" duration-ms="1100" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCandidateTestClass@2034b64c]" started-at="2024-01-22T17:31:46 IST" name="setup" finished-at="2024-01-22T17:31:48 IST" duration-ms="1637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addCandidateTest()[pri:0, instance:testCases.AddCandidateTestClass@2034b64c]" started-at="2024-01-21T17:04:13 IST" name="addCandidateTest" finished-at="2024-01-21T17:04:40 IST" duration-ms="26800" status="PASS">
+        <test-method signature="addCandidateTest()[pri:0, instance:testCases.AddCandidateTestClass@2034b64c]" started-at="2024-01-22T17:31:48 IST" name="addCandidateTest" finished-at="2024-01-22T17:32:06 IST" duration-ms="18644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCandidateTest -->
-        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddCandidateTestClass@2034b64c]" started-at="2024-01-21T17:04:40 IST" name="closeSetup" finished-at="2024-01-21T17:04:40 IST" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddCandidateTestClass@2034b64c]" started-at="2024-01-22T17:32:06 IST" name="closeSetup" finished-at="2024-01-22T17:32:06 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSetup -->
       </class> <!-- testCases.AddCandidateTestClass -->
       <class name="testCases.AddCandidateCustomFieldTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-21T17:02:08 IST" name="setup" finished-at="2024-01-21T17:02:10 IST" duration-ms="1790" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-22T17:30:37 IST" name="setup" finished-at="2024-01-22T17:30:39 IST" duration-ms="1846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="addCandidateCustomFieldTest()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-21T17:02:10 IST" name="addCandidateCustomFieldTest" finished-at="2024-01-21T17:02:44 IST" duration-ms="34105" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: a.menu-link.setting' (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: a.menu-link.setting' (tried for 30 second(s) with 500 milliseconds interval)
-at org.testng.Assert.fail(Assert.java:111)
-at baseClasses.ReportManager.reportFail(ReportManager.java:22)
-at baseClasses.ElementFunction.click(ElementFunction.java:43)
-at pageClasses.SideNavBarClass.openAdminSettingPage(SideNavBarClass.java:23)
-at testCases.AddCandidateCustomFieldTestClass.addCandidateCustomFieldTest(AddCandidateCustomFieldTestClass.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="addCandidateCustomFieldTest()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-22T17:30:39 IST" name="addCandidateCustomFieldTest" finished-at="2024-01-22T17:31:45 IST" duration-ms="66279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCandidateCustomFieldTest -->
-        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-21T17:02:44 IST" name="closeSetup" finished-at="2024-01-21T17:02:45 IST" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-22T17:31:45 IST" name="closeSetup" finished-at="2024-01-22T17:31:46 IST" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-21T17:02:45 IST" name="setup" finished-at="2024-01-21T17:02:46 IST" duration-ms="1147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addCandidateCustomFieldTest()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-21T17:02:46 IST" name="addCandidateCustomFieldTest" finished-at="2024-01-21T17:04:12 IST" duration-ms="86490" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCandidateCustomFieldTest -->
-        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-21T17:04:12 IST" name="closeSetup" finished-at="2024-01-21T17:04:12 IST" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeSetup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-21T17:06:12 IST" name="tearDown" finished-at="2024-01-21T17:06:12 IST" duration-ms="55" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AddCandidateCustomFieldTestClass@54422e18]" started-at="2024-01-22T17:33:16 IST" name="tearDown" finished-at="2024-01-22T17:33:16 IST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.AddCandidateCustomFieldTestClass -->
       <class name="testCases.AddCompanyTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCompanyTestClass@74e28667]" started-at="2024-01-21T17:05:45 IST" name="setup" finished-at="2024-01-21T17:05:46 IST" duration-ms="1061" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCompanyTestClass@74e28667]" started-at="2024-01-22T17:32:57 IST" name="setup" finished-at="2024-01-22T17:32:59 IST" duration-ms="1115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addCompanyTest()[pri:0, instance:testCases.AddCompanyTestClass@74e28667]" started-at="2024-01-21T17:05:46 IST" name="addCompanyTest" finished-at="2024-01-21T17:06:12 IST" duration-ms="25824" status="PASS">
+        <test-method signature="addCompanyTest()[pri:0, instance:testCases.AddCompanyTestClass@74e28667]" started-at="2024-01-22T17:32:59 IST" name="addCompanyTest" finished-at="2024-01-22T17:33:16 IST" duration-ms="17605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCompanyTest -->
-        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddCompanyTestClass@74e28667]" started-at="2024-01-21T17:06:12 IST" name="closeSetup" finished-at="2024-01-21T17:06:12 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:testCases.AddCompanyTestClass@74e28667]" started-at="2024-01-22T17:33:16 IST" name="closeSetup" finished-at="2024-01-22T17:33:16 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSetup -->

@@ -6,6 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="testCases.AddCompanyTestClass">
+        <methods>
+          <include name="closeSetup"/>
+          <include name="setup"/>
+          <include name="addCompanyTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.AddCompanyTestClass -->
       <class name="testCases.AddCandidateCustomFieldTestClass">
         <methods>
           <include name="closeSetup"/>
@@ -14,6 +22,14 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- testCases.AddCandidateCustomFieldTestClass -->
+      <class name="testCases.AddCandidateTestClass">
+        <methods>
+          <include name="closeSetup"/>
+          <include name="setup"/>
+          <include name="addCandidateTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.AddCandidateTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -14,8 +14,13 @@ public class ElementFunction extends ReportManager {
                 reportInfo("Entering Input in : " + inputFieldName);
                 expWait_VisibilityClickable(input);
                 input.sendKeys(Keys.chord(Keys.CONTROL, "a"), value); // Selects existing text and enters new value
-                reportPass("Entered Input Successfully in : " + inputFieldName);
-                break;
+                System.out.println(input.getAttribute("value"));
+                if(input.getAttribute("value").equals(value)) {
+                    reportPass("Entered Input Successfully in : " + inputFieldName);
+                    break;
+                } else {
+                    attempts++;
+                }
             } catch (StaleElementReferenceException | ElementNotInteractableException | NoSuchElementException e) {
                 reportWarning("Stale Element Reference Exception occurred. Retrying input action...");
                 attempts++;

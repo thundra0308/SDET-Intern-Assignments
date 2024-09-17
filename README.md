@@ -1,2 +1,2 @@
-Assignment 7 - UI Automation
-Assignment 11 - API Automation
+- Assignment 7 - UI Automation
+- Assignment 11 - API Automation
